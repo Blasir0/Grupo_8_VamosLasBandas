@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-dh-grupo-8",
+  "version": "1.0.0",
+  "description": "TEMÁTICA DEL SITIO Y PÚBLICO OBJETIVO",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blasir0/Proyecto-DH-Grupo-8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blasir0/Proyecto-DH-Grupo-8/issues"
+  },
+  "homepage": "https://github.com/Blasir0/Proyecto-DH-Grupo-8#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
