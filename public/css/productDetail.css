@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    background-color: lightgray;
+    width: 375px;
+}
+
+.higher{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.principal{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.principal img{
+    display: flex;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    border: solid 2px gray
+}
+
+.miniatures{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.miniatures a img{
+    display: flex;
+    width: 60%;
+    margin: 3px;
+    border: solid 1px gray;
+}
