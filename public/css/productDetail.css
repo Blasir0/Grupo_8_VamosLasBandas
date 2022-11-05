@@ -1,3 +1,10 @@
+:root{
+    --rojo-logo: #d10000; /*Botones?*/
+    --gris-oscuro: #666;
+    --gris-claro: lightgray; /*Background color*/
+}
+/*Si les parece vamos viendo q colores usamos y los agregamos comentados en todos los CSS*/
+
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -119,3 +126,5 @@ footer p{
     text-align: center;
     padding-top: 10px;
 }
+
+/*Media Queries*/

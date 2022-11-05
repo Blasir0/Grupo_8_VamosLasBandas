@@ -1,0 +1,24 @@
+:root{
+    --rojo-logo: #d10000; /*Para botones? Es el rojo del logo*/
+    --gris-oscuro: #666;
+    --gris-claro: lightgray; /*Background color*/
+}
+/*Si les parece vamos viendo q colores usamos y los agregamos comentados en todos los CSS*/
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: lightgray;
+}
+
+/*Header*/
+
+/*Main*/
+
+/*Footer*/
+
+/*Media Queries*/
