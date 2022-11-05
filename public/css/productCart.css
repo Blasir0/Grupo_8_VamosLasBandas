@@ -6,7 +6,7 @@
 /*Si les parece vamos viendo q colores usamos y los agregamos comentados en todos los CSS*/
 
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -18,6 +18,47 @@ body{
 /*Header*/
 
 /*Main*/
+
+main{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.titulo-principal {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+main article {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+main article img{
+    width: 10%;
+    padding: 10px 0;
+}
+
+main article section.info-articulo {
+    margin: 0px 12px 0px 12px;
+    text-decoration: none;
+}
+
+main article section.info-articulo h2 {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+main article section.info-articulo h2 a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+
 
 /*Footer*/
 
