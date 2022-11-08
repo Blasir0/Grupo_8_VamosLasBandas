@@ -7,12 +7,22 @@ SITIOS WEB DE REFERENCIA
 
 Elegimos los siguientes sitios web para tomar como referencia debido a sus diferentes estilos, estética y funcionalidades que creemos nos ayudarán a inspirarnos y darnos ideas útiles para implementar en nuestro proyecto.
 
-https://www.altovoltaje.com.uy/
+ • https://www.altovoltaje.com.uy/
+ • http://www.hemisferioderecho.com.uy/
+ • https://salaselrefugio.com.ar/salas-de-ensayo/
+ • http://www.elpalaciornr.com.ar/
+ • https://salasrocket.com/
 
-http://www.hemisferioderecho.com.uy/
+DESCRIPCIÓN DE LOS INTEGRANTES DEL EQUIPO
 
-https://salaselrefugio.com.ar/salas-de-ensayo/
+ • Macarena Abril Amato Delgado: ¡Hola! Tengo 21 años y vivo en Ramos Mejía, Buenos Aires.
+Actualmente estoy estudiando el programa conjunto de las licenciaturas en Administración de Empresas y Comercialización en la UADE, y me encuentro trabajando en el área de marketing de Indufra, la empresa familiar, en la que vendemos repuestos y servicios para el automóvil. 
+En 2018 tuve la oportunidad de hacer el curso de Marketing Digital en Digital House. Muy buena experiencia. También soy fotógrafa y maquilladora social y profesional.
+Desde siempre me interesó la programación web, pero por priorizar otros objetivos e intereses siempre posponía el adentrarme en este mundo, hasta ahora. Considero que, combinado con todas las competencias que he estado adquiriendo, el titularme en este área sumará muchísimo a mi perfil profesional.
+Mi objetivo es, además de hacer una web desde cero para Indufra para desligarnos de la dependencia con la empresa de desarrollo web con la que trabajamos actualmente, también poder comenzar a trabajar de esto en una empresa para poder afianzar los conocimientos adquiridos y seguir aprendiendo de otros con más experiencia, y a futuro hacerlo de forma freelance.
 
-http://www.elpalaciornr.com.ar/
-
-https://salasrocket.com/
+ • Emanuel Fidel:
+ 
+ • Ezequiel Gonzalo Macia:
+ 
+ • Mateo Muria:
