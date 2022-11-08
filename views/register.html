@@ -1,0 +1,60 @@
+<!-- app.get('/register', (req,res)=>{
+    res.sendFile(__dirname + '/views/register.html');
+}); -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrate</title>
+    <link rel="icon" href="img/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+<body>
+    <header></header>
+    <main class="register">
+        <h1>Register</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="janis.joplin@vlb.com">
+            </div>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" placeholder="Janis" required >
+            </div>
+            <div class="form-group">
+                <label for="last-name">Apellido</label>
+                <input type="password" name="last-name" placeholder="Joplin" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Direccion</label>
+                <input type="text" name="address" placeholder="Av Cordoba 333" required>
+            </div>
+            <div class="form-group">
+                <label for="instrument">Instrumento</label>
+                <select name="instrument">
+                    <option>Instrumentos</option>
+                    <option value="">Bajo</option>
+                    <option value="">Bateria</option>
+                    <option value="">Guitarra</option>
+                    <option value="">Teclado</option>
+                    <option value="">Voz</option>
+            </div>
+            <input type="submit" value="Enviar">
+            
+        </form>
+    </main>
+    <section class="help">
+    <!-- checkbox recordar -->
+    <!-- boton login -->
+    <p>ayuda para iniciar sesion?</p>
+    <p>No tenes una cuenta?</p>
+    <p>Registrarse</p>
+    </section>
+    <footer></footer>
+</body>
+</html>

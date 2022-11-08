@@ -1,0 +1,42 @@
+<!-- app.get('/login', (req,res)=>{
+    res.sendFile(__dirname + '/views/login.html');
+}); -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ingresá</title>
+    <link rel="icon" href="img/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+    <header></header>
+    <main class="login">
+        <h1>Iniciar Sesion</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+            <input type="text" name="user" placeholder="Nombre de usuario">
+            </div>
+            <div class="form-group">
+            <input type="password" name="pass" placeholder="Elegí tu contraseña">
+            </div>
+            <div class="form-group">
+            <input type="submit" value="Enviar">
+            </div>
+            
+        </form>
+    </main>
+    <section class="help">
+    <!-- checkbox recordar -->
+    <!-- boton login -->
+    <p>ayuda para iniciar sesion?</p>
+    <p>No tenes una cuenta?</p>
+    <p>Registrarse</p>
+    </section>
+    <footer></footer>
+</body>
+</html>
