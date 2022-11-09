@@ -31,7 +31,7 @@ header a{
     margin-left: 20px;
 }
 
-.main-navbar { 
+header nav .main-navbar { 
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -57,8 +57,13 @@ main h1, main h2, main h3 {
     text-align: center;
 }
 
-main section article img{
+.reservas img{
     width: 30%;
+    border-radius: 5px;
+}
+
+.productos img {
+    width: 22%;
     border-radius: 5px;
 }
 
