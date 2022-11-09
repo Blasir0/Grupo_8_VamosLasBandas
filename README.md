@@ -21,7 +21,10 @@ En 2018 tuve la oportunidad de hacer el curso de Marketing Digital en Digital Ho
 Desde siempre me interesó la programación web, pero por priorizar otros objetivos e intereses siempre posponía el adentrarme en este mundo, hasta ahora. Considero que, combinado con todas las competencias que he estado adquiriendo, el titularme en este área sumará muchísimo a mi perfil profesional.
 Mi objetivo es, además de hacer una web desde cero para Indufra para desligarnos de la dependencia con la empresa de desarrollo web con la que trabajamos actualmente, también poder comenzar a trabajar de esto en una empresa para poder afianzar los conocimientos adquiridos y seguir aprendiendo de otros con más experiencia, y a futuro hacerlo de forma freelance.
 
- • Emanuel Fidel:
+ • Emanuel Fidel: Tengo 26 años y vivo en Maldonado, Uruguay. Soy Licenciado en Administración de Empresas y luego de recibirme realicé una pasantía en el área de Marketin Digital, Ventas y Business Development de una startup. Actualmente me encuentro trabajando como administrador de varias propiedades. 
+ Siempre me gustaron los videojuegos desde que tengo memoria, y en el secundario fue que comencé a interesarme por el mundo de la programación y desarrollo web y tenía pensado estudiar Ingeniería en Sistemas al egresar. Sim embargo, la vida me llevó por caminos distintos, y por varios años dejé de lado ese interés para desarrollar mi carrera. 
+ Afortunadamente, se me presentó la oportunidad de ser parte de este curso y no dudé en tomarla, ya que siempre tuve como asignatura pendiente estudiar y por lo menos tener una base en el mundo de la programación. 
+ Mi objetivo es aprender todo lo que pueda y satisfacer mi curiosidad intelectual por este rubro, mientras compruebo si es algo a lo que me gustaría dedicarme en un futuro cercano y desarrollar como carrera. De ser así, me gustaría en un principio trabajar en una empresa como desarrollador junior para poder profundizar en conocimientos y experiencia, para el día de mañana crear un emprendimiento propio o trabajar de manera independiente. 
  
  • Ezequiel Gonzalo Macia:
  

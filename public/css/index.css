@@ -18,7 +18,50 @@ body{
 
 /*Header*/
 
+header{
+    display: flex;
+    background-color: rgb(60, 60, 60);
+    height: 80px;
+}
+
+header a{
+    display: flex;
+    padding: 5px;
+    width: 10%;
+    margin-left: 20px;
+}
+
+.main-navbar { 
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.main-navbar ul {
+    list-style: none;  
+}
+
+.main-navbar a {
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 17px;
+    color: var(--gris-claro);     
+}
+
+
+
 /*Main*/
+
+main h1, main h2, main h3 {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+main section article img{
+    width: 30%;
+    border-radius: 5px;
+}
+
 
 /*Footer*/
 
