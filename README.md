@@ -31,4 +31,6 @@ Mi objetivo es, además de hacer una web desde cero para Indufra para desligarno
  Estoy capacitandome hace tiempo, y una oferta sobre este curso fue lo que hizo tomar la decicion de hacerlo y aprovecharlo lo maximo posible. 
  Mi objetivo es sacar el mayor provecho posible al curso, tanto en playground como con los profesores, el trabajo limita un poco los tiempos, pero cuadno puedo estoy codeando para aunque sea aprender algo todos los dias. 
  
- • Mateo Muria:
+ • Mateo Murias: Tengo 32 años y vivo en Boulogne, San Isidro. Trabajo como tecnico de computadores en Paramount hace 10 años, actualmente en las instalaciones de Telefe en Martinez. 
+ Siempre me gustaron las computadoras y juzgar paginas web, o mejor dicho sufri tantas que me parecio interesante aprender sobre el tema. Por suerte tuve la oportunidad de acceder a este curso, y estoy tratando de aprovecharlo lo mejor posible aunque se me ha dificultado un poco estas ulitmas semanas. 
+ Me gustaria poder terminarlo exitosamente y luego pasar a practicarlo cada vez mas hasta poder dedicarme a la programacion web, probablemente comenzar en modo freelance en tiempo parcial hasta adquirir experiencia y poder cambiar de empleo a tiempo completo.
