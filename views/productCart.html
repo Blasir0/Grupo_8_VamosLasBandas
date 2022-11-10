@@ -12,16 +12,34 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
     <link rel="stylesheet" href="css/productCart.css">
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <a href="/index"><img src="img/logo.png" alt="logo"></a>
+        <div class="searchbar" action="#" method="GET">
+            <input class="input" placeholder="Buscar productos, marcas y más">
+            <div class="submit"><i class="fa fa-search"></i></div>
+        </div>
+        <nav class="main-navbar">
+            <ul>
+            <li><a href="/productDetail">Productos</a></li>
+            <li><a href="/productCart">Mi Carrito</a></li>
+            <li><a href="/login">Ingresá</a></li>
+            <li><a href="/register">Registrate</a></li>
+            <li><a href="#">Reservas</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <h3 class = "titulo-principal">Mi Carrito</h3>
         <hr>
         <section class = "carrito-de-compras">
-            <section class="articulos-en-carrito">
+            <section class="columna-izquierda">
                 <article>
                     <img src="img/guitar1.jpg" alt="">
                     <section class="info-articulo">
@@ -32,6 +50,7 @@
                         <i class="fas fa-trash"></i>
                 </article>
             </section>
+            <section class = "columna-derecha">
             <section class = "totales">
                     <div class = "subtotal">
                         <h3>Subtotal</h3>
@@ -58,10 +77,19 @@
                     </div>
             </section>
             <a href="#" class="myButton">Comprar</a>
+            </section>
 
 
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="left">
+            <p>Vamos las bandas</p>
+        </section>
+        <section class="rigth">
+            <a href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+        </section>
+    </footer>
 </body>
 </html>
