@@ -17,6 +17,7 @@ body{
 
 /*Header*/
 
+
 header{
     display: flex;
     background-color: rgb(60, 60, 60);
@@ -72,6 +73,15 @@ header .searchbar .submit{
     display: flex;
     align-items: center;
 }
+
+.main-navbar a {
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 17px;
+    color: var(--gris-claro);
+    margin-right: 20px;     
+}
+
 
 /*Main*/
 
