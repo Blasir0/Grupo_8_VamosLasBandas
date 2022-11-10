@@ -14,27 +14,44 @@
 
 </head>
 <body>
-    <header></header>
-    <main class="register">
-        <h1 >Register</h1>
-        <form action="#" method="POST">
-            <div class="form-group">
+    <header>
+        <a href="/index"><img src="img/logo.png" alt="logo"></a>
+        <div class="searchbar" action="#" method="GET">
+            <input class="input" placeholder="Buscar productos, marcas y más">
+            <div class="submit"><i class="fa fa-search"></i></div>
+        </div>
+        <nav class="main-navbar">
+            <ul>
+            <li><a href="/productDetail">Productos</a></li>
+            <li><a href="/productCart">Mi Carrito</a></li>
+            <li><a href="/login">Ingresá</a></li>
+            <li><a href="/register">Registrate</a></li>
+            <li><a href="#">Reservas</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="title">
+        <h1>Registrarse</h1>
+        <form class="form-group" action="#" method="POST">
+            <div class="form-obj">
                 <label for="email">Email</label>
                 <input type="text" name="email" placeholder="janis.joplin@vlb.com">
             </div>
-            <div class="form-group">
+            <div class="form-obj">
                 <label for="name">Nombre</label>
                 <input type="text" name="name" placeholder="Janis" required >
             </div>
-            <div class="form-group">
+            <div class="form-obj">
                 <label for="last-name">Apellido</label>
                 <input type="password" name="last-name" placeholder="Joplin" required>
             </div>
-            <div class="form-group">
+            <div class="form-obj">
                 <label for="address">Direccion</label>
                 <input type="text" name="address" placeholder="Av Cordoba 333" required>
             </div>
-            <div class="form-group">
+            <div class="form-obj">
                 <label for="instrument">Instrumento</label>
                 <select name="instrument">
                     <option>Instrumentos</option>
@@ -44,17 +61,25 @@
                     <option value="">Teclado</option>
                     <option value="">Voz</option>
             </div>
-            <input type="submit" value="Enviar">
+            <div class="button">
+                <input type="submit" value="Enviar">
+            </div>
             
         </form>
     </main>
     <section class="help">
-    <!-- checkbox recordar -->
-    <!-- boton login -->
-    <p>ayuda para iniciar sesion?</p>
-    <p>No tenes una cuenta?</p>
-    <p>Registrarse</p>
+    <a href="/login">
+        <p>Ya tenes una cuenta?</p>
+        <p>Iniciar Sesion</p></a>
     </section>
-    <footer></footer>
+    <footer>
+        <section class="left">
+            <p>Vamos las bandas</p>
+        </section>
+        <section class="right">
+            <a href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+        </section>
+    </footer>
 </body>
 </html>

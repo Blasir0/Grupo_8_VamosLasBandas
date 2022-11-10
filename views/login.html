@@ -14,29 +14,54 @@
 
 </head>
 <body>
-    <header></header>
-    <main class="login">
-        <h1>Iniciar Sesion</h1>
+    <header>
+        <a href="/index"><img src="img/logo.png" alt="logo"></a>
+        <div class="searchbar" action="#" method="GET">
+            <input class="input" placeholder="Buscar productos, marcas y más">
+            <div class="submit"><i class="fa fa-search"></i></div>
+        </div>
+        <nav class="main-navbar">
+            <ul>
+            <li><a href="/productDetail">Productos</a></li>
+            <li><a href="/productCart">Mi Carrito</a></li>
+            <li><a href="/login">Ingresá</a></li>
+            <li><a href="/register">Registrate</a></li>
+            <li><a href="#">Reservas</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="login-form">
+        <h1 class="title">Iniciar Sesion</h1>
         <form action="#" method="POST">
-            <div class="form-group">
+            <div class="form-obj">
             <input type="text" name="user" placeholder="Nombre de usuario">
             </div>
-            <div class="form-group">
-            <input type="password" name="pass" placeholder="Elegí tu contraseña">
+            <div class="form-obj">
+            <input type="password" name="pass" placeholder="Contraseña">
             </div>
-            <div class="form-group">
-            <input type="submit" value="Enviar">
+            <div class="buttons">
+                <input type="submit" value="Enviar">
             </div>
             
         </form>
     </main>
-    <section class="help">
-    <!-- checkbox recordar -->
+    <section class="remember">
+        <input type="checkbox" id="remember" name="remember" checked>
+        <label for="remember">Recordar usuario</label>
+      </div>
     <!-- boton login -->
-    <p>ayuda para iniciar sesion?</p>
-    <p>No tenes una cuenta?</p>
-    <p>Registrarse</p>
+    <a href="/register"><p class="help">Registrarse</p></a>
     </section>
-    <footer></footer>
+    <footer>
+        <section class="left">
+            <p>Vamos las bandas</p>
+        </section>
+        <section class="rigth">
+            <a href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+        </section>
+    </footer>
 </body>
 </html>
