@@ -34,7 +34,6 @@ main{
 main section.carrito-de-compras {
     width: 100%;
     padding: 12px 15px;
-    align-items: center;
     display: flex;
     background: var(--gris-claro);
     border: 1px solid var(--gris-claro);
