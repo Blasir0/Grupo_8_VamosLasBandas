@@ -26,6 +26,9 @@ Mi objetivo es, además de hacer una web desde cero para Indufra para desligarno
  Afortunadamente, se me presentó la oportunidad de ser parte de este curso y no dudé en tomarla, ya que siempre tuve como asignatura pendiente estudiar y por lo menos tener una base en el mundo de la programación. 
  Mi objetivo es aprender todo lo que pueda y satisfacer mi curiosidad intelectual por este rubro, mientras compruebo si es algo a lo que me gustaría dedicarme en un futuro cercano y desarrollar como carrera. De ser así, me gustaría en un principio trabajar en una empresa como desarrollador junior para poder profundizar en conocimientos y experiencia, para el día de mañana crear un emprendimiento propio o trabajar de manera independiente. 
  
- • Ezequiel Gonzalo Macia:
+ • Ezequiel Gonzalo Macia: Tengo 29 años y vivo en Banfield, BsAs, Argentina. Soy tecnico en informatica y seguridad e higiene, aunque actualmente me encuentro trabajando en una refineria de petroleo. 
+ Siempre me gusto lo relacionado a la computacion, y siempre fui autodidacta para aprender, aunque nunca pude ejercer, me gustaria si poder hacerlo porque es algo que me gusta. 
+ Estoy capacitandome hace tiempo, y una oferta sobre este curso fue lo que hizo tomar la decicion de hacerlo y aprovecharlo lo maximo posible. 
+ Mi objetivo es sacar el mayor provecho posible al curso, tanto en playground como con los profesores, el trabajo limita un poco los tiempos, pero cuadno puedo estoy codeando para aunque sea aprender algo todos los dias. 
  
  • Mateo Muria:
