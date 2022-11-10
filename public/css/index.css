@@ -1,0 +1,107 @@
+:root{
+    --rojo-logo: #d10000; /*Botones?*/
+    --gris-oscuro: #666;
+    --gris-claro: lightgray; /*Background color*/
+}
+/*Si les parece vamos viendo q colores usamos y los agregamos comentados en todos los CSS*/
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    background-color: rgb(60, 60, 60);
+    height: 20vh;
+    justify-content: space-between;
+}
+
+header a{
+    display: flex;
+    padding: 5px;
+    width: 10%;
+    margin-left: 20px;
+    border: #FFF;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    margin-top: 60px;
+}
+
+header .searchbar .input{
+    background-color: #FFF;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    border-radius: 5px 0px 0px 5px;
+    width: 30vw;
+    height: 5vh;
+    border: 0px;
+}
+
+header .searchbar .submit{
+    background-color: #FFF;
+    color: #666;
+    padding: 2px;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    height: 5vh;
+    align-items: center;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.main-navbar {
+    display: flex;
+}
+
+.main-navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.main-navbar a {
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 17px;
+    color: var(--gris-claro);
+    margin-right: 20px;     
+}
+
+
+/*Main*/
+
+main h1, main h2, main h3 {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.reservas img{
+    width: 30%;
+    border-radius: 5px;
+}
+
+.productos img {
+    width: 22%;
+    border-radius: 5px;
+}
+
+
+/*Footer*/
+
+/*Media Queries*/

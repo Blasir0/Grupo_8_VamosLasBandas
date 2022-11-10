@@ -1,0 +1,152 @@
+:root{
+    --rojo-logo: #d10000; /*Para botones? Es el rojo del logo*/
+    --gris-oscuro: #666;
+    --gris-claro: lightgray; /*Background color*/
+}
+/*Si les parece vamos viendo q colores usamos y los agregamos comentados en todos los CSS*/
+
+*{
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: lightgray;
+}
+
+/*Header*/
+
+/*Main*/
+
+main{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.titulo-principal {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+main section.carrito-de-compras {
+    width: 100%;
+    padding: 12px 15px;
+    align-items: center;
+    display: flex;
+    background: var(--gris-claro);
+    border: 1px solid var(--gris-claro);
+}
+
+main article{
+    background-color: white;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 2px 8px rgb(100, 100, 100);
+    border-radius: 4px;
+    opacity: 1;
+    margin-top: 0;
+}
+
+main article img{
+    width: 10%;
+    padding: 10px 0;
+    margin-left: 12px;
+}
+
+main article section.info-articulo {
+    margin: 0px 12px 0px 12px;
+    text-decoration: none;
+}
+
+main article section.info-articulo h2 {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--gris-oscuro);
+    margin-top: 5px;
+}
+
+main article section.info-articulo h2 a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+main section.totales {
+    background: white;
+    border: 1px solid #d10000; 
+    box-shadow: 1px 2px 8px rgb(100, 100, 100);
+    margin-left: 12px;
+    border-radius: 4px;
+    opacity: 1;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+main section.totales div{
+    margin: 0px 12px 0px 12px;
+    text-decoration: none;
+}
+
+.subtotal {
+    text-decoration: none;
+    font-weight: 400;
+    text-align: left;
+    display: inline;
+}
+
+.subtotal span {
+    text-align: right;
+}
+
+.total {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+    display: inline;
+}
+
+.total span {
+    text-align: right;
+}
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #cc2314;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:15px;
+	border:1px solid #d10000;
+	display: inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:18px;
+	padding:12px 76px;
+	text-decoration:none;
+	text-shadow:2px 0px 5px #810e05;
+    margin: 6px;
+}
+
+
+
+/*Footer*/
+
+/*Media Queries*/
+
+@media (min-width: 426px){
+
+}
+
+@media (min-width: 769px){
+    .myButton:hover {
+        background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+        background-color:#f24437;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+}
