@@ -17,27 +17,28 @@ body{
 
 /*---Header---*/
 
+
 header{
     display: flex;
     background-color: rgb(60, 60, 60);
-    height: 80px;
+    height: 20vh;
+    justify-content: space-between;
 }
 
 header a{
-    width: 15%;
     display: flex;
     padding: 5px;
-    margin-left: 5px;
+    width: 10%;
+    margin-left: 20px;
     border: #FFF;
 }
 
 .searchbar {
-    width: 70%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 20px;
+    margin-top: 60px;
 }
 
 header .searchbar .input{
@@ -46,7 +47,8 @@ header .searchbar .input{
     color: #666;
     padding: 2px;
     border-radius: 5px 0px 0px 5px;
-    height: 10pxpx;
+    width: 30vw;
+    height: 5vh;
     border: 0px;
 }
 
@@ -63,7 +65,7 @@ header .searchbar .submit{
 }
 
 .main-navbar {
-    display: none;
+    display: flex;
 }
 
 .main-navbar ul {
@@ -81,12 +83,6 @@ header .searchbar .submit{
     margin-right: 20px;     
 }
 
-.bars-menu a{
-    width: 15%;
-    color: #FFF;
-    text-decoration: none;
-    font-size: 24px;
-}
 
 /*---Main---*/
 
