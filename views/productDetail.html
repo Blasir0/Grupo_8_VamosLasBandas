@@ -14,6 +14,22 @@
 <body>
     <header>
         <a href="/index"><img src="img/logo.png" alt="logo"></a>
+        <div class="searchbar" action="#" method="GET">
+            <input class="input" placeholder="Buscar productos, marcas y más">
+            <div class="submit"><i class="fa fa-search"></i></div>
+            <a class="bars-menu" href="#"><i class="fas fa-bars"></i></a>
+        </div>
+        <nav class="main-navbar">
+            <ul>
+            <li><a href="/productDetail">Productos</a></li>
+            <li><a href="/productCart">Mi Carrito</a></li>
+            <li><a href="/login">Ingresá</a></li>
+            <li><a href="/register">Registrate</a></li>
+            <li><a href="#">Reservas</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Ubicación</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -51,8 +67,8 @@
                 </article>
 
                 <section class="buttons">
-                    <button>Comprar Ahora</button>
-                    <button>Agregar al carrito</button>
+                    <input type="button" value="Comprar ahora">
+                    <input type="button" value="Agregar al carrito">
                 </section>
             </section>
         </section>
@@ -78,7 +94,13 @@
     </main>
 
     <footer>
-        <p>Vamos las bandas</p>
+        <section class="left">
+            <p>Vamos las bandas</p>
+        </section>
+        <section class="rigth">
+            <a href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+        </section>
     </footer>
 </body>
 </html>
