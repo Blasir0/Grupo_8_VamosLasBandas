@@ -33,7 +33,7 @@ main{
 
 main section.carrito-de-compras {
     width: 100%;
-    padding: 12px 15px;
+    padding: 15px 0px;
     display: flex;
     background: var(--gris-claro);
     border: 1px solid var(--gris-claro);
@@ -66,7 +66,7 @@ main article section.info-articulo {
 main article section.info-articulo h2 a{
     text-decoration: none;
     font-weight: 400;
-    font-size: 18px;
+    font-size: medium;
     color: black;
     margin: 6px 0px 3px 0px;
 }
@@ -74,13 +74,57 @@ main article section.info-articulo h2 a{
 main article section.info-articulo h2 {
     text-decoration: none;
     font-weight: 400;
-    font-size: 15px;
+    font-size: small;
     color: var(--gris-oscuro);
     margin: 3px 0px 3px 0px;
 }
 
 main article section.info-articulo i {
     margin: 3px 0px 6px 0px;
+}
+
+
+.u-float-left {
+    float: left!important;
+}
+
+.u-button-reset {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    outline: 0!important;
+    width: auto;
+    font-size: inherit;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.cart-inline-loading__quantity-selector {
+    display: inline-block;
+    position: absolute;
+}
+
+
+
+.agregar-mas-productos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: static;
+    margin-top: 16px;
+}
+
+.agregar-mas-productos a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: var(--rojo-logo) !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 main section.totales {
@@ -206,5 +250,37 @@ main section.totales div.calcular-envio {
         margin: 12px;
     }
 
+    .ui-quantity-selector__container {
+        border: 1px solid #e6e6e6;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        overflow: hidden;
+        vertical-align: top;
+        display: inline-block;
+        padding: 10px;
+        margin: 0px 6px 0px 6px;
+    }
 
+    .ui-quantity-selector__container .ui-quantity-selector__input {
+        width: 55px;
+    }
+    
+    .ui-quantity-selector__input {
+        width: 47px;
+        font-size: 15px;
+    }
+
+    .ui-quantity-selector__button, .ui-quantity-selector__input {
+        border: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        display: block;
+        float: left;
+        text-align: center;
+    }
+    .ui-quantity-selector--max-quantity-error .ui-quantity-selector__stock, .ui-quantity-selector--min-quantity-error .ui-quantity-selector__stock {
+        color: #f73;
+    }
 }
