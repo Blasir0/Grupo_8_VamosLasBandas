@@ -80,9 +80,12 @@ main article section.info-articulo h2 {
 }
 
 main article section.info-articulo i {
-    margin: 3px 0px 6px 0px;
+    margin: 3px 6px 6px 3px;
 }
 
+main article section.total {
+    margin: auto;
+}
 
 .u-float-left {
     float: left!important;
@@ -103,8 +106,6 @@ main article section.info-articulo i {
     display: inline-block;
     position: absolute;
 }
-
-
 
 .agregar-mas-productos {
     display: flex;
@@ -258,7 +259,7 @@ main section.totales div.calcular-envio {
         vertical-align: top;
         display: inline-block;
         padding: 10px;
-        margin: 0px 6px 0px 6px;
+        margin: auto;
     }
 
     .ui-quantity-selector__container .ui-quantity-selector__input {
