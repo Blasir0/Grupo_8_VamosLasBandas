@@ -34,7 +34,6 @@ main{
 main section.carrito-de-compras {
     width: 100%;
     padding: 15px 0px;
-    display: flex;
     background: var(--gris-claro);
     border: 1px solid var(--gris-claro);
     clear: both;
@@ -44,7 +43,7 @@ main section.carrito-de-compras {
 main article{
     background-color: white;
     height: inherit;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     box-shadow: 1px 2px 8px rgb(100, 100, 100);
     border-radius: 4px;
@@ -108,11 +107,9 @@ main article section.total {
 }
 
 .agregar-mas-productos {
-    display: flex;
     justify-content: center;
     width: 100%;
-    position: static;
-    margin-top: 16px;
+    margin: 16px 0px 16px 0px;
 }
 
 .agregar-mas-productos a {
@@ -267,11 +264,29 @@ main section.totales div.calcular-descuento {
 
 /*Media Queries*/
 
-@media (min-width: 426px){
+@media (min-width: 470px){
+    main section.carrito-de-compras {
+        display: flex;
+    }
 
+    main article{
+        height: inherit;
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media (min-width: 769px){
+    main section.carrito-de-compras {
+        display: flex;
+    }
+
+    main article{
+        height: inherit;
+        display: flex;
+        align-items: center;
+    }
+
     .myButton:hover {
         background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
         background-color:#f24437;
@@ -337,4 +352,8 @@ main section.totales div.calcular-descuento {
     .ui-quantity-selector--max-quantity-error .ui-quantity-selector__stock, .ui-quantity-selector--min-quantity-error .ui-quantity-selector__stock {
         color: #f73;
     }
+}
+
+@media (min-width: 1135px){
+/*hacer que contador y $ columna izq vayan para abajo descripción art*/
 }
