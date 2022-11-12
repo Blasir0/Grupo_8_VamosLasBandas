@@ -147,20 +147,23 @@ main section.totales h3 {
 }
 
 main section.totales div{
-    margin: 6px 12px 6px 12px;
+    margin: 8px 12px 8px 12px;
 }
 
 .subtotal {
     text-align: left;
     display: flex;
+    color: var(--gris-oscuro) !important;
 }
 
 .subtotal h3 {
     margin-right: auto;
+    color: var(--gris-oscuro) !important;
 }
 
 .subtotal span strong {
     font-weight: 400;
+    color: var(--gris-oscuro) !important;
 }
 
 .total {
@@ -176,6 +179,22 @@ main section.totales div{
     font-weight: bold;
 }
 
+.totales div div h3 {
+    font-size: 15px !important;
+}
+
+.totales div div input {
+    font-size: 15px !important;
+}
+
+main section.totales div.envio div.icono-titulo {
+    display: flex;
+}
+
+.icono-titulo i {
+    margin-right: 6px;
+}
+
 main section.totales div.calcular-envio {
     display: flex;
     margin: 0px;
@@ -183,13 +202,40 @@ main section.totales div.calcular-envio {
 }
 
 .calcular-envio input {
-    width: 50%;
+    width: 60%;
     border-radius:4px;
     border-color: var(--rojo-logo);
 }
 
 .calcular-envio button {
-    width: 50%;
+    width: 40%;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color: var(--rojo-logo);
+    color: white;
+    text-decoration:none;
+	text-shadow:2px 0px 5px #810e05;
+    border: none;
+    border-radius:4px;
+}
+
+main section.totales div.cupon div.icono-titulo {
+    display: flex;
+}
+
+main section.totales div.calcular-descuento {
+    display: flex;
+    margin: 0px;
+    margin-top: 4px;
+}
+
+.calcular-descuento input {
+    width: 60%;
+    border-radius:4px;
+    border-color: var(--rojo-logo);
+}
+
+.calcular-descuento button {
+    width: 40%;
     background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
     background-color: var(--rojo-logo);
     color: white;
@@ -230,11 +276,18 @@ main section.totales div.calcular-envio {
         background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
         background-color:#f24437;
     }
+
     .myButton:active {
         position:relative;
         top:1px;
     }
+
     .calcular-envio button:hover {
+        background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+        background-color:#f24437;
+    }
+
+    .calcular-descuento button:hover {
         background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
         background-color:#f24437;
     }
