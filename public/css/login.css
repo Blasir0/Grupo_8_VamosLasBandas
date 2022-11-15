@@ -16,7 +16,7 @@ body{
 }
 
 /*Header*/
-header{
+/*header{
     display: flex;
     background-color: rgb(60, 60, 60);
     height: 20vh;
@@ -79,7 +79,7 @@ header .searchbar .submit{
     font-size: 17px;
     color: var(--gris-claro);
     margin-right: 20px;     
-}
+}*/
 /*Main*/
 
 main{

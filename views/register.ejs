@@ -1,0 +1,58 @@
+<!-- app.get('/register', (req,res)=>{
+    res.sendFile(__dirname + '/views/register.html');
+}); -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="css/register.css">
+
+<body>
+
+    <%- include('partials/header.ejs') %>
+
+    <main class="title">
+        <h1>Registrarse</h1>
+        <form class="form-group" action="#" method="POST">
+            <div class="form-obj">
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="janis.joplin@vlb.com">
+            </div>
+            <div class="form-obj">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" placeholder="Janis" required >
+            </div>
+            <div class="form-obj">
+                <label for="last-name">Apellido</label>
+                <input type="password" name="last-name" placeholder="Joplin" required>
+            </div>
+            <div class="form-obj">
+                <label for="address">Direccion</label>
+                <input type="text" name="address" placeholder="Av Cordoba 333" required>
+            </div>
+            <div class="form-obj">
+                <label for="instrument">Instrumento</label>
+                <select name="instrument">
+                    <option>Instrumentos</option>
+                    <option value="">Bajo</option>
+                    <option value="">Bateria</option>
+                    <option value="">Guitarra</option>
+                    <option value="">Teclado</option>
+                    <option value="">Voz</option>
+            </div>
+            <div class="button">
+                <input type="submit" value="Enviar">
+            </div>
+            
+        </form>
+    </main>
+    <section class="help">
+    <a href="/login">
+        <p>Ya tenes una cuenta?</p>
+        <p>Iniciar Sesion</p></a>
+    </section>
+
+    <%- include('partials/footer.ejs') %>
+
+</body>
+</html>

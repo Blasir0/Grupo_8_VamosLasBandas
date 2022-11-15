@@ -18,7 +18,7 @@ body{
 /*Header*/
 
 
-header{
+/*header{
     display: flex;
     background-color: rgb(60, 60, 60);
     height: 20vh;
@@ -80,7 +80,7 @@ header .searchbar .submit{
     font-size: 17px;
     color: var(--gris-claro);
     margin-right: 20px;     
-}
+}*/
 
 
 /*Main*/
@@ -157,7 +157,7 @@ header .searchbar .submit{
 
 /*Footer*/
 
-footer{
+/*footer{
     width: 100%;
     background-color:rgb(60, 60, 60);
     height: 50px;
@@ -200,6 +200,6 @@ footer{
 .right a i{
     color: white;
     padding-right: 5px;
-}
+}*/
 
 /*Media Queries*/

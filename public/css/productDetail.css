@@ -18,7 +18,7 @@ body{
 /*---Header---*/
 
 
-header{
+/*header{
     display: flex;
     background-color: rgb(60, 60, 60);
     height: 20vh;
@@ -81,7 +81,7 @@ header .searchbar .submit{
     font-size: 17px;
     color: var(--gris-claro);
     margin-right: 20px;     
-}
+}*/
 
 
 /*---Main---*/
@@ -254,7 +254,7 @@ header .searchbar .submit{
 
 /*---footer---*/
 
-footer{
+/*footer{
     width: 100%;
     background-color:rgb(60, 60, 60);
     height: 50px;
@@ -297,7 +297,7 @@ footer{
 .rigth a i{
     color: white;
     padding-right: 5px;
-}
+}*/
 
 /*--media queris--*/
 
@@ -366,10 +366,10 @@ footer{
         width: 80%;
     }
 
-    .rigth{
+    /*.rigth{
         display: flex;
         flex-direction: row;
-    }
+    }*/
 
 }
 

@@ -1,0 +1,40 @@
+<!-- app.get('/login', (req,res)=>{
+    res.sendFile(__dirname + '/views/login.html');
+}); -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="css/login.css">
+
+<body>
+
+    <%- include('partials/header.ejs') %>
+
+    <main class="login-form">
+        <h1 class="title">Iniciar Sesion</h1>
+        <form action="#" method="POST">
+            <div class="form-obj">
+            <input type="text" name="user" placeholder="Nombre de usuario">
+            </div>
+            <div class="form-obj">
+            <input type="password" name="pass" placeholder="Contraseña">
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Enviar">
+            </div>
+            
+        </form>
+    </main>
+    <section class="remember">
+        <input type="checkbox" id="remember" name="remember" checked>
+        <label for="remember">Recordar usuario</label>
+      </div>
+    <!-- boton login -->
+    <a href="/register"><p class="help">Registrarse</p></a>
+    </section>
+
+    <%- include('partials/footer.ejs') %>
+
+</body>
+</html>

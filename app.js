@@ -1,33 +1,18 @@
-const express = require('express');
-const app = express();
-const PORT = 3000;
+//requires
+const express=require('express');
+const app=express();
+const path=require('path')
+const mainRouter = require('./routers/mainRouters')
+
+//llamado a middle
 app.use(express.static('public'));
+app.set('views', path.resolve(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
+//llamado al puerto
+PORT = 3030;
+app.listen(PORT, ()=>console.log("Servidor corriendo en el puerto " + PORT))
 
-app.listen(PORT, ()=>{
-    console.log('Servidor funcionando en Puerto '+PORT);
-});
+//rutas
 
-app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/index.html');
-});
-
-app.get('/index', (req,res)=>{
-    res.sendFile(__dirname + '/views/index.html');
-});
-
-app.get('/productDetail', (req,res)=>{
-    res.sendFile(__dirname + '/views/productDetail.html');
-});
-
-app.get('/login', (req,res)=>{
-    res.sendFile(__dirname + '/views/login.html');
-});
-
-app.get('/register', (req,res)=>{
-    res.sendFile(__dirname + '/views/register.html');
-});
-
-app.get('/productCart', (req,res)=>{
-    res.sendFile(__dirname + '/views/productCart.html');
-});
+app.use('/', mainRouter)
