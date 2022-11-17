@@ -15,76 +15,10 @@ body{
     background-color: lightgray;
 }
 
-/*Header*/
-/*header{
-    display: flex;
-    background-color: rgb(60, 60, 60);
-    height: 20vh;
-    justify-content: space-between;
-}
-
-header a{
-    display: flex;
-    padding: 5px;
-    width: 10%;
-    margin-left: 20px;
-    border: #FFF;
-}
-
-.searchbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    margin-top: 60px;
-}
-
-header .searchbar .input{
-    background-color: #FFF;
-    outline: none;
-    color: #666;
-    padding: 2px;
-    border-radius: 5px 0px 0px 5px;
-    width: 30vw;
-    height: 5vh;
-    border: 0px;
-}
-
-header .searchbar .submit{
-    background-color: #FFF;
-    color: #666;
-    padding: 2px;
-    outline: none;
-    border-radius: 0px 5px 5px 0px;
-    height: 5vh;
-    align-items: center;
-    display: flex;
-    transition: all 0.5s;
-}
-
-.main-navbar {
-    display: flex;
-}
-
-.main-navbar ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-
-.main-navbar a {
-    text-decoration: none;
-    padding: 5px 0;
-    font-size: 17px;
-    color: var(--gris-claro);
-    margin-right: 20px;     
-}*/
 /*Main*/
 
 main{
     position: relative;
-    top: 80px
 }
 
 .login-form{
@@ -93,8 +27,7 @@ main{
     min-width: 320px;
     text-align: center;
     justify-content: center;
-    margin: 20px 0px;
-    padding: 20px;
+    margin-top: 20px;
 }
 .form-obj{
     display:flex;
@@ -107,6 +40,25 @@ main{
     padding-right:35%;
 }
 
+.form-obj input{
+    width: 80%;
+    height: 36px;
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    overflow: hidden;
+    max-height: 30px;
+    margin-left: 30px;
+    padding-left: 15px;
+    border-radius: 4px;
+}
+
+.form-obj input:hover{
+    border:solid 1px #d10000;
+}
+
 .remember{
     display:flex;
     flex-direction: column;
@@ -114,7 +66,6 @@ main{
     text-align: center;
     justify-content: center;
     margin: 20px 0px;
-    padding-top: 60px;
 }
 
 .help{
@@ -123,7 +74,6 @@ main{
     min-width: 320px;
     text-align: center;
     justify-content: center;
-    margin: 20px 0px;
     padding: 20px;
 }
 
@@ -168,51 +118,4 @@ main{
 
 .buttons input:last-child:hover{
     background-color: rgb(180, 35, 35);
-}
-
-/*Footer*/
-
-footer{
-    width: 100%;
-    background-color:rgb(60, 60, 60);
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.left{
-    width: 70%;
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-.left p{
-    color: white;
-    font-size: 16px;
-    text-align: center;
-}
-
-.rigth{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 15px;
-}
-
-.rigth a{
-    display: flex;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    padding-bottom: 3px;
-}
-
-.rigth a i{
-    color: white;
-    padding-right: 5px;
 }

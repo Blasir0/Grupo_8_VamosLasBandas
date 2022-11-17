@@ -10,148 +10,64 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color:#d10000;
 }
 
 body{
     background-color: lightgray;
 }
 
-/*Header*/
-
-/*header{
-    display: flex;
-    background-color: rgb(60, 60, 60);
-    height: 20vh;
-    justify-content: space-between;
-}
-
-header a{
-    display: flex;
-    padding: 5px;
-    width: 10%;
-    margin-left: 20px;
-    border: #FFF;
-}
-
-.searchbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    margin-top: 60px;
-}
-
-header .searchbar .input{
-    background-color: #FFF;
-    outline: none;
-    color: #666;
-    padding: 2px;
-    border-radius: 5px 0px 0px 5px;
-    width: 30vw;
-    height: 5vh;
-    border: 0px;
-}
-
-header .searchbar .submit{
-    background-color: #FFF;
-    color: #666;
-    padding: 2px;
-    outline: none;
-    border-radius: 0px 5px 5px 0px;
-    height: 5vh;
-    align-items: center;
-    display: flex;
-    transition: all 0.5s;
-}
-
-.main-navbar {
-    display: flex;
-}
-
-.main-navbar ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-
-.main-navbar a {
-    text-decoration: none;
-    padding: 5px 0;
-    font-size: 17px;
-    color: var(--gris-claro);
-    margin-right: 20px;     
-}*/
-
-
 /*Main*/
+
+.main-container{
+    border-top: 1px solid var(--gris-oscuro);
+    border-bottom: 1px solid var(--gris-oscuro);
+    margin: 10px 0;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+}
 
 main h1, main h2, main h3 {
     margin: 20px 0px;
     text-align: center;
 }
 
-.reservas img{
-    width: 30%;
+.card-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    height: 200px;
+    width: 30vh;
+}
+
+.card-article:hover{
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+.card-article img{
+    width: 50%;
     border-radius: 5px;
     height: auto;
 }
 
-.productos img {
-    width: 22%;
-    border-radius: 5px;
+.descripcion{
+    margin-bottom: 10px;
 }
-
-section .reservas {
-    justify-content: space-between;
-}
-
-
-/*Footer*/
-
-/*footer{
-    width: 100%;
-    background-color:rgb(60, 60, 60);
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.left{
-    width: 70%;
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-.left p{
-    color: white;
-    font-size: 16px;
-    text-align: center;
-}
-
-.rigth{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 15px;
-}
-
-.rigth a{
-    display: flex;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    padding-bottom: 3px;
-}
-
-.rigth a i{
-    color: white;
-    padding-right: 5px;
-}*/
 
 /*Media Queries*/

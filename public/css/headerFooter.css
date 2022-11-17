@@ -155,6 +155,12 @@ footer{
     padding-right: 5px;
 }
 
+.rigth i:hover,
+.rigth a:hover,
+.rigth i:hover a,
+.rigth a:hover i{
+    color:#d10000;
+}
 /*Media Queries*/
 
 @media (min-width: 426px){
