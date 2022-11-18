@@ -1,11 +1,24 @@
+/*General*/
+
+:root{
+    --rojo-logo: #d10000; /*Logo Red*/
+    --gris-oscuro: #666;
+    --gris-claro: lightgray; /*Background color*/
+}
+
 *{
+    font-family: 'Roboto Flex', sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
 body{
-    font-family: 'Roboto', sans-serif !important;
+    background-color: lightgray;
 }
+
+/*Header*/
+
+/*Main*/
 
 /*** REGISTRO ***/
 
@@ -139,6 +152,8 @@ form.register h3{
     padding: 10px;
     font-size: 20px;
 }
+
+
 
 .primary:hover {
     background-color:rgb(130, 25, 25);
