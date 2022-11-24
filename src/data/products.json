@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Global X Conscious Companies ETF",
+    "description": "etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKOSURBVDjLdVNNTxphEH5YVhZFRCCNmB6UYmgIRSJJD6QcS0QTT7145NT/4KUXY4yJHjzzB/gDJl68NE0IJCbaA+GzJBQBQ1RU1ALLbmfeAqmJTjJ5331n5pl5Zmah6zpYSQw+n+/z4eFhxuv1xuhb5rehyqFQKJJIJFLsw2+jOHEpGwx6i72OjvB2ZQW/T0+hbWzgDf4J25TjY7iWl9E4O0NvfV3YPLpukAwk7GRRFFhsNgwGA0zb7Zg0GmGXJKFmcjFbrcI2OTMD8xCYY6XhHWZZRq5cFk75YhEagXRmZ9GZnsbAbEYunxe2XKEwBsCIYwnQbJT95/w8ip0Olii7m6hJFKD3++iqKn7RWSZ9p2kI0flI9iVAkv+v4IPTCb/FAr3Xg0pOGiuBmQjo/cQEvHQaSJX7ezwS6LiKdDqtq6r6qvb7ff3p6UkoC79xDMfKeEG63S6y2Sw8Hg9KpZLgfnt7i9XV1dHIxyK9BMDBtVoNVup8MBiE2+3G1NQUKPNYR0DPKuBHzn59fY08df3m5gZXV1dYXFwUQLRkcDgcwm6nKYXDYcszAOKKZDKJh4cHxONxcXIlqVQKzWYTG7RcMjW70WjglJbN6XR+ewbAjpVKBV82N7G3tyf4u1wuBAIB1Ot17O/vCyBaa0SjUVSr1a+SPiRDh3Z+fg4LjZFle3tbVLRJYJFIBGtra4jFYujRiLe2toQP7Y4iKrinuXZIKJs1k8mI1T44OBDd50pGoEyJ8+3u7ooKLi4u/ggAbpjRaJxhfu12G99PTuD3+0Xpl5eXKND6KvSvLCwsYG5uDhptIyViWk3xN+7s7PygkX3i+93dHZgKNQgmk0lknqV/gu+tVktUwDTortI0Pv4FgnWCE6f7EysAAAAASUVORK5CYII=",
+    "category": "ultimos agregados",
+    "colors": "azul",
+    "price": 15110
+  },
+  {
+    "id": 2,
+    "name": "EZCORP, Inc.",
+    "description": "risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIdSURBVDjLjZO7a5RREMV/9/F9yaLBzQY3CC7EpBGxU2O0EBG0sxHBUitTWYitYCsiiJL0NvlfgoWSRpGA4IMsm43ZXchmv8e9MxZZN1GD5MCBW8yce4aZY1QVAGPMaWAacPwfm8A3VRUAVJWhyIUsy7plWcYQgh7GLMt0aWnpNTADWFX9Q2C+LMu4s7Oj/X5/xF6vp51OR1utloYQtNls6vLy8kjE3Huz9qPIQjcUg/GZenVOokIEiSBBCKUSQ+TFwwa1Wo2iKBARVlZW3iwuLr7izssPnwZ50DLIoWz9zPT+s/fabrf/GQmY97GIIXGWp28/08si5+oV1jcGTCSO6nHH2pddYqmkaUq320VECCFQr9cBsBIVBbJcSdXQmK7Q6Qsnq54sj2gBplS896RpSpIkjI2NjVZitdh7jAOSK6trXcpC2GjlfP1esHD+GDYozjm893jvSZJkXyAWe+ssc6W5G9naLqkaw/pGxBrl1tVpJCrWWpxzI6GRgOQKCv2BYHPl5uUatROeSsVy7eIkU9UUiYoxBgDnHNbagw4U6yAWwpmphNvXT6HAhAZuLNRx1iDDWzHG/L6ZEbyJVLa2c54/PgsKgyzw5MHcqKC9nROK/aaDvwN4KYS7j959DHk2PtuYnBUBFUEVVBQRgzX7I/wNM7RmgEshhFXAcDSI9/6KHQZKAYkxDgA5SnOMcReI5kCcG8M42yM6iMDmL261eaOOnqrOAAAAAElFTkSuQmCC",
+    "category": "ultimos agregados",
+    "colors": "rojo",
+    "price": 92246
+  },
+  {
+    "id": 3,
+    "name": "Praxair, Inc.",
+    "description": "leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAH3SURBVDjLjZNPaxpRFMXTfo4E+h1S8hmy7bJ0G+i60ECg2QXaIqVaqwttplXCSEMNDlZTqdEaEkyslIo4s9BG4yIOYzIo/v+Xnrz7UofR2DYDh1m8d37v3vPenQMwR2LfPNMi09J/dI/pruEzARZ7vV59OBxejkYjzBJbh8PheGOGmAFLZG61Wmi328jlchBFEYIgIB6PQ9M0DlFVFU6n04CMzXcIQBu63S5qtRp8Ph/K5TKy2SxCoRCq1SoHdDod0CEul+saMg3o9/vI5/MIh8OoVCpwu92QJAmBQACxWGyiJZ7JNIC1gUKhgGAwCEVR4PF4YLfbkUgkYLFYeCUE/ifA7/cjnU7z8lOpFP8nk0lYrVbenq7rswFJpQ7bThFbgUPIsoxoNMqzoCpsNhuHNZtNNBqNm4Anr3btL7dPIR2dY917Aqe4xyvJZDL8RuhkyodCJE0Ann8srW2Ipd+fj3VEfujYimtYea1MBEatEYBE78EAMOPqM2+pLx1dIPxdx6cDqqCID19VbhprMBhwkXkCsCqcdHcOzxE8vsD2fhVr74vwRlXjVLPZLAPw+G2hthmpQPym4em7XxAiZzdKnyUD8PCF/OjBhlxfXv/ZcX85Y/Qh/jYLU7o0QvxzE/dZQG1auI2Z7W3y6TUBFghyi3Eei0Z/4QrVT8W6WBitpQAAAABJRU5ErkJggg==",
+    "category": "ultimos agregados",
+    "colors": "azul",
+    "price": 51950
+  },
+  {
+    "id": 4,
+    "name": "Philip Morris International Inc",
+    "description": "natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADHSURBVCjPdZFNbsIwFAa/5B5FuQPCOQ9HQuqCq3SHUAtrrgFCSKQk8Y80XTjYJqiajRfj55GftNBKJtGoRiXSytlAZORzM1ckExjouHEm0LPdqHkTRnruXAgEPGpVq1JVCJ6RB3dOfHFEa7W5RzLx3kjPDse8ZxKisue9JwkByzevPQGZQnD8kHuunEvB43EcyD0dt/kEzzGdLD2/k9Ckb261zs9ZhiggVRO12jzN4Z5C+tQq90T+ETK20/J1tU2xeCOjpT7+APfbTaDnTb/mAAAAAElFTkSuQmCC",
+    "category": "ultimos agregados",
+    "colors": "negro",
+    "price": 59576
+  },
+  {
+    "id": 5,
+    "name": "Garmin Ltd.",
+    "description": "nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKdSURBVDjLbZNNTFxVFMd/781jICiCCFoSC5YgGGAQG/E7EhckJFqMe5suNI27Ji7r3qXbLk2rSRuFhU1asESgxvoRm5qQoIAikECMdcIMAzO8++6957h4MyjKSW5OcnPv7/z/554bqCoTFz4eUNXPFQooLymKKqBKmvRwibdYs7t++8oH3QAR6YHzCk/l+juD+3/tolq7BClMUIHibpkDo4hGp6hGCoBXc/0ng9eGTtLZkUNTAqKSVpW0entLI40NES+/+R5HAKg+nBvoYvrubxQKFVQEAKmpUEVFKZYqxCbh31G1QBBlI54c7KLnsVa8B1VBRPFe8SI4UQ5iy2eTC8cBFO+FzfslsmEdcRxjTYKTdN+RIarL0vZAPaJ6DAAQLzhvMcbw1nM9qfxUHarK5flfeOJgkovPrjJZKfxfgfWCtw7nQz5d+BljHc4r3gmOgCE3zzODJZr73+fEIx9x78Pe8dMXV2cOAc4JibUkAhrWE9TVQahIIPTG84z1rNLcN0Z5c5rWR/vIdJqp6Qvd79aaiHUeFzuM9TgvWC/VrHSGv9KSex1fWaKh7XFiv0XH6HCjKxcu/aPAC9ZYjPWpHa8kVcifrhVb2CDM5AnCMtmH8hBX2P/DZI5YsEkKcKIkTmhz64w/+CVNTYq4bUIpQtiE2oTlayvx0krpfFQbmMR5nHEYK1gR+twPjETf8PQrY2hyi8DvsXjzgKRQJBDL1kbp7bNX16cOe+C94hOfWhDhheafGB49Q5K/RBQ1sziXMLv3Bl9vRuTX7mzdu/3t1JFnJAwZeX4IDQK8V7JkCTLbZOrbWby1z1flCXbaX8Ss3aVYcXP/nYPZmRvfv5P+vOr8n7CY/B1KO4ZPlvtZtQHKd6Bc//3HL87VAH8DX5rXmGdCnY8AAAAASUVORK5CYII=",
+    "category": "en oferta",
+    "colors": "rojo",
+    "price": 48344
+  },
+  {
+    "id": 6,
+    "name": "Life Storage, Inc.",
+    "description": "ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAITSURBVDjLpZNNSJRBGMd/s7q50ZoWISZSRAgF5VpELFJ0CK9RneokEl1qO3URpFNCXqIO0aFLEF0iiAj6JBB0WYwOoikRJiXUYqbsumv7zvu+M/N02BV30YPgc5h5GPh/zMz/USLCVirCFqt+tZGfb8UUFxEJEBMiNkRMgBgfsT6EGms0YjwINU0Xn6haAmuIHrm0TkEEFFQWQCD3/PJ6B37+N9tFEOeVDxSIOEAhrDGoSAMSehtcwRhcMI8pfgLnIxKUdxeA04jTiPPYtucCLixtQGB9wCBOg4QVUDVYI64EYpBgAwdmZalsuUbZwzldIfHAeWUR8289gbMaPTOK8b+DDUAMVheI7W8pKzuNWA/E1byBWg3S4oteibZ0EO86DzhcMEdx/BkN+3aBlBie1YzMOZY9j6CU489K/tabOxOD9VVMhAuT5D6m2dl9FaUUTkKQEu+/FZny45w5fYL23R0MT79kbGr0djLV1hyp/u/Gk72E+b/kR+5VwBqxmtdfc3QdSmAjlsTeHqwKSR7tBri+FmWjUXURdhy/gphmiplX1MUSxFr7WCgsEVVxzh2+AcDNs4842NIJEKvKgSb37j5iNBJ6BN4XmM1Q+vyUQiFgOpthIpumv+cxQx/6iNU1AGi1mWlMptoG2w80DXR3nqKj9Rgz8+NkJtP8+rF8V212nJOptiHgGtAIFIGHYw+y/f8B3ntD1Kp2NbQAAAAASUVORK5CYII=",
+    "category": "ultimos agregados",
+    "colors": "negro",
+    "price": 67043
+  },
+  {
+    "id": 7,
+    "name": "Cleveland BioLabs, Inc.",
+    "description": "turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGkSURBVDjLrZJPKINhHMd3UsrJTcpBDi6UC+3ookQ5OOBAaCh2cFQ40GqTzURTihI54DRp8dqBg3BQw5BtNmxe/4flT9re5+v3vJvF2l6Kp749Pe/7fj7P7/09jwqA6i9R/ZugVr+cSZmlvFOgEIGSl0xgnVt3IRyRoDSWtn1c4qakxQW0yKBEJMbw+MpwHWIQnxgCDwxnQQbvHYP7RoLnJirvntrkkuKvghytZU1+eUWg+MjgJ/j0nuEkBh9dSTgQo4KB+R0uqEgquCD4PBiDbxlc11HYSfBuILUg/gu8fB/t6rmVcEzw4aWEfYIdAS6IyILe6S0uUCdtIpd8Hbwah1+SxQlNTE91jJHPI5tcPoiLrBsL6BxrQOtQFep0pc/lXYU9P14kkngugy/onxlF30ITlpwWOEQB5tV21JgLUNKRZVSCTeM2J6/kuV5fFrbuD8N6OCJXY7S3wGxv44K3VHAuxUvR8HVldxFszolvvVncs3DB7+67Wpv9Nig0Qy80yrB+pVG5gsTQh7pqYz5Mgkbemc98rdiDJBIDJcTLjs0G/vwDCw/6dFwBuzsAAAAASUVORK5CYII=",
+    "category": "ultimos agregados",
+    "colors": "rojo",
+    "price": 30760
+  },
+  {
+    "id": 8,
+    "name": "Kona Grill, Inc.",
+    "description": "morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJeSURBVDjLzVNbSJNRHBd660Go597qJQrEl4qgCIoopyk0ZstN0G22EZu1dAuEbA/Otb0Iu+jciinsaUiI7uJgF4cojkIdXtYG0TbYFuk86Ly0+e3X+QY9CCZEL33we/nOOb//+V1ODYCaf0HN/0FQed3TRrFFQVgwvUrCKLvJkfw5KcuekZJYRH62t5PDJ3xy8JhL9hubN4v3HwqqBPQAj6KIGR8wPw+srADJJLC+DiYcwqbTicL4OHYcDmxbR5EZGkLmTT92b98t7ty41cwSfMJ7GzA1BbhcwNoasLwMTEyA6e1FRipFVixGQSTCD4EAn5uaENfpkOx+CVJ/PcMS1FVUymjlnRag05BKofrNzoLhcpHlcPC9oQF+txvT09PYGBjAV3EXSN213Pblel7VA6r3HNXrYd72A5OTQC4HLC3hm8GAgNeLTEcHwuEwgsEgYj0qfBy1lV1mi+tYCmVpV22ps9N9pFYDCwvA6ir8fj8SiQRCoRC1ZB3xeBw+n48urUJHZWi12rPHIjlsE9Qe8FrdJZW6SrAxPIxYLEatcUGj0UCv11dlRKNRGI3GDyf2YP9RS+3eA47/98Z8Ps9OAtV7ULh0tcViseyl02l4PB4MDg6eXI7dO/cuOKmhXqo/RU212+3YuniFx66ZzWayRpOyWq2QSCR/btgX3tObsy9eZRcXFxEIBDAyMrJnMpmIm6YRiUQgl8vtlOD8qTV10PKwBOxtWDnswbGxMczNzbEEUCgUZ04loBptMpkMfX19jeO0jQYaK53aKhQKGT6fP/NXj0mpVEIgYOt//P8vZQLgm35VBV4AAAAASUVORK5CYII=",
+    "category": "en oferta",
+    "colors": "rojo",
+    "price": 99361
+  },
+  {
+    "id": 9,
+    "name": "Enphase Energy, Inc.",
+    "description": "amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGaSURBVBgZpcG9alRRGIXh99vnKIGgrbaCl5BOC2/BJgi2NmIlFoK9oI1CIJ39kInxhxReh1VKCZmfQkiVTOLs863l7GAau5DnCdtcRzx+ufPi4aON98cLr9uAhCVSiWVk4Uxk40xS4vbNenpwMH395cPmdr/xYGPrxtp6ubPGVayfLnIL2O4X1WVxfMJVnVUXVnqnefv0Plf17N0hTW+LZjkkBiyTAmEkkxI5mBxMWizT3Lt7i1TS9Ng0UYKwcQkcJhSUEkQUIpLoTKdCP5hGQ9L0qaQpgCMgoDMoQDKdoURHH5BhsohGKZpimdFoxGQyYXdnh9nREXvjMbPphO97u8ynE/a/7jKbT/ix/5nf8zmj0QgpufDq0083g+RB8iC5Zrpmepnp80z/qdVny+rFsvrkvLp58uabV+iHWrkQQQC2iQjMik1hpRQ6IG1KmGaoA03vFE0HmJUIsGkigksCuggs0Vii6SVxKYBgJYL/dfzTdTSyafrpr8Px8491U5koRWYiiawVScjGSpxGFpaQaMashG2uo3BNfwFx+DLsFQ4W2wAAAABJRU5ErkJggg==",
+    "category": "en oferta",
+    "colors": "negro",
+    "price": 73890
+  },
+  {
+    "id": 10,
+    "name": "Lattice Semiconductor Corporation",
+    "description": "lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADsSURBVCjPpZE9SgRBEIW/XnvWwB+ExUAXBDNvsTCTeAtP4AkEz+MNnGSHuYHBRgObCAaCmAiCU93VZdC9g5HJVlBJvfe+osoZ/9eMfQUeYFhrrUQCgYAgCCPS3TXgjGE178+RyZO3quh5be47D/HxjHcOAStD441Trhke6NxmNe8XfJXgiOE4oOKEI1q2jXtZX9SGYCXcpl7xyVPnhW8+GDESSsJIJBTDc4zgpQZB2eCYFa+RuEJZIrUfiUQUxZEKZpcRCPgRRUnckEjYH4yRsmCBTsHZvwNdEvE/7fOtMObbIUi5Z8Za6/b+5i8QHogENhlMkQAAAABJRU5ErkJggg==",
+    "category": "en oferta",
+    "colors": "rojo",
+    "price": 94785
+  },
+  {
+    "id": 11,
+    "name": "Apollo Commercial Real Estate Finance",
+    "description": "lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJmSURBVDjLhZNNS5RRGIav8+HMvDNO5ZhOYqXQF2FgVNRCCKM2EbQ1ok2b/AG16F/0ge5qUwitghbWooikiIhI3AQVFER+VsyMztg7vuecp4U2ORH5wLM5cK7n5r65lYgAoJTaDhQBw/9nAfgiIgEAEWENcjiO43KSJN45J//aOI5lZGTkBtALaBFpAhxNksRXq1Wp1WqNrVQqUiqVZH5+XpxzMjs7K6Ojow2Imri9Z1Dntjwo2dObZr7vpKXFoDVAwFpNvR6za9du+vr6KRQKrKysEEJgbGzs5vDw8DX1/N6Rrx0HOrpfvOqnWs0CCgQkaJTJEkIAHENDFygWi01mWGuP2Vw+KnT3djPUM0eLzZO4L6ikztQz6Dl2i4ePxgk+IYoylMtlQgg45+js7FyFKKUk/llhevplg9zTtR8RC0AmSlGtrGCMxVqF9x5j/gRlRQLZbIbt3fvW4lwmpS0IhCA4FwgEjDForVFK/Ta9oYDa8jdmpt83Hndu86DaEQkgHgkBrXXT5QaA4FuiqI3itl4IPzHWk7G5NQUBQgISUEoBYIxpVlArle9+fCbntFY6qM2Z4BOWazFzS13UPrwjlUqzuFhtXF9NZZ0Cn7hLc59mrly+/uPQ+OO3T+6PP8W7OpH1fJ6cpLU1hUsSphcqRLlNFHK6GXD84nuvlCoDS1FrgZn28+T5zom933jzeoKpyZeY9oPceOJpz1e4erbtLw/WTTBZWVpaVNmcYuvWDk6eOsPAwCCLseHOpCOfNg0vgACg1rXxSL1enzDGZAC9QSOD9345nU4PrgfsWKvzRp9/jwcWfgF7VEKXfHY5kwAAAABJRU5ErkJggg==",
+    "category": "en oferta",
+    "colors": "azul",
+    "price": 43725
+  },
+  {
+    "id": 12,
+    "name": "Resource Capital Corp.",
+    "description": "sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKFSURBVDjLfZM7aBRhEMd/3+7t7W7OmJjnxRjDKUYNnPEJHjZqo4WIEAQhFhY+asVGsLIUbGwVRMFGfKDpRWzEqCEKIko0GlQ0MV4e5u5279sZi+AjRh0Yhml+zPznP+Zy/+A5EdNXiiWILAtD57deCgKPS4f3bTwOkBI1B/ds62gOgsAY4/K/qAgktsrNu8OHgDlAKRLf9wNz5V6RChPMmJfkWscIvSmsCl+nQ54P11Gja0nRyMn9ORIx5gc0FVtwHBfHQOx8Itc0hp9+x1Q0g00sKd9nRUcbI28y1KebEJk/VQpAAMcxRDpO2isyWZ4iSirE1mJ1Ft/3mY1CGkMHRecJ8wtgDGqFKKlSsRHlakQslkQAU0UlIeUYVOer6gCozgECmpmZzaB4RJIQ2QRj0rRUXI6tGiXjlUHNPwCOYZHbzodPrVQmFlGjDdSaBkyxgbzOsKZrO93+/QWXcfR3gNfC0nADxaEi9ukIDL0lP/mF3MqdLG7bwDJ9gJ1+vVBEVXg5cZREhESErmicQkcn6oJTE1PbVE8yfYdl6/oYH76GYe8vgKpigN1zxgLAzU9Smv1C5v1dsvkDUBlk4Optth45xbvRBzT4OQ82z61g/uLXJKxHPJfMkhXULikh0QiokHx7RG77Cdqn+4OB84VaACfwzBRSpad1Kz3ZAuuyBfItm6kbfUj98vVI6RkqZTb1rkbijwTBKzq7dzg2io8DmIu3Bs+KmkKcaP7Hidui++ktnRJmu0KSbwOoxjy58YJNvWsxbh2Eu3h88fSYiuwwfxoDYOB84X2+72q767xFbfGPFR3ccDWfnw/xqv/M9dTfvs5GcTB4obesoqjIb6k/KyKoavY7re8z/KbjU2AAAAAASUVORK5CYII=",
+    "category": "ultimos agregados",
+    "colors": "blanco",
+    "price": 91567
+  },
+  {
+    "id": 13,
+    "name": "AvalonBay Communities, Inc.",
+    "description": "cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHlSURBVBgZpcE7a1RRFIbh95yZXEaSSLwWFkFEkICKhWhhIV7AxlKsbSz9DQpa+gfsbERQsUhnEYOFFiJoYSrBO6IBY5I5c2bvtfb6jCIIYjfPU0liFDUjqhlR99r9FfEfHoFZkNwxg9ZFm5xkTptFY0HbOl02Hdvf4y/hIUoRHsKLMBcWgZkwD6wE2YNbi1/p8sf6wCkBHsJLkIswD8xF9iB5IZtIHmQLtk11aftOl03nDk/x6NUGpw9OsTYo3H26yoXjs/TGK8Qmwav3A5aW17h0cjfJg9tL34jWqJM7gxTMTnWIgImxmjYXeuMVNxe+UAFX731kbuc483t67Nk+zt5dk7QWROPUTXKevWk4um8LD5+vMjlWcfnMTrqdin4qCGhSIQJOHJjhl41hIVlBTaHut+LU/DSPX69z9tAMgxTcePCZZKIZFiRohoWQePmuz4eVhARDE5Ey9VqbsSKeLK/TqSsk6CdHEk0qIGhyIQQ3Fz7xY+Bs7XW4fnEOJVGdvr6s80dm+fQ9kS1IHiQT2YPkQfbAPDAXVgIrwkPM7Zhg8c5buusbTpsL05Md8ljFpFXYhHCvMK+xEFZEKYEHlAgkkPit2nflhYatIxORAmVHFigVyIFKIAvkggj+VUliFDUj+gngimmFTeOsxAAAAABJRU5ErkJggg==",
+    "category": "en oferta",
+    "colors": "azul",
+    "price": 68377
+  },
+  {
+    "id": 14,
+    "name": "Civista Bancshares, Inc. ",
+    "description": "lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADqSURBVDjLY/j//z8DJZiBKgbkzH9cMHXX6wcgmiwDQJq3nv/4H0SD+OXl5dlA/L+kpOR/QUHB/+zs7P+pqan/ExIS/kdGRv4PDg7+T10XDHwgpsx8VNC56eWDkJ675Hmhbf3zB0uPvP1fuvQpOBDj4uKyIyIi/gcGBv738vL67+zs/N/Gxua/iYnJf11d3f9qamqogRjQcaugZPHjB66V14ZqINrmXyqIn3bvgXXeJfK8ANLcv+3lfxAN4hsZGWVra2v/V1FR+S8nJ/dfXFz8v5CQ0H8eHp7/7Ozs/5mZmVEDEWQzRS6gBAMAYBDQP57x26IAAAAASUVORK5CYII=",
+    "category": "en oferta",
+    "colors": "blanco",
+    "price": 78688
+  },
+  {
+    "id": 15,
+    "name": "Berkshire Hills Bancorp, Inc.",
+    "description": "curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHtSURBVDjLY/j//z8DJZiBKgY49drM9J3idhLEtu+xjvea4nLNqsVspnWr2S6QmF6+Zol2ltpq5QSlmcpxijMxDABp9pjkuMuu28rIpsMi3rLZFKzIus38mm6OuqRxpf41nC5w7rOJd+i1ngnUXGLTbj7Tsskk3rbL8ppZreEu7Ry1mWpJSvHK8Uoz0TWK5U/nYIg8y8rgPsl+l12P1WqgbTPdJtk/AtoWb1CkBdagnqyyWilawVM/Rw/FBQyx540ZGm/eYIg8P43BdYLdSZiEcYXeTJB/TaoNroH8q5OldVIhXE5SKUqhXSNRfZdKvPKVkOrED+L9d/8wN998w+B4XIL40I48K8FQf/O6+7In/7mbb35hsD2qjBKNDLU3ExjKb7pi1Rx61ke89+6fwBVP/jPXXn/HYHlYGiMdMJTe1JJc/PgHQ/X1xQyplznBYuFnmRiiz062nPfof8DSJ/8ZSq8/ZzA9KIEzIQE1Vvuuf/6fufv2M4bgsz4MxVdPui8Cal4C1Jx/+RGDPqpmTANiz7MAvXI+bO2L/5ZzHvzP2Pjif8DCx/8ZMi/fY9DcL0FUUmbwPKkg3Hr7T+WOV//95j/8z5B6/jaD6l4JkvIC0J9FTtPu/2dIPn+PQXG3BFmZiUFzbweDLH7NVMmNAOGld33BRiNUAAAAAElFTkSuQmCC",
+    "category": "en oferta",
+    "colors": "rojo",
+    "price": 42873
+  }
+]
