@@ -257,6 +257,7 @@ body{
         align-items: center;
         justify-content: center;
         margin: auto;
+        margin-bottom: 20px;
         max-width: 540px;
     }
 

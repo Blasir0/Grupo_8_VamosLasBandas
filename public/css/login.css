@@ -90,7 +90,7 @@ main{
 .buttons input{
     width: 130px;
     border: none;
-    background-color:rgb(180, 35, 35);
+    background-color:rgb(240, 60, 60);
     border-radius: 3px;
     margin: 3px;
     color: white;
@@ -98,9 +98,9 @@ main{
     font-size: 0.9rem;
 }
 
-.buttons :last-child{
+/* .buttons :last-child{
     background-color: rgb(240, 60, 60); ;
-}
+} */
 
 .buttons:hover{
     background-color: none;
@@ -112,9 +112,9 @@ main{
 }
 
 
-.buttons input:first-child:hover{
+/* .buttons input:first-child:hover{
     background-color: rgb(130, 25, 25);
-}
+} */
 
 .buttons input:last-child:hover{
     background-color: rgb(180, 35, 35);

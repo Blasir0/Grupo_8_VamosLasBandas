@@ -79,7 +79,7 @@ body{
 .buttons input{
     width: 130px;
     border: none;
-    background-color:rgb(180, 35, 35);
+    background-color:rgb(240, 60, 60);
     border-radius: 3px;
     margin: 3px;
     color: white;
@@ -99,7 +99,7 @@ body{
 
 
 .buttons input:first-child:hover{
-    background-color: rgb(130, 25, 25);
+    background-color: rgb(180, 35, 35);
 }
 
 .help{
