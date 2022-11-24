@@ -1,4 +1,9 @@
 /*Header*/
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 header{
     display: flex;
@@ -117,6 +122,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     object-position: bottom;
+    margin-top: auto;
 }
 
 .left{
