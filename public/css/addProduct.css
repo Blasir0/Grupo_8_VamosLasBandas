@@ -78,7 +78,7 @@ form.register h3{
 }
 
 .productDetail:hover{
-    border:solid 1px #d10000;
+    outline:solid 1px #d10000;
 }
 
 .form-group,
@@ -160,6 +160,5 @@ form.register h3{
 }
 
 .form-group input:hover{
-    outline: none;
-    border: 1px solid #d10000;
+    outline: 1px solid #d10000;
 }

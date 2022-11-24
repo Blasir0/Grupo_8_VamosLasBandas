@@ -56,7 +56,7 @@ main{
 }
 
 .form-obj input:hover{
-    border:solid 1px #d10000;
+    outline:solid 1px #d10000;
 }
 
 .remember{

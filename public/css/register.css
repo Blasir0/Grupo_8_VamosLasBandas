@@ -113,7 +113,7 @@ body{
 
 .form-obj input:hover,
 .form-obj select:hover{
-    border:solid 1px #d10000;
+    outline:solid 1px #d10000;
 }
 
 /*Media Queries*/
