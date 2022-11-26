@@ -4,19 +4,21 @@ const mainController = require('../controllers/mainController')
 
 //rutas
 
-mainRouter.get('/', mainController.index);
+/*** GET ALL PRODUCTS ***/ 
+router.get('/', mainController.index); 
 
-mainRouter.get('/index', mainController.index);
+/*** CREATE ONE PRODUCT ***/ 
+router.get('/create', mainController.create); 
+router.post('/create', mainController.store); 
 
-mainRouter.get('/productDetail', mainController.productDetail);
+/*** GET ONE PRODUCT ***/ 
+router.get('/detail/:id/', mainController.detail); 
 
-mainRouter.get('/register', mainController.register);
+/*** EDIT ONE PRODUCT ***/ 
+router.get('/edit/:id/', mainController.edit); 
+router.put('/edit/:id/', mainController.update); 
 
-mainRouter.get('/login', mainController.login);
-
-mainRouter.get('/productCart', mainController.productCart);
-
-mainRouter.get('/addProduct', mainController.addProduct);
-
+/*** DELETE ONE PRODUCT***/ 
+router.post('/delete/:id', mainController.destroy); 
 
 module.exports=mainRouter

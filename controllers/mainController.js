@@ -1,68 +1,88 @@
-let productos=[
-    {
-        id:1,
-        titulo:"Bajos",
-        imagen:"img/Bajo.jpg",
-    },
-    {
-        id:2,
-        titulo:"Baterias",
-        imagen:"img/bateria.jpg",
-    },
-    {
-        id:3,
-        titulo:"Guitarras Electricas",
-        imagen:"img/guitarraelectrica.jpg",
-    },
-    {
-        id:4,
-        titulo:"Microfonos",
-        imagen:"img/microfono.jpeg",
-    },
-];
+const fs = require('fs');
+const path = require('path');
 
-let salas = [
-    {
-        id:1,
-        titulo:"Sala de Ensayo 1",
-        imagen:"img/Saladeensayo1.webp",
-    },
-    {
-        id:2,
-        titulo:"Sala de Ensayo 2",
-        imagen:"img/Saladeensayo2.jpg",
-    },
-    {
-        id:3,
-        titulo:"Sala de Ensayo 3",
-        imagen:"img/Saladeensayo3.jpg",
-    },
-]
+const productsFilePath = path.join(__dirname, '../src/data/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const mainController = {
-    index:(req, res) => {
-        res.render('index',{productos,salas})
-    },
+    // Root - Show all products
+	index: (req, res) => {
+		res.render('products',{products})
+	},
 
-    productDetail:(req, res) => {
-        res.render('productDetail',{productos,salas})
-    },
 
-    register:(req, res) => {
-        res.render('register',{productos,salas})
-    },
+	// Detail - Detail from one product
+	detail: (req, res) => {
+		let product = products.find(product=>product.id == req.params.id)
 
-    login:(req, res) => {
-        res.render('login',{productos,salas})
-    },
+		res.render('detail',{product})
+	},
 
-    productCart:(req, res) => {
-        res.render('productCart',{productos,salas})
-    },
+	// Create - Form to create
+	create: (req, res) => {
+		res.render('create')
+	},
+	
+	// Create -  Method to store
+	store: (req, res) => {
+		let product = {
+			'id': products[products.length-1]['id']+1,
+			'name': req.body.name,
+			'price': req.body.price,
+			'discount': req.body.discount,
+			'category': req.body.category,
+			'description': req.body.description,
+		}	
 
-    addProduct:(req, res) => {
-        res.render('addProduct',{productos,salas})
-    },
+		products.push(product);
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null,'\t'));
+		
+    	res.render('detail',{product});
+	},
+
+	// Update - Form to edit
+	edit: (req, res) => {
+		let product = products.find(product=>product.id == req.params.id)
+
+		res.render('edit',{product})
+	},
+	// Update - Method to update
+	update: (req, res) => {
+		let product = products.find(product=>product.id == req.params.id);
+
+		let newProduct = {
+			'id': product.id,
+			'name': req.body.name,
+			'price': req.body.price,
+			'discount': req.body.discount,
+			'category': req.body.category,
+			'description': req.body.description,
+		};
+
+		let productToEdit = products.map(product => {
+			if(newProduct.id == product.id){
+				return product = newProduct
+			}
+			return product
+		})
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(productToEdit, null,'\t'));
+
+    	res.render('detail',{product})
+	},
+
+	// Delete - Delete one product from DB
+	destroy : (req, res) => {
+		let productId = req.params.id;
+
+		let productDelete=products.filter(product=>product.id != productId)
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(productDelete, null,'\t'));
+
+    	res.redirect('/')
+
+	}
 }
 
 module.exports=mainController
