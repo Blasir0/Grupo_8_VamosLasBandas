@@ -9,19 +9,19 @@
     <%- include('partials/header.ejs') %>
 
         <main>
-            <form action="/" method="" class="register" >
+            <form action="/edit/<%= product.id%>?_method=PUT" method="POST" class="register" >
                 <h3>Editar producto</h3>
                 <div class="form-group">
                     <label for="name">Nombre del producto</label>
-                    <input type="text" name="name" value="<%= product.name%>" minlength="10" required >
+                    <input type="text" name="name" id="name" value="<%= product.name%>" minlength="7" required >
                 </div>
                 <div class="form-group">
                     <label for="price">Precio del producto</label>
-                    <input type="text" name="price" value="<%= product.price%>" minlength="10" required >
+                    <input type="text" name="price" id="price" value="<%= product.price%>" minlength="3" required >
                 </div>
                 <div class="form-group">
                     <label for="description">Descripcion del producto</label>
-                    <textarea class="productDetail" name="descripcion" value="<%= product.description%>" cols="30" rows="10"></textarea>
+                    <textarea class="productDetail" name="descripcion" id="description" value="<%= product.description%>" cols="30" rows="10"></textarea>
                 </div>      
                 <div class="form-obj">
                     <label for="colors" class="form-label">Colores:</label>

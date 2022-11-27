@@ -28,9 +28,10 @@ const mainController = {
 		let product = {
 			'id': products[products.length-1]['id']+1,
 			'name': req.body.name,
-			'price': req.body.price,
-			'category': req.body.category,
 			'description': req.body.description,
+			'category': req.body.category,
+			'colors': req.body.category,
+			'price': req.body.price,
 		}	
 
 		products.push(product);
@@ -53,9 +54,10 @@ const mainController = {
 		let newProduct = {
 			'id': product.id,
 			'name': req.body.name,
-			'price': req.body.price,
-			'category': req.body.category,
 			'description': req.body.description,
+			'category': req.body.category,
+			'colors': req.body.category,
+			'price': req.body.price,
 		};
 
 		let productToEdit = products.map(product => {

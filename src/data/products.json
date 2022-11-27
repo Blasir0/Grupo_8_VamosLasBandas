@@ -1,137 +1,137 @@
 [
-  {
-    "id": 1,
-    "name": "Guitarra",
-    "description": "etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a",
-    "image": "guitar1.jpg",
-    "category": "ultimos agregados",
-    "colors": "azul",
-    "price": 15110
-  },
-  {
-    "id": 2,
-    "name": "Guitarra",
-    "description": "risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo",
-    "image": "guitar2.jpg",
-    "category": "ultimos agregados",
-    "colors": "rojo",
-    "price": 92246
-  },
-  {
-    "id": 3,
-    "name": "Guitarra",
-    "description": "leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum",
-    "image": "guitar3.jpg",
-    "category": "ultimos agregados",
-    "colors": "azul",
-    "price": 51950
-  },
-  {
-    "id": 4,
-    "name": "Bateria",
-    "description": "natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit",
-    "image": "bateria1.jpg",
-    "category": "ultimos agregados",
-    "colors": "negro",
-    "price": 59576
-  },
-  {
-    "id": 5,
-    "name": "Bateria",
-    "description": "nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus",
-    "image": "bateria2.jpg",
-    "category": "en oferta",
-    "colors": "rojo",
-    "price": 48344
-  },
-  {
-    "id": 6,
-    "name": "Bateria",
-    "description": "ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi",
-    "image": "bateria3.jpg",
-    "category": "ultimos agregados",
-    "colors": "negro",
-    "price": 67043
-  },
-  {
-    "id": 7,
-    "name": "Bajo",
-    "description": "turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus",
-    "image": "bajo1.jpg",
-    "category": "ultimos agregados",
-    "colors": "rojo",
-    "price": 30760
-  },
-  {
-    "id": 8,
-    "name": "Bajo",
-    "description": "morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla",
-    "image": "bajo2.jpg",
-    "category": "en oferta",
-    "colors": "rojo",
-    "price": 99361
-  },
-  {
-    "id": 9,
-    "name": "Bajo",
-    "description": "amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc",
-    "image": "bajo3.jpg",
-    "category": "en oferta",
-    "colors": "negro",
-    "price": 73890
-  },
-  {
-    "id": 10,
-    "name": "Teclado",
-    "description": "lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis",
-    "image": "teclado1.webp",
-    "category": "en oferta",
-    "colors": "rojo",
-    "price": 94785
-  },
-  {
-    "id": 11,
-    "name": "Teclado",
-    "description": "lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at",
-    "image": "teclado2.webp",
-    "category": "en oferta",
-    "colors": "azul",
-    "price": 43725
-  },
-  {
-    "id": 12,
-    "name": "Teclado",
-    "description": "sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate",
-    "image": "teclado3.jpg",
-    "category": "ultimos agregados",
-    "colors": "blanco",
-    "price": 91567
-  },
-  {
-    "id": 13,
-    "name": "Microfono",
-    "description": "cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis",
-    "image": "microfono1.jpeg",
-    "category": "en oferta",
-    "colors": "azul",
-    "price": 68377
-  },
-  {
-    "id": 14,
-    "name": "Microfono",
-    "description": "lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia",
-    "image": "microfono2.jpg",
-    "category": "en oferta",
-    "colors": "blanco",
-    "price": 78688
-  },
-  {
-    "id": 15,
-    "name": "Microfono",
-    "description": "curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit",
-    "image": "microfono3.jpg",
-    "category": "en oferta",
-    "colors": "rojo",
-    "price": 42873
-  }
+	{
+		"id": 1,
+		"name": "Guitarra",
+		"description": "morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla",
+		"image": "guitar1.jpg",
+		"category": "ultimos agregados",
+		"colors": "rojo",
+		"price": 15000
+	},
+	{
+		"id": 2,
+		"name": "Guitarra",
+		"description": "risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo",
+		"image": "guitar2.jpg",
+		"category": "ultimos agregados",
+		"colors": "rojo",
+		"price": 92246
+	},
+	{
+		"id": 3,
+		"name": "Guitarra",
+		"description": "leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum",
+		"image": "guitar3.jpg",
+		"category": "ultimos agregados",
+		"colors": "azul",
+		"price": 51950
+	},
+	{
+		"id": 4,
+		"name": "Bateria",
+		"description": "natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit",
+		"image": "bateria1.jpg",
+		"category": "ultimos agregados",
+		"colors": "negro",
+		"price": 59576
+	},
+	{
+		"id": 5,
+		"name": "Bateria",
+		"description": "nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus",
+		"image": "bateria2.jpg",
+		"category": "en oferta",
+		"colors": "rojo",
+		"price": 48344
+	},
+	{
+		"id": 6,
+		"name": "Bateria",
+		"description": "ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi",
+		"image": "bateria3.jpg",
+		"category": "ultimos agregados",
+		"colors": "negro",
+		"price": 67043
+	},
+	{
+		"id": 7,
+		"name": "Bajo",
+		"description": "turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus",
+		"image": "bajo1.jpg",
+		"category": "ultimos agregados",
+		"colors": "rojo",
+		"price": 30760
+	},
+	{
+		"id": 8,
+		"name": "Bajo",
+		"description": "morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla",
+		"image": "bajo2.jpg",
+		"category": "en oferta",
+		"colors": "rojo",
+		"price": 99361
+	},
+	{
+		"id": 9,
+		"name": "Bajo",
+		"description": "amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc",
+		"image": "bajo3.jpg",
+		"category": "en oferta",
+		"colors": "negro",
+		"price": 73890
+	},
+	{
+		"id": 10,
+		"name": "Teclado",
+		"description": "lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis",
+		"image": "teclado1.webp",
+		"category": "en oferta",
+		"colors": "rojo",
+		"price": 94785
+	},
+	{
+		"id": 11,
+		"name": "Teclado",
+		"description": "lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at",
+		"image": "teclado2.webp",
+		"category": "en oferta",
+		"colors": "azul",
+		"price": 43725
+	},
+	{
+		"id": 12,
+		"name": "Teclado",
+		"description": "sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate",
+		"image": "teclado3.jpg",
+		"category": "ultimos agregados",
+		"colors": "blanco",
+		"price": 91567
+	},
+	{
+		"id": 13,
+		"name": "Microfono",
+		"description": "cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis",
+		"image": "microfono1.jpeg",
+		"category": "en oferta",
+		"colors": "azul",
+		"price": 68377
+	},
+	{
+		"id": 14,
+		"name": "Microfono",
+		"description": "lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia",
+		"image": "microfono2.jpg",
+		"category": "en oferta",
+		"colors": "blanco",
+		"price": 78688
+	},
+	{
+		"id": 15,
+		"name": "Microfono",
+		"description": "curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit",
+		"image": "microfono3.jpg",
+		"category": "en oferta",
+		"colors": "rojo",
+		"price": 42873
+	}
 ]
