@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/create.css">
+
+<body>
+
+    <%- include('partials/header.ejs') %>
+
+        <main>
+            <form action="/" method="" class="register" >
+                <h3>Editar producto</h3>
+                <div class="form-group">
+                    <label for="name">Nombre del producto</label>
+                    <input type="text" name="name" value="<%= product.name%>" minlength="10" required >
+                </div>
+                <div class="form-group">
+                    <label for="price">Precio del producto</label>
+                    <input type="text" name="price" value="<%= product.price%>" minlength="10" required >
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripcion del producto</label>
+                    <textarea class="productDetail" name="descripcion" value="<%= product.description%>" cols="30" rows="10"></textarea>
+                </div>      
+                <div class="form-obj">
+                    <label for="colors" class="form-label">Colores:</label>
+                    <select name="colors" id="colors" class="form-input">
+                        <option value="Rojo">Rojo</option>
+                        <option value="Azul" >Azul</option>
+                        <option value="Negro">Negro</option>
+                        <option value="Blanco">Blanco</option>
+                        <option value="Marron">Marron</option>
+                    </select>
+                </div>
+                <div class="form-obj">
+                    <label for="category" class="form-label">Categoría:</label>
+                    <select name="category" id="category" class="form-input">
+                        <option value=""><%= product.category == 'in-sale'?'En oferta':'Ultimos agregados'%></option>
+                        <option value="in-sale">En oferta</option>
+                        <option value="visited" >Últimos agregados</option>
+                    </select>
+                </div>
+                <div class="form-group-photo" id="img">
+                    <input type="file" name="img" accept="image/*" >
+                </div>
+                <button type="submit" class="primary"> Enviar </button>
+            </form>
+        </main>
+
+    <%- include('partials/footer.ejs') %>
+
+</body>
+</html>

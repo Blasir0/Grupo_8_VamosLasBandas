@@ -28,7 +28,8 @@ main{
     background-color: lightgrey;
 }
 
-.form-group label{
+.form-group label,
+.form-obj label{
     padding-bottom: 10px;
 }
 
@@ -49,7 +50,8 @@ form.register h3{
     margin-bottom: 10px;
 }
 
-.form-group input{
+.form-group input,
+.form-obj select{
     width: 80%;
     height: 36px;
     background-color: #FFF;
@@ -82,14 +84,16 @@ form.register h3{
 }
 
 .form-group,
-.form-group-rc{
+.form-group-rc,
+.form-obj{
     width: 290px;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
 }
 
-.form-group-rc div{
+.form-group-rc div,
+.form-objet div{
     padding-left: 30px;
     margin-top: 10px;
 }
@@ -162,3 +166,22 @@ form.register h3{
 .form-group input:hover{
     outline: 1px solid #d10000;
 }
+
+/* .form-obj select{
+    width: 80%;
+    height: 36px;
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    overflow: hidden;
+    max-height: 30px;
+    margin-left: 30px;
+    padding-left: 15px;
+    border-radius: 4px;
+}
+
+.form-obj select:hover{
+    outline:solid 1px #d10000;
+} */

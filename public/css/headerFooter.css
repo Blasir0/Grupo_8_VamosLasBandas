@@ -91,7 +91,8 @@ header .searchbar:hover .submit i{
     padding: 5px 0;
     font-size: 17px;
     color: lightgrey;
-    margin-right: 20px;     
+    margin-right: 20px;
+    white-space:nowrap;
 }
 
 .main-navbar{

@@ -2,6 +2,10 @@
     --rojo-logo: #d10000; /*Botones?*/
     --gris-oscuro: #666;
     --gris-claro: lightgray; /*Background color*/
+    
+    --red1: rgb(240, 60, 60);
+    --red2:rgb(180, 35, 35);
+    --red3: rgb(130, 25, 25);
 }
 /*Si les parece vamos viendo q colores usamos y los agregamos comentados en todos los CSS*/
 
@@ -13,6 +17,10 @@
 
 body{
     background-color: lightgray;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -75,18 +83,19 @@ body{
 }
 
 .title{
-    font-size: 1.3em;
-    font-weight: 300;
+    font-size: 1.5em;
+    font-weight: bold;
     margin-bottom: 5px;
     width: 90%;
     text-align: start;
     margin-left: 20px;
+    margin-top: 10px;
 }
 
 .title2{
     display: none;
-    font-size: 1em;
-    font-weight: 300;
+    font-size: 1.7em;
+    font-weight: bold;
     margin-top: 10px;
     margin-bottom: 5px;
     width: 90%;
@@ -101,29 +110,20 @@ body{
     padding: 10px;
 }
 
-.valor{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.price{
-    padding: 5px;
-    font-size: 1.3em;
-    font-weight: bold;
-}
-
 .dates p{
-    display: flex;
-    align-items: flex-start;
     padding: 5px 25px;
+    text-align: start;
+    font-size: 1.1em;
+    white-space:nowrap;
 }
 
-.discount{
-    color:green;
+.dates p:first-child{
+    font-size: 1.5em;
     font-weight: bold;
+    color:darkgreen;
 }
+
+/* Buttons */
 
 .buttons{
     display: flex;
@@ -133,10 +133,26 @@ body{
     margin-bottom: 10px;
 }
 
-.buttons input{
+.button-buy{
     width: 130px;
     border: none;
-    background-color:rgb(180, 35, 35);
+    background-color:darkgreen;
+    border-radius: 3px;
+    margin: 3px;
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+
+}
+
+.button-buy:hover{
+    background-color:green;
+}
+
+.button-edit{
+    width: 130px;
+    border: none;
+    background-color:var(--red1);
     border-radius: 3px;
     margin: 3px;
     color: white;
@@ -144,26 +160,23 @@ body{
     font-size: 0.9rem;
 }
 
-.buttons :last-child{
-    background-color: rgb(240, 60, 60); ;
+.button-edit:hover{
+    background-color:var(--red2);
 }
 
-.buttons:hover{
-    background-color: none;
+.button-delete{
+    width: 150px;
+    border: none;
+    background-color:var(--red3);
+    border-radius: 3px;
+    margin: 3px;
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
 }
 
-.buttons input:hover{
-    background-color: none;
-    cursor:pointer;
-}
-
-
-.buttons input:first-child:hover{
-    background-color: rgb(130, 25, 25);
-}
-
-.buttons input:last-child:hover{
-    background-color: rgb(180, 35, 35);
+.button-delete:hover{
+    background-color:var(--red2);
 }
 
 .lower{
@@ -181,6 +194,7 @@ body{
 
 .description-sec p, h1{
     padding: 10px 20px;
+    margin-bottom: 0;
 }
 
 
@@ -229,19 +243,11 @@ body{
 
     .title2{
         display: block;
-    }
-
-    .valor{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .info{
-        display: flex;
-        flex-direction: column;
+        margin-left: 0;
     }
 
     .dates p{
+        padding-left:0 ;
         text-align:start;
         font-size: 12px;
     }
@@ -259,10 +265,6 @@ body{
         margin: auto;
         margin-bottom: 20px;
         max-width: 540px;
-    }
-
-    .description-sec{
-        width: 80%;
     }
 
     /*.rigth{

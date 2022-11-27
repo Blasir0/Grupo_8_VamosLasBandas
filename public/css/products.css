@@ -1,3 +1,5 @@
+
+
 :root{
     --rojo-logo: #d10000; /*Botones?*/
     --gris-oscuro: #666;
@@ -27,22 +29,23 @@ body{
 
 /*Main*/
 
+main h1, main h2{
+    text-align: center;
+    padding-top: 10px;
+}
+
 .main-container{
     border-top: 1px solid var(--gris-oscuro);
     border-bottom: 1px solid var(--gris-oscuro);
-    margin: 10px 0;
 }
 
 .card-container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 30px;
-}
-
-main h1, main h2, main h3 {
-    margin: 20px 0px;
-    text-align: center;
+    overflow: hidden;
 }
 
 .card-article{
@@ -52,8 +55,39 @@ main h1, main h2, main h3 {
     justify-content: center;
     background-color: white;
     border-radius: 5px;
-    height: 200px;
+    height: 320px;
     width: 30vh;
+    margin: 20px;
+}
+
+.name{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.card-price{
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.price{
+    color:darkgreen;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 25px;
+    margin-left: -50px;
+}
+
+.fas{
+    color: darkgreen;
+    font-size: 20px;
+}
+
+.image{
+    margin-top: 15px;
+    text-align: center;
+    width: 300px;
 }
 
 .card-article:hover{
@@ -64,10 +98,6 @@ main h1, main h2, main h3 {
     width: 50%;
     border-radius: 5px;
     height: auto;
-}
-
-.descripcion{
-    margin-bottom: 10px;
 }
 
 /*Media Queries*/

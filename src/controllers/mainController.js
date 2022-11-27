@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const productsFilePath = path.join(__dirname, '../src/data/products.json');
+const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const mainController = {
@@ -29,7 +29,6 @@ const mainController = {
 			'id': products[products.length-1]['id']+1,
 			'name': req.body.name,
 			'price': req.body.price,
-			'discount': req.body.discount,
 			'category': req.body.category,
 			'description': req.body.description,
 		}	
@@ -55,7 +54,6 @@ const mainController = {
 			'id': product.id,
 			'name': req.body.name,
 			'price': req.body.price,
-			'discount': req.body.discount,
 			'category': req.body.category,
 			'description': req.body.description,
 		};
@@ -82,7 +80,22 @@ const mainController = {
 
     	res.redirect('/')
 
-	}
+	},
+
+	//login
+	login: (req, res) => {
+		res.render('login')
+	},
+
+	//register
+	register: (req, res) => {
+		res.render('register')
+	},
+
+	//carrito
+	productCart: (req, res) => {
+		res.render('productCart')
+	},
 }
 
 module.exports=mainController
