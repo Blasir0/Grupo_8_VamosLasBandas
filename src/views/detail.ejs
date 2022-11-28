@@ -32,8 +32,8 @@
                 
                 <section class="buttons">
                     <a href="#" class="button-buy">COMPRAR</a>
-                    <a href="/edit/<%= product.id%>/" class="button-edit">EDITAR PRODUCTO</a>
-                    <form action="/delete/<%= product.id%>" method="POST">
+                    <a href="/products/edit/<%= product.id%>" class="button-edit">EDITAR PRODUCTO</a>
+                    <form action="/products/delete/<%= product.id%>" method="POST">
                         <button type="submit" class="button-delete">ELIMINAR</button>
                     </form>
                 </section>
