@@ -1,7 +1,8 @@
 /*General*/
 
 :root{
-    --rojo-logo: #d10000; /*Logo Red*/
+    --rojo-logo: rgb(240, 60, 60); /*Logo Red*/
+    --rojo-logo2: rgb(180, 35, 35);
     --gris-oscuro: #666;
     --gris-claro: lightgray; /*Background color*/
 }
@@ -118,7 +119,7 @@ main article section.total {
     font-size: 16px;
     line-height: 25px;
     text-decoration-line: underline;
-    color: var(--rojo-logo) !important;
+    color: var(--rojo-logo2) ;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -200,19 +201,23 @@ main section.totales div.calcular-envio {
 
 .calcular-envio input {
     width: 60%;
-    border-radius:4px;
-    border-color: var(--rojo-logo);
+    background-color: #FFF;
+    border: none;
+    outline: 1px solid var(--gris-claro);
+    color: #666;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 2px;
 }
 
 .calcular-envio button {
     width: 40%;
-    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
     background-color: var(--rojo-logo);
     color: white;
     text-decoration:none;
-	text-shadow:2px 0px 5px #810e05;
     border: none;
     border-radius:4px;
+    cursor:pointer;
 }
 
 main section.totales div.cupon div.icono-titulo {
@@ -227,37 +232,53 @@ main section.totales div.calcular-descuento {
 
 .calcular-descuento input {
     width: 60%;
-    border-radius:4px;
-    border-color: var(--rojo-logo);
+    background-color: #FFF;
+    border: none;
+    outline: 1px solid var(--gris-claro);
+    color: #666;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 2px;
 }
 
 .calcular-descuento button {
     width: 40%;
-    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
     background-color: var(--rojo-logo);
     color: white;
     text-decoration:none;
-	text-shadow:2px 0px 5px #810e05;
     border: none;
     border-radius:4px;
+    cursor:pointer;
 }
 
 .myButton {
-	box-shadow: 3px 4px 0px 0px #cc2314;
-	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-	background-color:#c62d1f;
+	background-color:var(--rojo-logo);
 	border-radius:4px;
-	border:1px solid #d10000;
 	display: inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-size:18px;
 	padding:12px 76px;
 	text-decoration:none;
-	text-shadow:2px 0px 5px #810e05;
     width: auto;
     text-align: center;
     width: -webkit-fill-available;
+}
+
+.myButton:hover,
+.calcular-descuento button:hover,
+.calcular-envio button:hover{
+    background-color: var(--rojo-logo2);
+}
+
+input:hover{
+    outline:1px solid var(--rojo-logo)
+}
+
+.info-articulo i:hover,
+.agregar-mas-productos a:hover{
+    color:var(--rojo-logo);
+    cursor:pointer
 }
 
 /*Footer*/
@@ -288,8 +309,7 @@ main section.totales div.calcular-descuento {
     }
 
     .myButton:hover {
-        background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-        background-color:#f24437;
+        background-color:var(--rojo-logo2);
     }
 
     .myButton:active {
@@ -298,13 +318,11 @@ main section.totales div.calcular-descuento {
     }
 
     .calcular-envio button:hover {
-        background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-        background-color:#f24437;
+        background-color:var(--rojo-logo2);
     }
 
     .calcular-descuento button:hover {
-        background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-        background-color:#f24437;
+        background-color:var(--rojo-logo2);
     }
 
     .columna-izquierda {
