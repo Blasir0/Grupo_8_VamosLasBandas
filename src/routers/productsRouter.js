@@ -21,9 +21,12 @@ productsRouter.put('/edit/:id/', productsController.update);
 /*** DELETE ONE PRODUCT***/ 
 productsRouter.post('/delete/:id', productsController.destroy); 
 
-/*** LOGIN & REGISTER ***/ 
+/*** LOGIN ***/ 
 productsRouter.get('/login', productsController.login); 
+
+/*** REGISTER ***/ 
 productsRouter.get('/register', productsController.register); 
+productsRouter.post('/register', productsController.charge)
 
 /*** PODUCTCART ***/ 
 productsRouter.get('/productCart', productsController.productCart); 

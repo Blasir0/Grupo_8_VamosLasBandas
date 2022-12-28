@@ -5,7 +5,7 @@
 <html lang="en">
 
     <%- include('partials/head.ejs') %>
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="/css/register.css">
 
 <body>
 
@@ -13,7 +13,7 @@
 
     <main class="title">
         <h1>Registrarse</h1>
-        <form class="form-group" action="#" method="POST">
+        <form class="form-group" action="/products/register" method="POST">
             <div class="form-obj">
                 <label for="email">Email</label>
                 <input type="text" name="email" placeholder="janis.joplin@vlb.com">
@@ -23,8 +23,8 @@
                 <input type="text" name="name" placeholder="Janis" required >
             </div>
             <div class="form-obj">
-                <label for="last-name">Apellido</label>
-                <input type="password" name="last-name" placeholder="Joplin" required>
+                <label for="last_name">Apellido</label>
+                <input type="text" name="last_name" placeholder="Joplin" required>
             </div>
             <div class="form-obj">
                 <label for="address">Direccion</label>
@@ -41,11 +41,22 @@
                     <option value="">Voz</option>
                 </select>
             </div>
-
-            <div class="buttons">
-                <input type="submit" value="Registrarse">
+            <div class="form-obj">
+                <label for="category">Categoria</label>
+                <select name="category">
+                    <option>Categoria</option>
+                    <option value="">Comprador</option>
+                    <option value="">Vendedor</option>
+                </select>
+            </div>
+            <div class="form-obj">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" placeholder="Janis1234" required>
             </div>
             
+            <div class="form-obj">
+                <button type="submit" class="buttons"> Registrarse </button>
+            </div>
         </form>
 
         <section class="help">
