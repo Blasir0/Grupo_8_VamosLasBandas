@@ -2,11 +2,9 @@
 	{
 		"id": 1,
 		"name": "Guitarra",
-		"description": "leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum",
-		"image": "guitar1.jpg",
-		"category": "ultimos agregados",
-		"colors": "azul",
-		"price": 50000
+		"category": "",
+		"colors": "",
+		"price": "50000"
 	},
 	{
 		"id": 2,

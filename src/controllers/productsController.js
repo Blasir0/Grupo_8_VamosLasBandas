@@ -116,6 +116,38 @@ const productsController = {
 		res.render('login',{user});
 	},
 
+		// Update - Form to edit User
+		editUser: (req, res) => {
+			let user = users.find(user=>user.id == req.params.id)
+	
+			res.render('editUser',{user})
+		},
+		// Update - Method to update User
+		updateUser: (req, res) => {
+			let user = user.find(user=>user.id == req.params.id);
+	
+			let newUser = {
+				'id': user.id,
+				'firstName': req.body.name,
+				'lastName': req.body.last_name,
+				'email': req.body.email,
+				'category': req.body.category,
+				'instrument': req.body.instrument,
+				'password': req.body.password,
+			};
+	
+			let userToEdit = users.map(user => {
+				if(newUser.id == user.id){
+					return user = newUser
+				}
+				return user
+			})
+	
+			fs.writeFileSync(usersFilePath, JSON.stringify(userToEdit, null,'\t'));
+	
+			res.render('editUser',{user})
+		},
+
 	//carrito
 	productCart: (req, res) => {
 		res.render('productCart')

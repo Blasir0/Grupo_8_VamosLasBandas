@@ -133,5 +133,14 @@
 		"password": "D99pRY",
 		"category": "comprador",
 		"instrument": "Voz"
+	},
+	{
+		"id": 16,
+		"firstName": "Ezequiel",
+		"lastName": "Macia",
+		"email": "ezequielmacia@gmail.com",
+		"category": "comprador",
+		"instrument": "bajo",
+		"password": "789878787"
 	}
 ]

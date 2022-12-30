@@ -28,6 +28,11 @@ productsRouter.get('/login', productsController.login);
 productsRouter.get('/register', productsController.register); 
 productsRouter.post('/register', productsController.charge)
 
+/*** EDIT ONE USER ***/ 
+productsRouter.get('/editUser/:id/', productsController.editUser); 
+productsRouter.put('/editUser/:id/', productsController.updateUser); 
+
+
 /*** PODUCTCART ***/ 
 productsRouter.get('/productCart', productsController.productCart); 
 
