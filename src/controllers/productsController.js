@@ -124,12 +124,12 @@ const productsController = {
 		},
 		// Update - Method to update User
 		updateUser: (req, res) => {
-			let user = user.find(user=>user.id == req.params.id);
+			let user = users.find(user=>user.id == req.params.id);
 	
 			let newUser = {
 				'id': user.id,
-				'firstName': req.body.name,
-				'lastName': req.body.last_name,
+				'firstName': req.body.firstName,
+				'lastName': req.body.lastName,
 				'email': req.body.email,
 				'category': req.body.category,
 				'instrument': req.body.instrument,

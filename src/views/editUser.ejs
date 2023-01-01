@@ -1,6 +1,3 @@
-<!-- app.get('/register', (req,res)=>{
-    res.sendFile(__dirname + '/views/register.html');
-}); -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,37 +10,41 @@
 
     <main class="title">
         <h1>Editar usuario</h1>
-        <form class="form-group" form action="/products/editUser/<%= user.id%>?_method=PUT" method="POST">
+        <form action="/products/editUser/<%= user.id%>?_method=PUT" method="POST" class="form-group">
             <div class="form-obj">
                 <label for="email">Email</label>
                 <input type="text" name="email" value="<%= user.email%>">
             </div>
             <div class="form-obj">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" value="<%= user.firstName%>" required >
+                <label for="firstName">Nombre</label>
+                <input type="text" name="firstName" value="<%= user.firstName%>" required >
             </div>
             <div class="form-obj">
-                <label for="last_name">Apellido</label>
-                <input type="text" name="last_name" value="<%= user.lastName%>" required>
+                <label for="lastName">Apellido</label>
+                <input type="text" name="lastName" value="<%= user.lastName%>" required>
             </div>
             <div class="form-obj">
                 <label for="instrument">Instrumento</label>
                 <select name="instrument" >
                     <option value=""><%= user.instrument%></option>
-                    <option value="">Bajo</option>
-                    <option value="">Bateria</option>
-                    <option value="">Guitarra</option>
-                    <option value="">Teclado</option>
-                    <option value="">Voz</option>
+                    <option value="Bajo">Bajo</option>
+                    <option value="Bateria">Bateria</option>
+                    <option value="Guitarra">Guitarra</option>
+                    <option value="Teclado">Teclado</option>
+                    <option value="Voz">Voz</option>
                 </select>
             </div>
             <div class="form-obj">
                 <label for="category">Categoria</label>
                 <select name="category">
                     <option value=""><%= user.category%></option>
-                    <option value="">Comprador</option>
-                    <option value="">Vendedor</option>
+                    <option value="Comprador">Comprador</option>
+                    <option value="Vendedor">Vendedor</option>
                 </select>
+            </div>
+            <div class="form-obj">
+                <label for="password">Password</label>
+                <input type="password" name="password" value="<%= user.password%>" required>
             </div>
             
             <div class="form-obj">
