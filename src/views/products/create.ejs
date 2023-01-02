@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/create.css">
+
+<body>
+
+    <%- include('partials/header.ejs') %>
+
+        <main>
+            <form action="/products/create" method="POST" class="register" >
+                <h3>Agregar Producto</h3>
+                <div class="form-group">
+                    <label for="name">Nombre del producto</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre del Producto" minlength="7" required >
+                </div>
+                <div class="form-group">
+                    <label for="price">Precio del producto</label>
+                    <input type="text" name="price" id="price" placeholder="Precio del Producto" minlength="3" required >
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripcion del producto</label>
+                    <textarea class="productDetail" name="description" id="description" placeholder="Descripcion" cols="30" rows="10"></textarea>
+                </div>      
+                <div class="form-obj">
+                    <label for="colors" class="form-label">Colores:</label>
+                    <select name="colors" id="colors" class="form-input">
+                        <option value="Rojo">Rojo</option>
+                        <option value="Azul" >Azul</option>
+                        <option value="Negro">Negro</option>
+                        <option value="Blanco">Blanco</option>
+                        <option value="Marron">Marron</option>
+                    </select>
+                </div>
+                </div>
+                <div class="form-obj">
+                    <label for="category" class="form-label">Categoría:</label>
+                    <select name="category" id="category" class="form-input">
+                        <option value="in-sale">En oferta</option>
+                        <option value="visited" >Últimos agregados</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="form-group-photo">
+                    <input type="file" name="image" id="image">
+                </div>
+                <button type="submit" class="primary"> Crear </button>
+            </form>
+        </main>
+
+    <%- include('partials/footer.ejs') %>
+
+</body>
+</html>

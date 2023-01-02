@@ -1,29 +1,20 @@
 [
 	{
 		"id": 1,
-		"firstName": "Lucas",
-		"lastName": "Gonzales",
-		"email": "lucasgonzalez@vamoslasbandas.com",
-		"password": "123456",
-		"category": "comprador",
+		"firstName": "Juan",
+		"lastName": "Perez",
+		"email": "juanperez@vamoslasbandas.com",
+		"category": "Comprador",
+		"password": "$2a$10$Q8dslLm7jwQ5YNFuFIHtuO.kxgBsuANk/1u3TyfKfTePsPBJPucCm",
 		"image": "default-profile.jpg"
 	},
 	{
 		"id": 2,
-		"firstName": "Juan",
-		"lastName": "Perez",
-		"email": "juanperez@vamoslasbandas.com",
-		"password": "123456",
-		"category": "comprador",
-		"image": "default-profile.jpg"
-	},
-	{
-		"id": 3,
-		"firstName": "Rosa",
-		"lastName": "Martinez",
-		"email": "rosamartinez@vamoslasbandas.com",
-		"password": "123456",
-		"category": "vendedor",
+		"firstName": "Ezequiel",
+		"lastName": "Macia",
+		"email": "ezequielmacia@gmail.com",
+		"category": "Vendedor",
+		"password": "$2a$10$gQLiEMjNUoAtYfs7RsO.LuIiLHpLyIQKzUPIK4Zm7FVTaR53os0X.",
 		"image": "default-profile.jpg"
 	}
 ]

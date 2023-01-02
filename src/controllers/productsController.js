@@ -4,11 +4,6 @@ const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-const usersFilePath = path.join(__dirname, '../data/users.json');
-const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-
-const bcrypt = require('bcryptjs')
-
 const productsController = {
     // Root - Show all products
 	index: (req, res) => {
@@ -72,7 +67,7 @@ const productsController = {
 			'category': req.body.category,
 			'colors': req.body.category,
 			'price': req.body.price,
-			'image': req.field.filename
+			// 'image': req.field.filename
 		};
 
 		let productToEdit = products.map(product => {
@@ -99,100 +94,6 @@ const productsController = {
 
 	},
 
-	//--------------------USER------------------------//
-
-	//login
-	login: (req, res) => {
-		res.render('login')
-	},
-
-	//register
-	register: (req, res) => {
-		res.render('register')
-	},
-
-	//cargar usuario
-	charge: (req, res) => {
-		let image
-
-		if(req.file == undefined){
-			image = "default-profile.jpg"
-		} else {
-			image = req.file.filename
-		}
-
-		let user = {
-			'id': users[users.length-1]['id']+1,
-			'firstName': req.body.name,
-			'lastName': req.body.last_name,
-			'email': req.body.email,
-			'category': req.body.category,
-			'password': req.body.password,
-			'image':image
-		}	
-
-		users.push(user);
-
-		fs.writeFileSync(usersFilePath, JSON.stringify(users, null,'\t'));
-		
-		res.render('detailUser',{user});
-	},
-
-	// Update - Form to edit User
-	editUser: (req, res) => {
-		let user = users.find(user=>user.id == req.params.id)
-	
-		res.render('editUser',{user})
-	},
-	// Update - Method to update User
-	updateUser: (req, res) => {
-		let user = users.find(user=>user.id == req.params.id);
-	
-		let newUser = {
-			'id': user.id,
-			'firstName': req.body.firstName,
-			'lastName': req.body.lastName,
-			'email': req.body.email,
-			'category': req.body.category,
-			'password': req.body.password,
-		};
-	
-		let userToEdit = users.map(user => {
-			if(newUser.id == user.id){
-				return user = newUser
-			}
-			return user
-		})
-	
-		fs.writeFileSync(usersFilePath, JSON.stringify(userToEdit, null,'\t'));
-	
-		res.render('editUser',{user})
-	},
-
-	// Detail User - Edit one user from DB
-
-	detailUser: (req, res) => {
-		let user = users.find(user=>user.id == req.params.id)
-
-		res.render('detailUser',{user})
-	},
-
-	// Delete - Delete one user from DB
-	destroyUser : (req, res) => {
-		let userId = req.params.id;
-
-		let userDelete=users.filter(user=>user.id != userId)
-
-		fs.writeFileSync(usersFilePath, JSON.stringify(userDelete, null,'\t'));
-
-    	res.redirect('/')
-
-	},
-
-	//carrito
-	productCart: (req, res) => {
-		res.render('productCart')
-	},
 }
 
 module.exports=productsController

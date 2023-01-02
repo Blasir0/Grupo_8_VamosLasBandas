@@ -33,8 +33,8 @@ const productsRouter = require('./routers/productsRouter'); // Rutas /products
 const usersRouter = require('./routers/usersRouter'); // Rutas /users
 
 app.use('/', mainRouter);
-app.use('/products', productsRouter);
-app.use('/users', usersRouter)
+app.use('/products/', productsRouter);
+app.use('/users/', usersRouter)
 
 
 // ************ DON'T TOUCH FROM HERE ************

@@ -4,35 +4,111 @@ const path = require('path');
 const usersFilePath = path.join(__dirname, '../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
+const bcryptjs = require('bcryptjs')
+
 const usersController = {
-    // Root - Show all products
-	index: (req, res) => {
-		res.render('users',{users})
+
+	//login
+	login: (req, res) => {
+		res.render('login')
 	},
 
-		// Create - Form to create
-		// register: (req, res) => {
-		// 	res.render('register')
-		// },
-		
-		// Create -  Method to store
-		// charge: (req, res) => {
-		// 	let user = {
-		// 		'id': users[users.length-1]['id']+1,
-		// 		'firstName': req.body.name,
-		// 		'lastName': req.body.last_name,
-		// 		'email': req.body.email,
-		// 		'category': req.body.category,
-		// 		'instrument': req.body.instrument,
-		// 		'password': req.body.password,
-		// 	}	
+	//register
+	register: (req, res) => {
+		res.render('register')
+	},
+
+	//cargar usuario
+	findByField: (field, text) => {
+        let allUsers = this.findAll();
+        let userFound = allUsers.find(oneUser => oneUser[field]===text);
+        return userFound
+    },
+
+	charge: (req, res) => {
+		let image
+		if(req.file == undefined){
+			image = "default-profile.jpg"
+		} else {
+			image = req.file.filename
+		}
+
+		let password = bcryptjs.hashSync(req.body.password,10)
+
+		let user = {
+			'id': users[users.length-1]['id']+1,
+			'firstName': req.body.firstName,
+			'lastName': req.body.lastName,
+			'email': req.body.email,
+			'category': req.body.category,
+			'password': password,
+			'image':image
+		}
+
+			users.push(user);
 	
-		// 	users.push(user);
-	
-		// 	fs.writeFileSync(usersFilePath, JSON.stringify(users, null,'\t'));
+			fs.writeFileSync(usersFilePath, JSON.stringify(users, null,'\t'));
 			
-		// 	res.render('login',{user});
-		// },
+			res.render('detailUser',{user});
+		
+	},
+
+	// Update - Form to edit User
+	editUser: (req, res) => {
+		let user = users.find(user=>user.id == req.params.id)
+	
+		res.render('editUser',{user})
+	},
+	// Update - Method to update User
+	updateUser: (req, res) => {
+		let user = users.find(user=>user.id == req.params.id);
+	
+		let newUser = {
+			'id': user.id,
+			'firstName': req.body.firstName,
+			'lastName': req.body.lastName,
+			'email': req.body.email,
+			'category': req.body.category,
+			'password': req.body.password,
+			// 'image':req.field.filename
+		};
+	
+		let userToEdit = users.map(user => {
+			if(newUser.id == user.id){
+				return user = newUser
+			}
+			return user
+		})
+	
+		fs.writeFileSync(usersFilePath, JSON.stringify(userToEdit, null,'\t'));
+	
+		res.render('detailUser',{user})
+	},
+
+	// Detail User - Edit one user from DB
+
+	detailUser: (req, res) => {
+		let user = users.find(user=>user.id == req.params.id)
+
+		res.render('detailUser',{user})
+	},
+
+	// DeleteUser - Delete one user from DB
+	destroyUser : (req, res) => {
+		let userId = req.params.id;
+
+		let userDelete=users.filter(user=>user.id != userId)
+
+		fs.writeFileSync(usersFilePath, JSON.stringify(userDelete, null,'\t'));
+
+    	res.redirect('/')
+
+	},
+
+	//carrito
+	productCart: (req, res) => {
+		res.render('productCart')
+	},
 }
 
 module.exports=usersController
