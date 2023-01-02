@@ -1,146 +1,29 @@
 [
 	{
 		"id": 1,
-		"firstName": "Estève",
-		"lastName": "Josovich",
-		"email": "ijosovich0@jiathis.com",
-		"password": "gqC9nYO7irgJ",
+		"firstName": "Lucas",
+		"lastName": "Gonzales",
+		"email": "lucasgonzalez@vamoslasbandas.com",
+		"password": "123456",
 		"category": "comprador",
-		"instrument": "Bajo"
+		"image": "default-profile.jpg"
 	},
 	{
 		"id": 2,
-		"firstName": "Adèle",
-		"lastName": "Matysiak",
-		"email": "amatysiak1@hud.gov",
-		"password": "5Rp2aCf",
+		"firstName": "Juan",
+		"lastName": "Perez",
+		"email": "juanperez@vamoslasbandas.com",
+		"password": "123456",
 		"category": "comprador",
-		"instrument": "Bateria"
+		"image": "default-profile.jpg"
 	},
 	{
 		"id": 3,
-		"firstName": "Mélinda",
-		"lastName": "McDonnell",
-		"email": "mmcdonnell2@hugedomains.com",
-		"password": "RxKyjwDm6c",
+		"firstName": "Rosa",
+		"lastName": "Martinez",
+		"email": "rosamartinez@vamoslasbandas.com",
+		"password": "123456",
 		"category": "vendedor",
-		"instrument": "Guitarra"
-	},
-	{
-		"id": 4,
-		"firstName": "Loïc",
-		"lastName": "Delmage",
-		"email": "sdelmage3@squidoo.com",
-		"password": "yVZxetsw",
-		"category": "vendedor",
-		"instrument": "Teclado"
-	},
-	{
-		"id": 5,
-		"firstName": "Maëlyss",
-		"lastName": "Poynzer",
-		"email": "mpoynzer4@plala.or.jp",
-		"password": "7Yb0l2QJG",
-		"category": "comprador",
-		"instrument": "Voz"
-	},
-	{
-		"id": 6,
-		"firstName": "Lài",
-		"lastName": "Renshell",
-		"email": "frenshell5@eventbrite.com",
-		"password": "1BMdI079h2",
-		"category": "comprador",
-		"instrument": "Bajo"
-	},
-	{
-		"id": 7,
-		"firstName": "Cunégonde",
-		"lastName": "Joannidi",
-		"email": "sjoannidi6@devhub.com",
-		"password": "NWOqZPpfYaC",
-		"category": "comprador",
-		"instrument": "Bateria"
-	},
-	{
-		"id": 8,
-		"firstName": "Cécilia",
-		"lastName": "Fri",
-		"email": "dfri7@godaddy.com",
-		"password": "gZXMDKGf",
-		"category": "vendedor",
-		"instrument": "Guitarra"
-	},
-	{
-		"id": 9,
-		"firstName": "Aí",
-		"lastName": "Rudd",
-		"email": "prudd8@tiny.cc",
-		"password": "PiFmwqs8Nq",
-		"category": "comprador",
-		"instrument": "Teclado"
-	},
-	{
-		"id": 10,
-		"firstName": "Maëlle",
-		"lastName": "Langlands",
-		"email": "hlanglands9@dagondesign.com",
-		"password": "zLnlqy8m2z",
-		"category": "vendedor",
-		"instrument": "Voz"
-	},
-	{
-		"id": 11,
-		"firstName": "Joséphine",
-		"lastName": "Morris",
-		"email": "dmorrisa@sina.com.cn",
-		"password": "omDmRNNT5",
-		"category": "vendedor",
-		"instrument": "Bajo"
-	},
-	{
-		"id": 12,
-		"firstName": "Marylène",
-		"lastName": "Commusso",
-		"email": "acommussob@people.com.cn",
-		"password": "V9ThfzjgEv",
-		"category": "vendedor",
-		"instrument": "Bateria"
-	},
-	{
-		"id": 13,
-		"firstName": "Camélia",
-		"lastName": "Henrych",
-		"email": "ehenrychc@studiopress.com",
-		"password": "VLi8jix",
-		"category": "comprador",
-		"instrument": "Guitarra"
-	},
-	{
-		"id": 14,
-		"firstName": "Gisèle",
-		"lastName": "Akess",
-		"email": "sakessd@ucoz.ru",
-		"password": "7zFM8W",
-		"category": "comprador",
-		"instrument": "Teclado"
-	},
-	{
-		"id": 15,
-		"firstName": "Naéva",
-		"lastName": "Hardage",
-		"email": "vhardagee@omniture.com",
-		"password": "D99pRY",
-		"category": "comprador",
-		"instrument": "Voz"
-	},
-	{
-		"id": 16,
-		"firstName": "Ezequiel",
-		"lastName": "Macia",
-		"email": "ezequielmacia@gmail.com",
-		"category": "Comprador",
-		"instrument": "Bateria",
-		"password": "789789789"
+		"image": "default-profile.jpg"
 	}
 ]

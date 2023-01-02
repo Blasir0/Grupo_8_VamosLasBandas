@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/detail.css">
+
+<body>
+
+    <%- include('partials/header.ejs') %>
+
+    <main>
+        <section class="higher">
+                <p class="title"><%= user.name%></p>
+
+            <section class="main-options-container">
+                <section class="options-container--slider">
+                    <article class="options-container--card">
+                            <img class="options-card--img" src="/images/<%= user.image%>" alt="guitar"/>
+                    </article>
+                </section>
+            </section>
+
+            <section class="info">
+                <article class="description-prin">
+                    <p class="title2"><%= user.firstName%></p>
+                    <section class="dates">
+                        <p><%= user.lastName%></p>
+                        <p>Categoria: <%= user.category%></p>
+                    </section>
+                </article>
+
+                
+                <section class="buttons">
+                    <a href="/products/editUser/<%= user.id%>" class="button-edit">EDITAR USUARIO</a>
+                    <form action="/products/delete/<%= user.id%>" method="POST">
+                        <button type="submit" class="button-delete">ELIMINAR</button>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <%- include('partials/footer.ejs') %>
+
+</body>
+</html>

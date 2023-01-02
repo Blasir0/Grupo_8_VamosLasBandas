@@ -27,24 +27,6 @@
 		"price": 51950
 	},
 	{
-		"id": 4,
-		"name": "Bateria",
-		"description": "natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit",
-		"image": "bateria1.jpg",
-		"category": "ultimos agregados",
-		"colors": "negro",
-		"price": 59576
-	},
-	{
-		"id": 5,
-		"name": "Bateria",
-		"description": "nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus",
-		"image": "bateria2.jpg",
-		"category": "en oferta",
-		"colors": "rojo",
-		"price": 48344
-	},
-	{
 		"id": 6,
 		"name": "Bateria",
 		"description": "ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi",
@@ -52,15 +34,6 @@
 		"category": "ultimos agregados",
 		"colors": "negro",
 		"price": 67043
-	},
-	{
-		"id": 7,
-		"name": "Bajo",
-		"description": "turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus",
-		"image": "bajo1.jpg",
-		"category": "ultimos agregados",
-		"colors": "rojo",
-		"price": 30760
 	},
 	{
 		"id": 8,
