@@ -2,7 +2,7 @@ const path = require('path')
 const {body}=require('express-validator')
 
 module.exports = [
-    body('firtName').notEmpty().withMessage('Escribir nombre'),
+    body('firstName').notEmpty().withMessage('Escribir nombre'),
     body('lastName').notEmpty().withMessage('Escribir apellido'),
     body('email')
         .notEmpty().withMessage('Escribir correo electronico').bail()
