@@ -28,10 +28,9 @@ app.use(userLoggedMiddleware)
 app.use(logger('dev'));
 
 // ************ Template Engine - (don't touch) ************
+app.set('views', path.join(__dirname, 'views')); // Define la ubicación de la carpeta de las Vistas
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
-
-
+app.engine('html', require('ejs').renderFile);
 
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************

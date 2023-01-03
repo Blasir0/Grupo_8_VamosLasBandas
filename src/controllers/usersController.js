@@ -3,6 +3,9 @@ const path = require('path');
 const {validationResult}=require('express-validator')
 const User = require('../models/users')
 
+const productsFilePath = path.join(__dirname, '../data/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
 const usersFilePath = path.join(__dirname, '../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
@@ -10,7 +13,6 @@ const bcryptjs = require('bcryptjs')
 
 const usersController = {
 
-	
 	//register
 	register: (req, res) => {
 		res.render('register')
@@ -20,7 +22,7 @@ const usersController = {
 		const resultValidation = validationResult(req)
 
 		if(resultValidation.error.length>0){
-			return res.render('register', {
+			res.render('register', {
 				error: resultValidation.mapped(),
 				oldData: req.body
 			})
@@ -29,7 +31,7 @@ const usersController = {
 		let userInDB = User.findByField('email', req.body.email);
 
 		if(userInDB){
-			return res.render('register',{
+			res.render('register',{
 				errors: {
 					email: {
 						msg: 'Este email ya esta registrado'
@@ -69,9 +71,9 @@ const usersController = {
 					res.cookie('userEmail',req.body.email, {maxAge:(1000*60)*5})
 				}
 
-				return res.redirect(detailUser)
+				res.redirect(detailUser)
 			}
-			return res.render('login', {
+			res.render('login', {
 				error:{
 					email:{
 						msg:'Las credenciales son invalidas'
@@ -85,7 +87,7 @@ const usersController = {
 	logout: (req,res) => {
 		res.clearCookie('userEmail');
 		req.session.destroy();
-		return redirect('/')
+		redirect('/')
 	},
 
 	// Update - Form to edit User
@@ -123,7 +125,7 @@ const usersController = {
 	// Detail User - Edit one user from DB
 
 	detailUser: (req, res) => {
-		return res.render('detailUser',{
+		res.render('detailUser',{
 			user: req.session.userLogged
 		})
 	},
