@@ -18,13 +18,13 @@ app.use(express.static(path.join(__dirname, '../public')));  // Necesario para l
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
+//app.use(userLoggedMiddleware)
 app.use(session({
   secret:'claveSecreta',
   resave:false,
   saveUninitialized:false
 }))
 app.use(cookieParser());
-app.use(userLoggedMiddleware)
 app.use(logger('dev'));
 
 // ************ Template Engine - (don't touch) ************

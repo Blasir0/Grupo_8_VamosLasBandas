@@ -10,9 +10,10 @@ const controller = {
 	index: (req, res) => {
 		res.render('index',{products})
 	},
-	search: (req, res) => {
-		res.render('search')
-	},
+	
+	// search: (req, res) => {
+	// 	res.render('search')
+	// },
 
 	// //login
 	// login: (req, res) => {

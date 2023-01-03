@@ -51,4 +51,4 @@ const User = {
     }
 }
 
-module.export = User
+module.exports = User

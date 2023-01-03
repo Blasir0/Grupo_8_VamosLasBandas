@@ -6,7 +6,8 @@ const mainRouter = express.Router();
 const mainController = require('../controllers/mainController');
 
 mainRouter.get('/', mainController.index); 
-mainRouter.get('/search', mainController.search); 
+
+// mainRouter.get('/search', mainController.search); 
 
 // /*** LOGIN & REGISTER ***/ 
 // mainRouter.get('/login', mainController.login); 
