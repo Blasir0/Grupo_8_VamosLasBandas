@@ -7,14 +7,5 @@
 		"category": "Comprador",
 		"password": "$2a$10$Q8dslLm7jwQ5YNFuFIHtuO.kxgBsuANk/1u3TyfKfTePsPBJPucCm",
 		"image": "default-profile.jpg"
-	},
-	{
-		"id": 2,
-		"firstName": "Ezequiel",
-		"lastName": "Macia",
-		"email": "ezequielmacia@gmail.com",
-		"category": "Vendedor",
-		"password": "$2a$10$gQLiEMjNUoAtYfs7RsO.LuIiLHpLyIQKzUPIK4Zm7FVTaR53os0X.",
-		"image": "default-profile.jpg"
 	}
 ]

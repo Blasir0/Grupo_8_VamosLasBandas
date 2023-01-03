@@ -19,67 +19,36 @@ const usersController = {
 	charge: (req, res) => {
 		const resultValidation = validationResult(req)
 
-		if(resultValidation.error.length>0){
-			return res.render('register', {
-				error: resultValidation.mapped(),
-				oldData: req.body
-			})
+		let image
+		if(req.file == undefined){
+			image = "default-profile.jpg"
+		} else {
+			image = req.file.filename
 		}
-
-		let userInDB = User.findByField('email', req.body.email);
-
-		if(userInDB){
-			return res.render('register',{
-				errors: {
-					email: {
-						msg: 'Este email ya esta registrado'
-					}
-				},
-				oldData: req.body
-			})
+		
+		let password = bcryptjs.hashSync(req.body.password,10)
+		
+		let user = {
+			'id': users[users.length-1]['id']+1,
+			'firstName': req.body.firstName,
+			'lastName': req.body.lastName,
+			'email': req.body.email,
+			'category': req.body.category,
+			'password': password,
+			'image':image
 		}
-
-		let userToCreate = {
-			...req.body,
-			password: bcryptjs.hashSync(req.body.password,10),
-			image: req.file.filename
-		}
-
-		let UserCreated = User.create(userToCreate);
-
-		res.redirect('login');
+		
+		users.push(user);
+		
+		fs.writeFileSync(usersFilePath, JSON.stringify(users, null,'\t'));
+		
+		res.render('detailUser',{user});
+		
 	},
 	
 	//login
 	login: (req, res) => {
 		res.render('login')
-	},
-
-	//login charge
-	loginCharge: (req, res) => {
-		let userToLogin = User.findByField('email',req.body.email);
-
-		if(userToLogin){
-			let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
-			if(isOkThePassword){
-				delete userToLogin.password
-				req.session.userLogged = userToLogin;
-				return res.redirect(detailUser)
-			}
-			return res.render('login', {
-				error:{
-					email:{
-						msg:'Las credenciales son invalidas'
-					}
-				}
-			})
-		}
-	},
-
-	//logout
-	logout: (req,res) => {
-		req.session.destroy();
-		return redirect('/')
 	},
 
 	// Update - Form to edit User
