@@ -17,6 +17,11 @@
             <div class="form-obj">
                 <label for="email">Email</label>
                 <input type="text" name="email" placeholder="Email de usuario">
+                <% if(locals.errors && errors.email) { %>
+                    <div style="color:red">
+                        <%= errors.email.msg %>
+                    </div>
+                <% } %>
             </div>
             <div class="form-obj">
                 <label for="password">Contraseña</label>
@@ -28,8 +33,8 @@
             
         </form>
         <section class="remember">
-            <input type="checkbox" id="remember" name="remember" checked>
-            <label for="remember">Recordar usuario</label>
+            <input type="checkbox" id="rememberUser" name="rememberUser" checked>
+            <label for="rememberUser">Recordar usuario</label>
           </div>
         <!-- boton login -->
         <div>

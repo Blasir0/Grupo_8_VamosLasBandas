@@ -64,6 +64,11 @@ const usersController = {
 			if(isOkThePassword){
 				delete userToLogin.password
 				req.session.userLogged = userToLogin;
+
+				if(req.body.rememberUser){
+					res.cookie('userEmail',req.body.email, {maxAge:(1000*60)*5})
+				}
+
 				return res.redirect(detailUser)
 			}
 			return res.render('login', {
@@ -78,6 +83,7 @@ const usersController = {
 
 	//logout
 	logout: (req,res) => {
+		res.clearCookie('userEmail');
 		req.session.destroy();
 		return redirect('/')
 	},
@@ -117,9 +123,9 @@ const usersController = {
 	// Detail User - Edit one user from DB
 
 	detailUser: (req, res) => {
-		let user = users.find(user=>user.id == req.params.id)
-
-		res.render('detailUser',{user})
+		return res.render('detailUser',{
+			user: req.session.userLogged
+		})
 	},
 
 	// DeleteUser - Delete one user from DB
