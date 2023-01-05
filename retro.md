@@ -20,4 +20,55 @@ RETROSPECTIVA
       
    5. Dejar de hacer:
       Por el momento no hay puntos para dejar de hacer.
+
+> Sprint 3
+
+   1. Comenzar a hacer: 
+   Tener una comunicación más fluída para poder repartir mejor las tareas
+      
+   2. Hacer más: 
+   Reunirnos e intercambiar ideas para lograr mejores resultados
+      
+   3. Continuar haciendo: 
+   Cumplir con las tareas asignadas 
+      
+   4. Hacer menos: 
+   Centrarnos en cosas secundarias referentes al proyecto en lugar de lo que pide la consigna
+      
+   5. Dejar de hacer: 
+   Por el momento no hay puntos para dejar de hacer.
    
+
+> Sprint 4
+
+   1. Comenzar a hacer: 
+   Tener una mejor comunicación con el profesor asignado para ayudarnos con el proyecto para poder resolver ciertos errores de manera más eficiente
+      
+   2. Hacer más:
+   Mejorar la parte visual del proyecto (Front-End)
+   
+   3. Continuar haciendo: 
+   Mejorar el código del proyecto
+      
+   4. Hacer menos: 
+   No expresar las dudas que nos surjan respecto de las tareas asignadas
+      
+   5. Dejar de hacer: 
+   Por el momento no hay puntos para dejar de hacer.
+
+> Sprint 5
+   
+   1. Comenzar a hacer: 
+   Buscar mas información en la web para solucionar los problemas que surjan en el código para poder solucionarlos de manera autónoma
+      
+   2. Hacer más:
+   Reunirnos más seguido con el equipo para lograr mejores resultados
+      
+   3. Continuar haciendo:
+   Utilizar el material de PlayGround para completar los requerimientos del proyecto
+
+   4. Hacer menos:
+   Por el momento no hay puntos para hacer menos.
+      
+   5. Dejar de hacer:
+   Por el momento no hay puntos para dejar de hacer.
