@@ -18,7 +18,7 @@ const usersController = {
 	charge: (req, res) => {
 		const resultValidation = validationResult(req)
 
-		if(resultValidation.error.length>0){
+		if(resultValidation.errors.length>0){
 			res.render('register', {
 				error: resultValidation.mapped(),
 				oldData: req.body
@@ -46,7 +46,7 @@ const usersController = {
 
 		let UserCreated = User.create(userToCreate);
 
-		res.redirect('login');
+		res.redirect('/users/login');
 	},
 	
 	//login
@@ -57,7 +57,7 @@ const usersController = {
 	//login charge
 	loginCharge: (req, res) => {
 		let userToLogin = User.findByField('email',req.body.email);
-
+		
 		if(userToLogin){
 			let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
 			if(isOkThePassword){
@@ -68,7 +68,7 @@ const usersController = {
 					res.cookie('userEmail',req.body.email, {maxAge:(1000*60)*5})
 				}
 
-				res.redirect(detailUser)
+				res.redirect('/users/detailUsers')
 			}
 			res.render('login', {
 				error:{
