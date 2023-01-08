@@ -12,14 +12,14 @@ const usersController = {
 
 	//register
 	register: (req, res) => {
-		res.render('register')
+		res.render('users/register')
 	},
 	
 	charge: (req, res) => {
 		const resultValidation = validationResult(req)
 
 		if(resultValidation.errors.length>0){
-			res.render('register', {
+			res.render('users/register', {
 				error: resultValidation.mapped(),
 				oldData: req.body
 			})
@@ -28,7 +28,7 @@ const usersController = {
 		let userInDB = User.findByField('email', req.body.email);
 
 		if(userInDB){
-			res.render('register',{
+			res.render('users/register',{
 				errors: {
 					email: {
 						msg: 'Este email ya esta registrado'
@@ -46,12 +46,12 @@ const usersController = {
 
 		let UserCreated = User.create(userToCreate);
 
-		res.redirect('/users/login');
+		res.redirect('users/login');
 	},
 	
 	//login
 	login: (req, res) => {
-		res.render('login')
+		res.render('users/login')
 	},
 
 	//login charge
@@ -68,7 +68,7 @@ const usersController = {
 					res.cookie('userEmail',req.body.email, {maxAge:(1000*60)*5})
 				}
 
-				res.redirect('/users/detailUsers')
+				res.redirect('users/detailUsers')
 			}
 			res.render('login', {
 				error:{
@@ -91,7 +91,7 @@ const usersController = {
 	editUser: (req, res) => {
 		let user = users.find(user=>user.id == req.params.id)
 		
-		res.render('editUser',{user})
+		res.render('users/editUser',{user})
 	},
 	// Update - Method to update User
 	updateUser: (req, res) => {
@@ -116,13 +116,13 @@ const usersController = {
 	
 		fs.writeFileSync(usersFilePath, JSON.stringify(userToEdit, null,'\t'));
 	
-		res.render('detailUser',{user})
+		res.render('users/detailUser',{user})
 	},
 
 	// Detail User - Edit one user from DB
 
 	detailUser: (req, res) => {
-		res.render('detailUser',{
+		res.render('users/detailUser',{
 			user: req.session.userLogged
 		})
 	},
@@ -141,7 +141,7 @@ const usersController = {
 
 	//carrito
 	productCart: (req, res) => {
-		res.render('productCart')
+		res.render('users/productCart')
 	},
 }
 

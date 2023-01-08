@@ -7,7 +7,7 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const productsController = {
     // Root - Show all products
 	index: (req, res) => {
-		res.render('products',{products})
+		res.render('products/products',{products})
 	},
 
 
@@ -15,12 +15,12 @@ const productsController = {
 	detail: (req, res) => {
 		let product = products.find(product=>product.id == req.params.id)
 
-		res.render('detail',{product})
+		res.render('products/detail',{product})
 	},
 
 	// Create - Form to create
 	create: (req, res) => {
-		res.render('create')
+		res.render('products/create')
 	},
 	
 	// Create -  Method to store
@@ -47,14 +47,14 @@ const productsController = {
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null,'\t'));
 		
-    	res.render('detail',{product});
+    	res.render('products/detail',{product});
 	},
 
 	// Update - Form to edit
 	edit: (req, res) => {
 		let product = products.find(product=>product.id == req.params.id)
 
-		res.render('edit',{product})
+		res.render('products/edit',{product})
 	},
 	// Update - Method to update
 	update: (req, res) => {
@@ -79,7 +79,7 @@ const productsController = {
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(productToEdit, null,'\t'));
 
-		res.render('detail',{product})
+		res.render('products/detail',{product})
 	},
 
 	// Delete - Delete one product from DB

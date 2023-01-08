@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('partials/head.ejs') %>
+    <%- include('../partials/head.ejs') %>
     <link rel="stylesheet" href="/css/detail.css">
 
 <body>
 
-    <%- include('partials/header.ejs') %>
+    <%- include('../partials/header.ejs') %>
 
     <main>
         <section class="higher">
@@ -15,7 +15,7 @@
             <section class="main-options-container">
                 <section class="options-container--slider">
                     <article class="options-container--card">
-                            <img class="options-card--img" src="/images/<%= user.image%>" alt="guitar"/>
+                            <img class="options-card--img" src="/images/users/<%= user.image%>" alt="guitar"/>
                     </article>
                 </section>
             </section>
@@ -40,7 +40,7 @@
         </section>
     </main>
 
-    <%- include('partials/footer.ejs') %>
+    <%- include('../partials/footer.ejs') %>
 
 </body>
 </html>
