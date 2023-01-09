@@ -39,11 +39,11 @@ const User = {
     create: (userData) => {
         let allUsers = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/users.json'), 'utf-8'));
         let newUser ={
-            id: this.generateId,
+            id: users[users.length-1]['id']+1,
             ...userData
         }
         allUsers.push(newUser);
-        fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, ' '));
+        fs.writeFileSync(usersFilePath, JSON.stringify(allUsers, null, ' '));
         return true
     },
 

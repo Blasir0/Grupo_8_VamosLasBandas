@@ -19,7 +19,7 @@ const usersController = {
 		const resultValidation = validationResult(req)
 
 		if(resultValidation.errors.length>0){
-			res.render('users/register', {
+			res.render('register', {
 				error: resultValidation.mapped(),
 				oldData: req.body
 			})
@@ -28,7 +28,7 @@ const usersController = {
 		let userInDB = User.findByField('email', req.body.email);
 
 		if(userInDB){
-			res.render('users/register',{
+			res.render('register',{
 				errors: {
 					email: {
 						msg: 'Este email ya esta registrado'
@@ -46,7 +46,7 @@ const usersController = {
 
 		let UserCreated = User.create(userToCreate);
 
-		res.redirect('users/login');
+		res.redirect('/users/login');
 	},
 	
 	//login
@@ -68,9 +68,9 @@ const usersController = {
 					res.cookie('userEmail',req.body.email, {maxAge:(1000*60)*5})
 				}
 
-				res.redirect('users/detailUsers')
+				return res.redirect('/users/detailUser')
 			}
-			res.render('login', {
+			res.render('users/login', {
 				error:{
 					email:{
 						msg:'Las credenciales son invalidas'

@@ -1,11 +1,11 @@
 [
-	{
-		"id": 1,
-		"firstName": "Juan",
-		"lastName": "Perez",
-		"email": "juanperez@vamoslasbandas.com",
-		"category": "Comprador",
-		"password": "$2a$10$Q8dslLm7jwQ5YNFuFIHtuO.kxgBsuANk/1u3TyfKfTePsPBJPucCm",
-		"image": "default-profile.jpg"
-	}
+ {
+  "id": 1,
+  "email": "ezequielmacia@gmail.com",
+  "firstName": "Ezequiel",
+  "lastName": "Macia",
+  "category": "Comprador",
+  "password": "$2a$10$RJAOzNA.Nj/ffW3uWfqgIOzN.5aaGM0zwzox3TcUOiFGQu9YR6t5i",
+  "image": "default-profile.jpg"
+ }
 ]
