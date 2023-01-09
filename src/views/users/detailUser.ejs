@@ -10,12 +10,12 @@
 
     <main>
         <section class="higher">
-                <p class="title"><%= user.name%></p>
+                <p class="title"><%= user.firstName%></p>
 
             <section class="main-options-container">
                 <section class="options-container--slider">
                     <article class="options-container--card">
-                            <img class="options-card--img" src="/images/users/<%= user.image%>" alt="guitar"/>
+                            <img class="options-card--img" src="/images/users/<%= user.image %>" alt="guitar"/>
                     </article>
                 </section>
             </section>
@@ -24,15 +24,15 @@
                 <article class="description-prin">
                     <p class="title2"><%= user.firstName%></p>
                     <section class="dates">
-                        <p><%= user.lastName%></p>
-                        <p>Categoria: <%= user.category%></p>
+                        <p><%= user.lastName %></p>
+                        <p>Categoria: <%= user.category %></p>
                     </section>
                 </article>
 
                 
                 <section class="buttons">
-                    <a href="/users/editUser/<%= user.id%>" class="button-edit">EDITAR USUARIO</a>
-                    <form action="/users/deleteUser/<%= user.id%>" method="POST">
+                    <a href="/users/editUser/<%= user.id %>" class="button-edit">EDITAR USUARIO</a>
+                    <form action="/users/deleteUser/<%= user.id %>" method="POST">
                         <button type="submit" class="button-delete">ELIMINAR</button>
                     </form>
                 </section>

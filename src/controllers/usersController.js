@@ -84,7 +84,7 @@ const usersController = {
 	logout: (req,res) => {
 		res.clearCookie('userEmail');
 		req.session.destroy();
-		redirect('/')
+		res.redirect('/')
 	},
 
 	// Update - Form to edit User

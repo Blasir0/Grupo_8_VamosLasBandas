@@ -1,6 +1,6 @@
 function guestMiddleware(req,res,next){
     if(req.session.userLogged){
-        return req.redirect('detailUser')
+        res.redirect('/users/detailUser')
     }
     next();
 }

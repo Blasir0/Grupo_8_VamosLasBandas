@@ -15,13 +15,13 @@ usersRouter.post('/register', uploadUser.single('image'), validations, usersCont
 
 /*** LOGIN ***/ 
 usersRouter.get('/login', guestMiddleware, usersController.login);
-usersRouter.get('/login', usersController.loginCharge);
+usersRouter.post('/login', usersController.loginCharge);
 
 /*** LOGOUT ***/ 
 usersRouter.get('/logout', usersController.logout);
 
 /*** DETAIL USER ***/ 
-usersRouter.get('/detailUser/:id/', authMiddleware,usersController.detailUser);
+usersRouter.get('/detailUser', authMiddleware,usersController.detailUser);
 
 /*** EDIT ONE USER ***/ 
 usersRouter.get('/editUser/:id/', usersController.editUser); 
