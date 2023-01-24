@@ -218,7 +218,7 @@ a{
 
     .higher{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: auto;

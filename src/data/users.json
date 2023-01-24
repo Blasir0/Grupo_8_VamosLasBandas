@@ -7,5 +7,14 @@
   "category": "Comprador",
   "password": "$2a$10$RJAOzNA.Nj/ffW3uWfqgIOzN.5aaGM0zwzox3TcUOiFGQu9YR6t5i",
   "image": "default-profile.jpg"
+ },
+ {
+  "id": 2,
+  "email": "juanperez@vlb.com",
+  "firstName": "Juan",
+  "lastName": "Perez",
+  "category": "Comprador",
+  "password": "$2a$10$/NWbmpaFYxTcH.NbfpmSa..dWNQUgmttbxA1xpu/4gO5EZIrXo.3i",
+  "image": "1674589144937-.png"
  }
 ]
