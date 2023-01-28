@@ -1,5 +1,8 @@
 const fs = require('fs');
 const path = require('path');
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const { Op } = require("sequelize");
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -8,7 +11,13 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controller = {
 	index: (req, res) => {
-		res.render('index',{products})
+		db.Product.findAll({
+			include:['color']
+		})
+		.then(products => {
+			res.render('index',{products})
+		})
+		//res.render('index',{products})
 	},
 	
 	// search: (req, res) => {

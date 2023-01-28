@@ -1,5 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const { Op } = require("sequelize");
+
+const Product = db.Product;
+const Color = db.Color
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -7,7 +13,13 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const productsController = {
     // Root - Show all products
 	index: (req, res) => {
+		db.Product.findAll({
+		include:['color']
+		})
+		.then(products => {
 		res.render('products/products',{products})
+		})
+		//res.render('products/products',{products})
 	},
 
 
