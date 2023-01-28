@@ -19,20 +19,30 @@ const productsController = {
 		.then(products => {
 		res.render('products/products',{products})
 		})
-		//res.render('products/products',{products})
 	},
 
 
 	// Detail - Detail from one product
 	detail: (req, res) => {
-		let product = products.find(product=>product.id == req.params.id)
-
-		res.render('products/detail',{product})
+		db.Product.findByPk(req.params.id,
+            {
+                include : ['color']
+            })
+            .then(product => {
+                res.render('products/detail', {product});
+            });
 	},
 
 	// Create - Form to create
 	create: (req, res) => {
-		res.render('products/create')
+		let promProduct = Product.findAll();
+        let promColor = Color.findAll();
+        
+        Promise
+        .all([promProduct, promColor])
+        .then(([allProduct, allColor]) => {
+            return res.render(path.resolve(__dirname, '..', 'views',  'products/create'), {allProduct,allColor})})
+        .catch(error => res.send(error))
 	},
 	
 	// Create -  Method to store
@@ -44,22 +54,21 @@ const productsController = {
 		} else {
 			image = req.file.filename
 		}
-
-		let product = {
-			'id': products[products.length-1]['id']+1,
-			'name': req.body.name,
-			'description': req.body.description,
-			'category': req.body.category,
-			'colors': req.body.colors,
-			'price': req.body.price,
-			'image': image
-		}	
-
-		products.push(product);
-
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null,'\t'));
 		
-    	res.render('products/detail',{product});
+		Product.create(
+            {
+				'idProduct': products[products.length-1]['id']+1,
+				'name': req.body.name,
+				'description': req.body.description,
+				'category': req.body.category,
+				'idColors': req.body.colors,
+				'price': req.body.price,
+				'image': image
+            }
+        )
+        .then(()=> {
+            return res.redirect('products/products')})            
+        .catch(error => res.send(error))
 	},
 
 	// Update - Form to edit

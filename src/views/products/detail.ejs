@@ -25,15 +25,15 @@
                     <p class="title2"><%= product.name%></p>
                     <section class="dates">
                         <p>$ <%= product.price%></p>
-                        <p>Color: <%= product.colors%></p>
+                        <p>Color: <%= product.color.name%></p>
                     </section>
                 </article>
 
                 
                 <section class="buttons">
                     <a href="#" class="button-buy">COMPRAR</a>
-                    <a href="/products/edit/<%= product.id%>" class="button-edit">EDITAR PRODUCTO</a>
-                    <form action="/products/delete/<%= product.id%>" method="POST">
+                    <a href="/products/edit/<%= product.idProduct%>" class="button-edit">EDITAR PRODUCTO</a>
+                    <form action="/products/delete/<%= product.idProduct%>" method="POST">
                         <button type="submit" class="button-delete">ELIMINAR</button>
                     </form>
                 </section>

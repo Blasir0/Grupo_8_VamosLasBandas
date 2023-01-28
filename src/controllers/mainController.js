@@ -17,7 +17,6 @@ const controller = {
 		.then(products => {
 			res.render('index',{products})
 		})
-		//res.render('index',{products})
 	},
 	
 	// search: (req, res) => {
