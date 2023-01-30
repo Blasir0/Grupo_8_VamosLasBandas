@@ -35,6 +35,10 @@ module.exports = (sequelize, dataTypes) => {
         idColors: {
             type: dataTypes.BIGINT(10),
             allowNull: false
+        },
+        idUser: {
+            type: dataTypes.BIGINT(10),
+            allowNull: false
         }
     };
     let config = {
@@ -51,6 +55,10 @@ module.exports = (sequelize, dataTypes) => {
         Product.belongsTo(models.Color, {
             foreignKey: "idColors",
             as: "color",
+        }),
+        Product.belongsTo(models.User, {
+            foreignKey: "idUser",
+            as: "user",
         })
 
     }

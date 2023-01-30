@@ -7,6 +7,8 @@ const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 
 const User = db.User;
+const Product = db.Product;
+const Color = db.Color
 
 const usersFilePath = path.join(__dirname, '../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
