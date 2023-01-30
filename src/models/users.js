@@ -9,7 +9,7 @@ const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
 const UserDB = db.User
 
-const User = {
+const Usermodel = {
     fileName: '../data/users.json',
 
     getData: () => {
@@ -60,4 +60,4 @@ const User = {
     }
 }
 
-module.exports = User
+module.exports = Usermodel

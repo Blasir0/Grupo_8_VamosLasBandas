@@ -57,13 +57,13 @@ const productsController = {
 		
 		Product.create(
             {
-				'idProduct': products[products.length-1]['id']+1,
-				'name': req.body.name,
-				'description': req.body.description,
-				'category': req.body.category,
-				'idColors': req.body.colors,
-				'price': req.body.price,
-				'image': image
+				idProduct: products[products.length-1]['id']+1,
+				name: req.body.name,
+				description: req.body.description,
+				category: req.body.category,
+				idColors: req.body.colors,
+				price: req.body.price,
+				image: image
             }
         )
         .then(()=> {
@@ -73,47 +73,51 @@ const productsController = {
 
 	// Update - Form to edit
 	edit: (req, res) => {
-		let product = products.find(product=>product.id == req.params.id)
-
-		res.render('products/edit',{product})
+        let idProduct = req.params.id;
+        let promProduct = Product.findByPk(idProduct,{include: ['color']});
+        let promColor = Color.findAll();
+        Promise
+        .all([promProduct, promColor])
+        .then(([product, allColor]) => {
+            return res.render(path.resolve(__dirname, '..', 'views',  'products/edit'), {product,allColor})})
+        .catch(error => res.send(error))
 	},
 	// Update - Method to update
 	update: (req, res) => {
-		let product = products.find(product=>product.id == req.params.id);
+		let image
 
-		let newProduct = {
-			'id': product.id,
-			'name': req.body.name,
-			'description': req.body.description,
-			'category': req.body.category,
-			'colors': req.body.category,
-			'price': req.body.price,
-			// 'image': req.field.filename
-		};
+		if(req.file == undefined){
+			image = "default.jpg"
+		} else {
+			image = req.file.filename
+		}
 
-		let productToEdit = products.map(product => {
-			if(newProduct.id == product.id){
-				return product = newProduct
-			}
-			return product
-		})
-
-		fs.writeFileSync(productsFilePath, JSON.stringify(productToEdit, null,'\t'));
-
-		res.render('products/detail',{product})
+        let idProduct = req.params.id;
+        Product.update(
+            {
+				name: req.body.name,
+				description: req.body.description,
+				category: req.body.category,
+				idColors: req.body.category,
+				price: req.body.price,
+				image: image,
+            },
+            {
+                where: {idProduct: idProduct}
+            })
+        .then(()=> {
+            return res.redirect('products/products')})            
+        .catch(error => res.send(error))
 	},
 
 	// Delete - Delete one product from DB
-	destroy : (req, res) => {
-		let productId = req.params.id;
-
-		let productDelete=products.filter(product=>product.id != productId)
-
-		fs.writeFileSync(productsFilePath, JSON.stringify(productDelete, null,'\t'));
-
-    	res.redirect('/')
-
-	},
+    destroy: function (req,res) {
+        let idProduct = req.params.id;
+        Product.destroy({where: {idProduct: idProduct}, force: true})
+        .then(()=>{
+            return res.redirect('/')})
+        .catch(error => res.send(error)) 
+    }
 
 }
 
