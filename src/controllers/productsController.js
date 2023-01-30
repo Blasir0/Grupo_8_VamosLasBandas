@@ -62,9 +62,10 @@ const productsController = {
 				name: req.body.name,
 				description: req.body.description,
 				category: req.body.category,
-				idColors: req.body.colors,
+				idColors: req.body.idColors,
 				price: req.body.price,
-				image: image
+				image: image,
+				idUser: '2'
             }
         )
         .then(()=> {
@@ -99,9 +100,10 @@ const productsController = {
 				name: req.body.name,
 				description: req.body.description,
 				category: req.body.category,
-				idColors: req.body.category,
+				idColors: req.body.idColors,
 				price: req.body.price,
 				image: image,
+				idUser: '2'
             },
             {
                 where: {idProduct: idProduct}

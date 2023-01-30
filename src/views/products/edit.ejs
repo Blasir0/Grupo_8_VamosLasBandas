@@ -24,13 +24,11 @@
                     <textarea class="productDetail" name="descripcion" id="description" value="<%= product.description%>" cols="30" rows="10"></textarea>
                 </div>      
                 <div class="form-obj">
-                    <label for="colors" class="form-label">Colores:</label>
-                    <select name="colors" id="colors" class="form-input">
-                        <option value="Rojo">Rojo</option>
-                        <option value="Azul" >Azul</option>
-                        <option value="Negro">Negro</option>
-                        <option value="Blanco">Blanco</option>
-                        <option value="Marron">Marron</option>
+                    <select name="idColors" id="idColors" >
+                        <option value="" disabled selected>Seleccione el color</option>
+                        <% allColor.forEach(color => { %>
+                        <option value="<%= color.idColors %>"><%= color.name %></option>
+                        <% }); %>
                     </select>
                 </div>
                 <div class="form-obj">

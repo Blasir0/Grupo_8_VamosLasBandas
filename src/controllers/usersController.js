@@ -41,7 +41,7 @@ const usersController = {
 		User.create(
             {
 				idUser: users[users.length-1]['id']+1,
-				firsName: req.body.firstName,
+				firstName: req.body.firstName,
 				lastName: req.body.lastName,
 				category: req.body.category,
 				email: req.body.email,
@@ -50,7 +50,7 @@ const usersController = {
             }
         )
         .then(()=> {
-            return res.redirect('users/login')})            
+            return res.redirect('/users/login')})            
         .catch(error => res.send(error))
 	},
 	
@@ -63,16 +63,17 @@ const usersController = {
 	loginCharge: (req, res) => {
 		//let userToLogin = User.findByField('email',req.body.email);
 		
-		let userToLogin = User.find('email', req.body.email)
-
+		User.findOne({where: {email: req.body.email}})
+		.then( userToLogin => {
 		if(userToLogin){
+			console.log("user ok")
 			let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
 			if(isOkThePassword){
 				delete userToLogin.password
 				req.session.userLogged = userToLogin;
 
 				if(req.body.rememberUser){
-					res.cookie('userEmail',req.body.email, {maxAge:(1000*60)*5})
+					res.cookie('userEmail',req.body.email, {maxAge:(1000*60)*20})
 				}
 
 				return res.redirect('/users/detailUser')
@@ -84,7 +85,8 @@ const usersController = {
 					}
 				}
 			})
-		}
+		}})
+		
 	},
 
 	//logout
