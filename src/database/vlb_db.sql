@@ -18,6 +18,9 @@
 --
 -- Table structure for table `colors`
 --
+DROP DATABASE IF EXISTS `vlb_db`;
+CREATE DATABASE `vlb_db`;
+USE  `vlb_db`;
 
 DROP TABLE IF EXISTS `colors`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
