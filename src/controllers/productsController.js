@@ -64,11 +64,11 @@ const productsController = {
 				idColors: req.body.idColors,
 				price: req.body.price,
 				image: image,
-				idUser: '2'
+				idUser: req.session.userLogged.idUser
             }
         )
         .then(()=> {
-            return res.redirect('products/products')})            
+            return res.redirect('/')})            
         .catch(error => res.send(error))
 	},
 
@@ -102,13 +102,13 @@ const productsController = {
 				idColors: req.body.idColors,
 				price: req.body.price,
 				image: image,
-				idUser: '2'
+				idUser: req.session.userLogged.idUser
             },
             {
                 where: {idProduct: idProduct}
             })
         .then(()=> {
-            return res.redirect('products/products')})            
+            return res.redirect('/')})            
         .catch(error => res.send(error))
 	},
 
