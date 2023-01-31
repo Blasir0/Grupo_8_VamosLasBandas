@@ -58,7 +58,6 @@ const productsController = {
 		
 		Product.create(
             {
-				idProduct: products[products.length-1]['id']+1,
 				name: req.body.name,
 				description: req.body.description,
 				category: req.body.category,

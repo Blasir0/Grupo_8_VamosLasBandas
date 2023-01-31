@@ -40,7 +40,6 @@ const usersController = {
 		
 		User.create(
             {
-				idUser: users[users.length-1]['id']+1,
 				firstName: req.body.firstName,
 				lastName: req.body.lastName,
 				category: req.body.category,
@@ -119,7 +118,6 @@ const usersController = {
         let idUser = req.params.id;
         User.update(
             {
-				idUser: users[users.length-1]['id']+1,
 				firsName: req.body.firstName,
 				lastName: req.body.lastName,
 				category: req.body.category,

@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `vlb_db` /*!40100 DEFAULT CHARACTER SET latin1 COLLATE latin1_bin */;
-USE `vlb_db`;
 -- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: vlb_db
@@ -25,10 +23,10 @@ DROP TABLE IF EXISTS `colors`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `colors` (
-  `idColors` int(11) NOT NULL,
+  `idColors` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(150) NOT NULL,
   PRIMARY KEY (`idColors`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -49,20 +47,20 @@ DROP TABLE IF EXISTS `products`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `products` (
-  `idProduct` int(11) NOT NULL,
+  `idProduct` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
   `description` text NOT NULL,
   `price` int(11) NOT NULL,
   `image` text NOT NULL,
   `category` varchar(100) NOT NULL,
-  `idColors` int(200) NOT NULL DEFAULT 1,
-  `idUser` int(200) NOT NULL DEFAULT 1,
+  `idUser` int(11) NOT NULL DEFAULT 1,
+  `idColors` int(11) NOT NULL DEFAULT 1,
   PRIMARY KEY (`idProduct`),
-  KEY `fk_id_colors` (`idColors`),
-  KEY `fk_id_user` (`idUser`),
-  CONSTRAINT `fk_id_colors` FOREIGN KEY (`idColors`) REFERENCES `colors` (`idColors`),
-  CONSTRAINT `fk_id_user` FOREIGN KEY (`idUser`) REFERENCES `users` (`idUser`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  KEY `fk_users` (`idUser`),
+  KEY `fk_colors` (`idColors`),
+  CONSTRAINT `fk_colors` FOREIGN KEY (`idColors`) REFERENCES `colors` (`idColors`),
+  CONSTRAINT `fk_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`idUser`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -71,7 +69,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (2,'Guitarra','Guitarra',60000,'guitar2.jpg','Ultimos agregados',1,1),(3,'Guitarra','Guitarra',40000,'guitar3.jpg','En oferta',1,1),(4,'Bajo','Bajo',50000,'bajo1.jpg','Ultimos agregados',1,1),(6,'Bajo','Bajo',40000,'bajo3.jpg','Ultimos agregados',1,1),(7,'Bateria','Bateria',90000,'bateria1.jpg','En oferta',1,1),(8,'Bateria','Bateria',80000,'bateria2.jpg','Ultimos agregados',1,1),(9,'Bateria','Bateria',70000,'bateria3.jpg','En oferta',1,1),(10,'Microfono','Microfono',20000,'microfono1.jpeg','Ultimos agregados',1,1),(11,'Microfono','Microfono',30000,'microfono2.jpg','En oferta',1,1),(12,'Microfono','Microfono',20000,'microfono3.jpg','Ultimos agregados',1,1),(13,'Teclado','Teclado',50000,'teclado1.webp','En oferta',1,1),(14,'Teclado','Teclado',60000,'teclado2.webp','Ultimos agregados',1,1),(15,'Teclado','Teclado',40000,'teclado3.jpg','En oferta',1,1);
+INSERT INTO `products` VALUES (2,'Guitarra','Guitarra',60000,'guitar2.jpg','Ultimos agregados',3,1),(3,'Guitarra','Guitarra',40000,'guitar3.jpg','En oferta',3,2),(4,'Bajo','Bajo',50000,'bajo1.jpg','Ultimos agregados',3,3),(6,'Bajo','Bajo',40000,'bajo3.jpg','Ultimos agregados',3,4),(7,'Bateria','Bateria',90000,'bateria1.jpg','En oferta',3,5),(8,'Bateria','Bateria',80000,'bateria2.jpg','Ultimos agregados',3,1),(9,'Bateria','Bateria',70000,'bateria3.jpg','En oferta',3,2),(10,'Microfono','Microfono',20000,'microfono1.jpeg','Ultimos agregados',3,3),(11,'Microfono','Microfono',30000,'microfono2.jpg','En oferta',3,4),(12,'Microfono','Microfono',20000,'microfono3.jpg','Ultimos agregados',3,5),(13,'Teclado','Teclado',50000,'teclado1.webp','En oferta',3,1),(14,'Teclado','Teclado',60000,'teclado2.webp','Ultimos agregados',3,2),(15,'Teclado','Teclado',40000,'teclado3.jpg','En oferta',3,3);
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -83,7 +81,7 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (
-  `idUser` int(11) NOT NULL,
+  `idUser` int(11) NOT NULL AUTO_INCREMENT,
   `email` text DEFAULT NULL,
   `firstName` varchar(45) DEFAULT NULL,
   `lastName` varchar(45) DEFAULT NULL,
@@ -91,7 +89,7 @@ CREATE TABLE `users` (
   `password` text DEFAULT NULL,
   `image` text DEFAULT NULL,
   PRIMARY KEY (`idUser`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -100,7 +98,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'juanperez@vlb.com','Juan','Perez','Comprador','$2a$10$/NWbmpaFYxTcH.NbfpmSa..dWNQUgmttbxA1xp','1674589144937-.png');
+INSERT INTO `users` VALUES (1,'juanperez@vlb.com','Juan','Perez','Comprador','$2a$10$/NWbmpaFYxTcH.NbfpmSa..dWNQUgmttbxA1xp','1674589144937-.png'),(3,'pabloperez@vlb.com','Pablo','Perez','Comprador','$2a$10$fiiR.M2G1wH/C9S4JW4ikOl11RzuTPcmbZhQpi0hQKV.b5flRRNcq','default.jpg');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -113,4 +111,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-30 14:38:31
+-- Dump completed on 2023-01-31 16:08:55

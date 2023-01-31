@@ -4,7 +4,8 @@ module.exports = (sequelize, dataTypes) => {
         idProduct: {
             type: dataTypes.BIGINT(10).UNSIGNED,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            unique: true
         },
         // createdAt:{
         //     type: dataTypes.DATE

@@ -4,7 +4,8 @@ module.exports = (sequelize, dataTypes) => {
         idUser: {
             type: dataTypes.BIGINT(10).UNSIGNED,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            unique: true
         },
         // createdAt:{
         //     type: dataTypes.DATE
@@ -14,7 +15,8 @@ module.exports = (sequelize, dataTypes) => {
         // },
         email: {
             type: dataTypes.STRING(100),
-            allowNull: false
+            allowNull: false,
+            unique: true
         },
         firstName: {
             type: dataTypes.STRING(100),
