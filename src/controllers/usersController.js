@@ -136,10 +136,9 @@ const usersController = {
 	// Detail User - Edit one user from DB
 
 	detailUser: (req, res) => {
-		db.User.findByPk(req.params.id,)
-            .then(user => {
-                res.render('users/detailUser', {user});
-            });
+		res.render('users/detailUser',{
+			user: req.session.userLogged
+		})
 	},
 
 	// DeleteUser - Delete one user from DB
