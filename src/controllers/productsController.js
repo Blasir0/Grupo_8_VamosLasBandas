@@ -88,7 +88,7 @@ const productsController = {
 		let image
 
 		if(req.file == undefined){
-			image = "default.jpg"
+			image = Product.image
 		} else {
 			image = req.file.filename
 		}
@@ -102,7 +102,7 @@ const productsController = {
 				idColors: req.body.idColors,
 				price: req.body.price,
 				image: image,
-				idUser: req.session.userLogged.idUser
+				idUser: User.idUser
             },
             {
                 where: {idProduct: idProduct}

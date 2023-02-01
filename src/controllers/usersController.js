@@ -97,8 +97,8 @@ const usersController = {
 
 	// Update - Form to edit User
 	editUser: (req, res) => {
-        let idUser = req.params.id;
-        let promUser = Product.findByPk(idUser);
+        let idUser = req.session.userLogged.idUser;
+        let promUser = User.findByPk(idUser);
         Promise
         .all([promUser])
         .then(([user]) => {
@@ -110,12 +110,11 @@ const usersController = {
 		let image
 
 		if(req.file == undefined){
-			image = "default.jpg"
+			image = User.image
 		} else {
 			image = req.file.filename
 		}
 
-        let idUser = req.params.id;
         User.update(
             {
 				firsName: req.body.firstName,
@@ -126,7 +125,7 @@ const usersController = {
 				image: image
             },
             {
-                where: {idUser: idUser}
+                where: {idUser: req.session.userLogged.idUser}
             })
         .then(()=> {
             return res.redirect('/')})            
@@ -143,9 +142,10 @@ const usersController = {
 
 	// DeleteUser - Delete one user from DB
 	destroyUser : (req, res) => {
-		let idUser = req.params.id;
-        User.destroy({where: {idUser: idUser}, force: true})
+        User.destroy({where: {idUser: req.session.userLogged.idUser}, force: true})
         .then(()=>{
+			res.clearCookie('userEmail');
+			req.session.destroy()
             return res.redirect('/')})
         .catch(error => res.send(error)) 
 	},
