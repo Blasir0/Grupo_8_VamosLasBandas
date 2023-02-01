@@ -35,6 +35,14 @@ Mi objetivo es, además de hacer una web desde cero para Indufra para desligarno
  Siempre me gustaron las computadoras y juzgar paginas web, o mejor dicho sufri tantas que me parecio interesante aprender sobre el tema. Por suerte tuve la oportunidad de acceder a este curso, y estoy tratando de aprovecharlo lo mejor posible aunque se me ha dificultado un poco estas ulitmas semanas. 
  Me gustaria poder terminarlo exitosamente y luego pasar a practicarlo cada vez mas hasta poder dedicarme a la programacion web, probablemente comenzar en modo freelance en tiempo parcial hasta adquirir experiencia y poder cambiar de empleo a tiempo completo.
 
+ USUARIO DB
+ User: vlb@vlb.com
+ Password: 123456
+
+ SERVER
+ Host: 127.0.0.1
+ Password: ''
+
  TABLERO DE TRABAJO
  
  https://trello.com/b/6I5Eif2E/grupo8vamoslasbandas
