@@ -37,13 +37,13 @@
             <div class="form-obj">
                 <label for="category">Categoria</label>
                 <select name="category">
-                    <option value=""><%= user.category%></option>
+                    <option value=""><%= user.category == 'Comprador'?'Comprador':'Vendedor'%></option>
                     <option value="Comprador">Comprador</option>
                     <option value="Vendedor">Vendedor</option>
                 </select>
             </div>
-            <div class="form-group-photo" id="img">
-                <input type="file" name="img" accept="image/*" >
+            <div class="form-group-photo">
+                <input type="file" name="image" id="image" accept="image/*">
             </div>
             <div class="form-obj">
                 <label for="password">Password</label>
