@@ -115,6 +115,7 @@ const usersController = {
 			image = req.file.filename
 		}
 
+		let idUser = req.params.id;
         User.update(
             {
 				firsName: req.body.firstName,
@@ -125,7 +126,7 @@ const usersController = {
 				image: image
             },
             {
-                where: {idUser: req.session.userLogged.idUser}
+                where: {idUser: idUser}
             })
         .then(()=> {
             return res.redirect('/')})            

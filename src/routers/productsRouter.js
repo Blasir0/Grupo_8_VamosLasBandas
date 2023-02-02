@@ -11,14 +11,14 @@ productsRouter.get('/', productsController.index);
 
 /*** CREATE ONE PRODUCT ***/ 
 productsRouter.get('/create', productsController.create); 
-productsRouter.post('/create', uploadProduct.any(''), productsController.store); 
+productsRouter.post('/create', uploadProduct.single('image'), productsController.store); 
 
 /*** GET ONE PRODUCT ***/ 
 productsRouter.get('/detail/:id/', productsController.detail); 
 
 /*** EDIT ONE PRODUCT ***/ 
 productsRouter.get('/edit/:id/', productsController.edit); 
-productsRouter.put('/edit/:id/', uploadProduct.any(''), productsController.update); 
+productsRouter.put('/edit/:id/', uploadProduct.single('image'), productsController.update); 
 
 /*** DELETE ONE PRODUCT***/ 
 productsRouter.post('/delete/:id',productsController.destroy); 
