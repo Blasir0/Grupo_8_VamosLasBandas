@@ -116,9 +116,10 @@ const usersController = {
 		}
 
 		let idUser = req.params.id;
+
         User.update(
             {
-				firsName: req.body.firstName,
+				firstName: req.body.firstName,
 				lastName: req.body.lastName,
 				category: req.body.category,
 				email: req.body.email,
@@ -136,9 +137,9 @@ const usersController = {
 	// Detail User - Edit one user from DB
 
 	detailUser: (req, res) => {
-		res.render('users/detailUser',{
-			user: req.session.userLogged
-		})
+		let sessionUser = req.session.userLogged
+		User.findByPk(sessionUser.idUser) 
+		.then(user=>res.render('users/detailUser',{user}))
 	},
 
 	// DeleteUser - Delete one user from DB

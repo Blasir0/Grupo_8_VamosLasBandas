@@ -10,18 +10,18 @@
 
     <main class="title">
         <h1>Editar usuario</h1>
-        <form action="<%= user.idUser%>?_method=PUT" method="POST" class="form-group">
+        <form action="/users/editUser/<%= user.idUser%>?_method=PUT" method="POST" class="form-group" enctype="multipart/form-data">
             <div class="form-obj">
                 <label for="email">Email</label>
-                <input type="text" name="email" value="<%= user.email%>">
+                <input type="text" name="email"  id="email" value="<%= user.email%>">
             </div>
             <div class="form-obj">
                 <label for="firstName">Nombre</label>
-                <input type="text" name="firstName" value="<%= user.firstName%>" required >
+                <input type="text" name="firstName" id="firstName" value="<%= user.firstName%>" required >
             </div>
             <div class="form-obj">
                 <label for="lastName">Apellido</label>
-                <input type="text" name="lastName" value="<%= user.lastName%>" required>
+                <input type="text" name="lastName" id="lastName" value="<%= user.lastName%>" required>
             </div>
             <!-- <div class="form-obj">
                 <label for="instrument">Instrumento</label>
@@ -36,7 +36,7 @@
             </div> -->
             <div class="form-obj">
                 <label for="category">Categoria</label>
-                <select name="category">
+                <select name="category" id="category">
                     <option value=""><%= user.category == 'Comprador'?'Comprador':'Vendedor'%></option>
                     <option value="Comprador">Comprador</option>
                     <option value="Vendedor">Vendedor</option>
@@ -47,7 +47,7 @@
             </div>
             <div class="form-obj">
                 <label for="password">Password</label>
-                <input type="password" name="password" value="" required>
+                <input type="password" name="password" id="password" value="" required>
             </div>
             
             <div class="form-obj">
