@@ -9,19 +9,22 @@
     <%- include('../partials/header.ejs') %>
 
         <main>
-            <form action="/products/create" method="POST" class="register" enctype="multipart/form-data">
+            <form action="/products/create" method="POST" class="register" id="form" enctype="multipart/form-data">
                 <h3>Agregar Producto</h3>
                 <div class="form-group">
                     <label for="name">Nombre del producto</label>
-                    <input type="text" name="name" id="name" placeholder="Nombre del Producto" minlength="7" required >
+                    <input type="text" name="name" id="name" placeholder="Nombre del Producto" >
+                    <div class="text-danger" id="nameError"></div>
                 </div>
                 <div class="form-group">
                     <label for="price">Precio del producto</label>
-                    <input type="text" name="price" id="price" placeholder="Precio del Producto" minlength="3" required >
+                    <input type="text" name="price" id="price" placeholder="Precio del Producto"  >
+                    <div class="text-danger" id="priceError"></div>
                 </div>
                 <div class="form-group">
                     <label for="description">Descripcion del producto</label>
                     <textarea class="productDetail" name="description" id="description" placeholder="Descripcion" cols="30" rows="10"></textarea>
+                    <div class="text-danger" id="descriptionError"></div>
                 </div>      
                 <div class="form-obj">
                     <select name="idColors" id="idColors" >
@@ -30,6 +33,7 @@
                         <option value="<%= color.idColors %>"><%= color.name %></option>
                         <% }); %>
                     </select>
+                    <div class="text-danger" id="colorError"></div>
                 </div>
                 </div>
                 <div class="form-obj">
@@ -38,16 +42,16 @@
                         <option value="in-sale">En oferta</option>
                         <option value="visited" >Últimos agregados</option>
                     </select>
-                    </div>
+                    <div class="text-danger" id="categoryError"></div>
                 </div>
                 <div class="form-group-photo">
                     <input type="file" name="image" id="image"  accept="image/*">
                 </div>
-                <button type="submit" class="primary"> Crear </button>
+                <button type="submit" class="primary" id="button"> Crear </button>
             </form>
         </main>
 
     <%- include('../partials/footer.ejs') %>
-
+    <script src="/js/create.js"></script>
 </body>
 </html>

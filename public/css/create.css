@@ -185,3 +185,10 @@ form.register h3{
 .form-obj select:hover{
     outline:solid 1px #d10000;
 } */
+
+.text-danger{
+    font-size: 0.8rem;
+    font-size: bold;
+    color:red;
+    margin: 3px;
+}
