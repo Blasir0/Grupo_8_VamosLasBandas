@@ -65,7 +65,6 @@ const usersController = {
 		User.findOne({where: {email: req.body.email}})
 		.then( userToLogin => {
 		if(userToLogin){
-			console.log("user ok")
 			let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
 			if(isOkThePassword){
 				delete userToLogin.password
@@ -117,13 +116,20 @@ const usersController = {
 
 		let idUser = req.params.id;
 
+		let password
+
+		let isOkThePassword = bcryptjs.compareSync(req.body.password, req.session.userLogged.password);
+		if(isOkThePassword){
+			password = req.session.userLogged.password
+		}
+
         User.update(
             {
 				firstName: req.body.firstName,
 				lastName: req.body.lastName,
 				category: req.body.category,
-				email: req.body.email,
-				password: bcryptjs.hashSync(req.body.password,10),
+				email: req.session.userLogged.email,
+				password: password,
 				image: image
             },
             {

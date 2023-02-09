@@ -10,18 +10,21 @@
 
     <main class="title">
         <h1>Editar usuario</h1>
-        <form action="/users/editUser/<%= user.idUser%>?_method=PUT" method="POST" class="form-group" enctype="multipart/form-data">
-            <div class="form-obj">
+        <form action="/users/editUser/<%= user.idUser%>?_method=PUT" method="POST" id="form" class="form-group" enctype="multipart/form-data">
+            <!-- <div class="form-obj">
                 <label for="email">Email</label>
                 <input type="text" name="email"  id="email" value="<%= user.email%>">
-            </div>
+                <small class="text-danger" id="emailError"></small>
+            </div> -->
             <div class="form-obj">
                 <label for="firstName">Nombre</label>
                 <input type="text" name="firstName" id="firstName" value="<%= user.firstName%>" required >
+                <small class="text-danger" id="firstNameError"></small>
             </div>
             <div class="form-obj">
                 <label for="lastName">Apellido</label>
                 <input type="text" name="lastName" id="lastName" value="<%= user.lastName%>" required>
+                <small class="text-danger" id="lastNameError"></small>
             </div>
             <!-- <div class="form-obj">
                 <label for="instrument">Instrumento</label>
@@ -41,22 +44,24 @@
                     <option value="Comprador">Comprador</option>
                     <option value="Vendedor">Vendedor</option>
                 </select>
+                <small class="text-danger" id="categoryError"></small>
             </div>
             <div class="form-group-photo">
                 <input type="file" name="image" id="image" accept="image/*">
             </div>
             <div class="form-obj">
-                <label for="password">Password</label>
+                <label for="password">Ingrese su Password</label>
                 <input type="password" name="password" id="password" value="" required>
+                <small class="text-danger" id="passwordError"></small>
             </div>
             
             <div class="form-obj">
-                <button type="submit" class="buttons"> Guardar </button>
+                <button type="submit" id="button" class="buttons"> Guardar </button>
             </div>
         </form>
     </main>
 
     <%- include('../partials/footer.ejs') %>
-
+    <script src="/js/editUser.js"></script>
 </body>
 </html>

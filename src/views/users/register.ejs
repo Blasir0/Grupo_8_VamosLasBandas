@@ -13,18 +13,21 @@
 
     <main class="title">
         <h1>Registrarse</h1>
-        <form class="form-group" action="/users/register" enctype="multipart/form-data" method="POST">
+        <form class="form-group" action="/users/register" id="form" enctype="multipart/form-data" method="POST">
             <div class="form-obj">
                 <label for="email">Email</label>
                 <input type="text" name="email" placeholder="juanperez@vamoslasbandas.com">
+                <small class="text-danger" id="emailError"></small>
             </div>
             <div class="form-obj">
                 <label for="firstName">Nombre</label>
                 <input type="text" name="firstName" placeholder="Juan" required >
+                <small class="text-danger" id="firstNameError"></small>
             </div>
             <div class="form-obj">
                 <label for="lastName">Apellido</label>
                 <input type="text" name="lastName" placeholder="Perez" required>
+                <small class="text-danger" id="lastNameError"></small>
             </div>
             <!-- <div class="form-obj">
                 <label for="instrument">Instrumento</label>
@@ -44,17 +47,19 @@
                     <option value="Comprador">Comprador</option>
                     <option value="Vendedor">Vendedor</option>
                 </select>
+                <small class="text-danger" id="categoryError"></small>
             </div>
             <div class="form-obj">
                 <label for="password">Contraseña</label>
                 <input type="password" name="password" placeholder="Perez1234" required>
+                <small class="text-danger" id="passwordError"></small>
             </div>
             <div class="form-group-photo">
                 <input type="file" name="image" id="image" accept="image/*">
             </div>
             
             <div class="form-obj">
-                <button type="submit" class="buttons"> Registrarse </button>
+                <button type="submit" id="button" class="buttons"> Registrarse </button>
             </div>
         </form>
 
@@ -66,6 +71,6 @@
     </main>
 
     <%- include('../partials/footer.ejs') %>
-
+    <script src="/js/register.js"></script>
 </body>
 </html>

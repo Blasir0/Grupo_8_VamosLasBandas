@@ -14,17 +14,17 @@
                 <div class="form-group">
                     <label for="name">Nombre del producto</label>
                     <input type="text" name="name" id="name" placeholder="Nombre del Producto" >
-                    <div class="text-danger" id="nameError"></div>
+                    <small class="text-danger" id="nameError"></small>
                 </div>
                 <div class="form-group">
                     <label for="price">Precio del producto</label>
                     <input type="text" name="price" id="price" placeholder="Precio del Producto"  >
-                    <div class="text-danger" id="priceError"></div>
+                    <small class="text-danger" id="priceError"></small>
                 </div>
                 <div class="form-group">
                     <label for="description">Descripcion del producto</label>
                     <textarea class="productDetail" name="description" id="description" placeholder="Descripcion" cols="30" rows="10"></textarea>
-                    <div class="text-danger" id="descriptionError"></div>
+                    <small class="text-danger" id="descriptionError"></small>
                 </div>      
                 <div class="form-obj">
                     <select name="idColors" id="idColors" >
@@ -33,7 +33,7 @@
                         <option value="<%= color.idColors %>"><%= color.name %></option>
                         <% }); %>
                     </select>
-                    <div class="text-danger" id="colorError"></div>
+                    <small class="text-danger" id="colorError"></small>
                 </div>
                 </div>
                 <div class="form-obj">
@@ -42,7 +42,7 @@
                         <option value="in-sale">En oferta</option>
                         <option value="visited" >Últimos agregados</option>
                     </select>
-                    <div class="text-danger" id="categoryError"></div>
+                    <small class="text-danger" id="categoryError"></small>
                 </div>
                 <div class="form-group-photo">
                     <input type="file" name="image" id="image"  accept="image/*">
