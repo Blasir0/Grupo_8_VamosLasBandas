@@ -15,6 +15,25 @@ window.addEventListener('load', function(){
 
     let textDanger = document.querySelectorAll('.text-danger')
 
+    name.addEventListener('focus',()=>{
+        name.style.backgroundColor ='pink'
+    })
+    name.addEventListener('blur',()=>{
+        name.style.backgroundColor ='white'
+    })
+    price.addEventListener('focus',()=>{
+        price.style.backgroundColor ='pink'
+    })
+    price.addEventListener('blur',()=>{
+        price.style.backgroundColor ='white'
+    })
+    description.addEventListener('focus',()=>{
+        description.style.backgroundColor ='pink'
+    })
+    description.addEventListener('blur',()=>{
+        description.style.backgroundColor ='white'
+    })
+
     button.addEventListener('click', function(event){
         event.preventDefault()
         let errors={}

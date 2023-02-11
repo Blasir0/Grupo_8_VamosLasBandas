@@ -119,3 +119,10 @@ main{
 .buttons input:last-child:hover{
     background-color: rgb(180, 35, 35);
 }
+
+.text-danger{
+    font-size: 0.8rem;
+    font-size: bold;
+    color:red;
+    margin: 3px;
+}

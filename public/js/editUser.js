@@ -15,6 +15,25 @@ window.addEventListener('load', function(){
 
     let textDanger = document.querySelectorAll('.text-danger')
 
+    firstName.addEventListener('focus',()=>{
+        firstName.style.backgroundColor ='pink'
+    })
+    firstName.addEventListener('blur',()=>{
+        firstName.style.backgroundColor ='white'
+    })
+    lastName.addEventListener('focus',()=>{
+        lastName.style.backgroundColor ='pink'
+    })
+    lastName.addEventListener('blur',()=>{
+        lastName.style.backgroundColor ='white'
+    })
+    password.addEventListener('focus',()=>{
+        password.style.backgroundColor ='pink'
+    })
+    password.addEventListener('blur',()=>{
+        password.style.backgroundColor ='white'
+    })
+
     button.addEventListener('click', function(event){
         event.preventDefault()
         let errors={}

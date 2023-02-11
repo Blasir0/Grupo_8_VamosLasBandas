@@ -163,7 +163,8 @@ form.register h3{
     background-color:rgb(130, 25, 25);
 }
 
-.form-group input:hover{
+.form-group input:hover,
+.form-obj select:hover{
     outline: 1px solid #d10000;
 }
 
