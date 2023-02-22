@@ -34,12 +34,15 @@ app.engine('html', require('ejs').renderFile);
 // ************ Route System require and use() ************
 const mainRouter = require('./routers/mainRouter'); // Rutas main
 const productsRouter = require('./routers/productsRouter'); // Rutas /products
-const usersRouter = require('./routers/usersRouter'); // Rutas /users
+const usersRouter = require('./routers/usersRouter');
+const productsAPIRouter = require('./routers/api/productsAPIRouter') // Rutas /users
+const usersAPIRouter = require('./routers/api/usersAPIRouter')
 
 app.use('/', mainRouter);
 app.use('/products/', productsRouter);
 app.use('/users/', usersRouter)
-
+app.use('/api/products/', productsAPIRouter)
+app.use('/api/users/', usersAPIRouter)
 
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************
