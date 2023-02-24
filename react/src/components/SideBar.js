@@ -1,11 +1,11 @@
 import React from 'react';
-import image from '../assets/images/logo-DH.png';
+import image from '../assets/images/logo.png';
 import ContentWrapper from './ContentWrapper';
-import GenresInDb from './GenresInDb';
-import LastMovieInDb from './LastMovieInDb';
-import ContentRowMovies from './ContentRowMovies';
+import CategoriesInDb from './CategoriesInDb';
+import LastProductDb from './LastProductDb';
+import ProductList from './ProductList';
 import NotFound from './NotFound';
-import SearchMovies from './SearchMovies';
+import SearchProducts from './SearchProducts';
 import {Link, Route, Switch} from 'react-router-dom';
 
 function SideBar(){
@@ -17,7 +17,7 @@ function SideBar(){
                 {/*<!-- Sidebar - Brand -->*/}
                 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
                     <div className="sidebar-brand-icon">
-                        <img className="w-100" src={image} alt="Digital House"/>
+                        <img className="w-25" src={image} alt="Vamos Las Bandas"/>
                     </div>
                 </a>
 
@@ -28,7 +28,7 @@ function SideBar(){
                 <li className="nav-item active">
                     <Link className="nav-link" to="/">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard - DH movies</span></Link>
+                        <span>Dashboard - VLB</span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -39,29 +39,29 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                <Link className="nav-link" to="/GenresInDb">
-                        <i className="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
+                <Link className="nav-link" to="/LastProductDb">
+                        <i className="fas fa-fw fa-truck-loading"></i>
+                        <span>Last Product In Data Base</span>
                     </Link>
                 </li>
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" to="/LastMovieInDb">
-                        <i className="fas fa-fw fa-chart-area"></i>
-                        <span>Charts</span></Link>
+                    <Link className="nav-link" to="/CategoriesInDb">
+                        <i className="fas fa-fw fa-clipboard-list"></i>
+                        <span>Categories in Data Base</span></Link>
                 </li>
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item nav-link">
-                <Link className="nav-link" to="/ContentRowMovies">
+                <Link className="nav-link" to="/ProductList">
                         <i className="fas fa-fw fa-table"></i>
-                        <span>Tables</span></Link>
+                        <span>Product List</span></Link>
                 </li>
                 
                 {/*<!-- Nav Item - Search -->*/}
                 <li className="nav-item nav-link">
-                <Link className="nav-link" to="/SearchMovies">
+                <Link className="nav-link" to="/SearchProducts">
                         <i className="fas fa-fw fa-search"></i>
                         <span>Search</span></Link>
                 </li>
@@ -72,41 +72,25 @@ function SideBar(){
             </ul>
             {/*<!-- End of Sidebar -->*/}
 
-            {/*<!-- Microdesafio 1 -->*/}
-            {/*<!--<Route exact path="/">
-                <ContentWrapper />
-            </Route>
-            <Route path="/GenresInDb">
-                <GenresInDb />
-            </Route>
-            <Route path="/LastMovieInDb">
-                <LastMovieInDb />
-            </Route>
-            <Route path="/ContentRowMovies">
-                <ContentRowMovies />
-            </Route>*/}
-            {/*<!-- End Microdesafio 1 -->*/}
-
-            {/*<!-- End Microdesafio 2 -->*/}
             <Switch>
                 <Route exact path="/">
                     <ContentWrapper />
                 </Route>
-                <Route path="/GenresInDb">
-                    <GenresInDb />
+                <Route path="/CategoriesInDb">
+                    <CategoriesInDb />
                 </Route>
-                <Route path="/LastMovieInDb">
-                    <LastMovieInDb />
+                <Route path="/LastProductDb">
+                    <LastProductDb />
                 </Route>
-                <Route path="/ContentRowMovies">
-                    <ContentRowMovies />
+                <Route path="/ProductList">
+                    <ProductList />
                 </Route>
-                <Route path="/SearchMovies">
-                    <SearchMovies />
+                <Route path="/SearchProducts">
+                    <SearchProducts />
                 </Route>
                 <Route component={NotFound} />
             </Switch>
-            {/*<!-- End Microdesafio 2 -->*/}
+
         </React.Fragment>
     )
 }

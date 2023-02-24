@@ -25,6 +25,19 @@ const productsAPIController = {
                     status: 200
                 })
             })
+    },
+    'lastProduct': (req, res)=>{
+        db.Product
+        .findAll({
+            order: [['idProduct', 'DESC']],
+            limit: 1
+        })
+        .then(product => {
+            return res.status(200).json({
+                data: product,
+                status: 200
+            })
+        })
     }
 }
 
