@@ -26,7 +26,7 @@ const productsAPIController = {
                 })
             })
     },
-    'lastProduct': (req, res)=>{
+    'lastProduct': (req, res)=>{      
         db.Product
         .findAll({
             order: [['idProduct', 'DESC']],
