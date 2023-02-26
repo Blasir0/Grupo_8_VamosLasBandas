@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState} from 'react'
 
+
 function LastProductDb(){
 
     const [product, setProduct] = useState([])
@@ -24,15 +25,17 @@ function LastProductDb(){
                 </div>
                 <div className="card-body">
                     <div className="text-center">
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} alt=" product "/>
+                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={`http://localhost:3030/images/products/${product.image}`} style={{width: 40 +'rem'}} alt=" product "/>
                     </div>
                     <h2>{product.name}</h2>
                     <p>{product.description}</p>
                     <h3 className=''>$ {product.price}</h3>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View product detail</a>
+                    <a className="btn btn-danger" target="_blank" rel="nofollow" href='/'>View product detail</a>
                 </div>
             </div>
         </div>
+
+        
     )
 }
 

@@ -1,8 +1,6 @@
 import React from 'react';
 import { useEffect, useState, useRef } from 'react';
 
-// import noPoster from '../assets/images/no-poster.jpg';
-
 function SearchProduct(){
 
 	const [products, setProduct] = useState([])
@@ -31,7 +29,7 @@ function SearchProduct(){
 				<>
 					<div className="row my-4">
 						<div className="col-12 col-md-6">
-							{/* Buscador */}
+
 							<form method="GET" onKeyUp={search}>
 								<div className="form-group">
 									<label htmlFor="">Search for name:</label>
@@ -45,7 +43,7 @@ function SearchProduct(){
 						<div className="col-12">
 							<h2>Product for the word: {keyword}</h2>
 						</div>
-						{/* Listado de películas */}
+
 						{
 							products !== undefined ? products.map((product, i) => {
 								return (

@@ -16,7 +16,7 @@ function TopBar(){
 
 						{/*<!-- Nav Item - User Information -->*/}
 						<li className="nav-item dropdown no-arrow">
-							<a className="nav-link dropdown-toggle" href="/" id="userDropdown">
+							<a className="nav-link dropdown-toggle" href="http://localhost:3030" id="userDropdown">
 								<span className="mr-2 d-none d-lg-inline text-gray-600 small">Ir a la Web de VLB</span>
 							</a>
 						</li>

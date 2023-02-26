@@ -6,7 +6,7 @@ const productsAPIController = {
     //list of products
 	'listProducts': (req, res) => {
 		db.Product
-			.findAll()
+			.findAll({include: ['color']})
 			.then(products =>{
 				return res.status(200).json({
 					total: products.length,
@@ -30,7 +30,8 @@ const productsAPIController = {
         db.Product
         .findAll({
             order: [['idProduct', 'DESC']],
-            limit: 1
+            limit: 1,
+            include:['color']
         })
         .then(product => {
             return res.status(200).json({

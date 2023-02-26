@@ -37,7 +37,6 @@ function SideBar(){
                 {/*<!-- Heading -->*/}
                 <div className="sidebar-heading">Actions</div>
 
-                {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
                 <Link className="nav-link" to="/LastProductDb">
                         <i className="fas fa-fw fa-truck-loading"></i>
@@ -45,21 +44,18 @@ function SideBar(){
                     </Link>
                 </li>
 
-                {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
                     <Link className="nav-link" to="/CategoriesInDb">
                         <i className="fas fa-fw fa-clipboard-list"></i>
                         <span>Categories in Data Base</span></Link>
                 </li>
 
-                {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item nav-link">
                 <Link className="nav-link" to="/ProductList">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Product List</span></Link>
                 </li>
                 
-                {/*<!-- Nav Item - Search -->*/}
                 <li className="nav-item nav-link">
                 <Link className="nav-link" to="/SearchProducts">
                         <i className="fas fa-fw fa-search"></i>

@@ -53,16 +53,12 @@ function ContentRowMovies(){
         icon: 'fa-truck-loading'
     }
     
-    /* <!-- Total awards --> */
-    
     let usersInDb = {
         title:'Users in Data Base', 
         color:'success', 
         cuantity: user,
         icon:'fa-user'
     }
-    
-    /* <!-- Actors quantity --> */
     
     let colorsInDb = {
         title:'Color in Data Base' ,

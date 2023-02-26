@@ -3,7 +3,7 @@ import { useEffect, useState} from 'react'
 import ProductListRow from "./ProductListRow";
 
 function ProductList() {
-  const [product, setProduct] = useState([])
+    const [product, setProduct] = useState([])
 	
 	useEffect(()=>{
 		let endPoint = `http://localhost:3030/api/products/list`
@@ -15,7 +15,7 @@ function ProductList() {
 		.catch(err => console.log(err))
 	}, [])
 
-  return (
+    return (
     <div className="card shadow mb-4">
     <div className="card-body">
         <div className="table-responsive">
@@ -24,6 +24,7 @@ function ProductList() {
                     <tr>
                         <th>Name</th>
                         <th>Category</th>
+                        <th>Color</th>
                         <th>Price</th>
                     </tr>
                 </thead>
@@ -31,6 +32,7 @@ function ProductList() {
                     <tr>
                         <th>Name</th>
                         <th>Category</th>
+                        <th>Color</th>
                         <th>Price</th>
                     </tr>
                 </tfoot>
