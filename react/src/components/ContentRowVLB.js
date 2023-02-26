@@ -1,45 +1,84 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import SmallCard from './SmallCard';
 
 /*  Cada set de datos es un objeto literal */
 
 /* <!-- Movies in DB --> */
 
-let moviesInDB = {
-    title: 'Products in Data Base',
-    color: 'primary', 
-    cuantity: 21,
-    icon: 'fa-truck-loading'
-}
 
-/* <!-- Total awards --> */
 
-let totalAwards = {
-    title:'Users in Data Base', 
-    color:'success', 
-    cuantity: '79',
-    icon:'fa-user'
-}
 
-/* <!-- Actors quantity --> */
-
-let actorsQuantity = {
-    title:'Category in Data Base' ,
-    color:'warning',
-    cuantity:'49',
-    icon:'fa-clipboard-list'
-}
-
-let cartProps = [moviesInDB, totalAwards, actorsQuantity];
 
 function ContentRowMovies(){
+    
+    
+    const [product, setProduct] = useState([])	
+	useEffect(()=>{
+		let endPoint = `http://localhost:3030/api/products/list`
+		fetch(endPoint)
+		.then(res=>res.json())
+		.then((data) => {
+				setProduct(data.total);
+			})
+		.catch(err => console.log(err))
+	}, [])
+
+    const [user, setUser] = useState([])	
+	useEffect(()=>{
+		let endPoint = `http://localhost:3030/api/users/list`
+		fetch(endPoint)
+		.then(res=>res.json())
+		.then((data) => {
+				setUser(data.total);
+			})
+		.catch(err => console.log(err))
+	}, [])
+    
+    const [color, setColor] = useState([])	
+	useEffect(()=>{
+		let endPoint = `http://localhost:3030/api/products/color`
+		fetch(endPoint)
+		.then(res=>res.json())
+		.then((data) => {
+				setColor(data.total);
+			})
+		.catch(err => console.log(err))
+	}, [])
+
+    let productsInDb = {
+        title: 'Products in Data Base',
+        color: 'primary', 
+        cuantity: product,
+        icon: 'fa-truck-loading'
+    }
+    
+    /* <!-- Total awards --> */
+    
+    let usersInDb = {
+        title:'Users in Data Base', 
+        color:'success', 
+        cuantity: user,
+        icon:'fa-user'
+    }
+    
+    /* <!-- Actors quantity --> */
+    
+    let colorsInDb = {
+        title:'Color in Data Base' ,
+        color:'warning',
+        cuantity: color,
+        icon:'fa-clipboard-list'
+    }
+    
+    let cartProps = [productsInDb, usersInDb, colorsInDb];
     return (
     
         <div className="row">
             
-            {cartProps.map( (movie, i) => {
+            {cartProps.map( (card, i) => {
 
-                return <SmallCard {...movie} key={i}/>
+                return <SmallCard {...card} key={i}/>
             
             })}
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState} from 'react'
+import ProductListRow from "./ProductListRow";
 
 function ProductList() {
   const [product, setProduct] = useState([])
@@ -15,36 +16,36 @@ function ProductList() {
 	}, [])
 
   return (
-    <div className="col-lg-12 mb-4">
-      <div className="card shadow mb-4">
-        <div className="card-header py-3">
-          <h5 className="m-0 font-weight-bold text-gray-800">
-            Product List
-          </h5>
-        </div>
-        <div className="card-body">
-          <div className="row">
+    <div className="card shadow mb-4">
+    <div className="card-body">
+        <div className="table-responsive">
+            <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    {
+                    product.map( ( row , i) => {
+                        return <ProductListRow { ...row} key={i}/>
+                    })
+                    }
 
-        {
-        product.map((prod, i)=> { 
-          return (
-            
-          <div className="col-lg-6 mb-4" key={i}>
-              <div className="card bg-dark text-white shadow">
-                <div className="card-body">
-                  <h2>{prod.name}</h2>
-                  <p>$ {prod.price}</p>
-                </div>
-              </div>
-          </div>
-          
-          )
-          })
-        }
-          </div>
+                </tbody>
+            </table>
         </div>
-      </div>
     </div>
+</div>
   );
 }
 
