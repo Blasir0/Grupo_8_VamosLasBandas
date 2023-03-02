@@ -67,8 +67,12 @@ main h1, main h2{
 }
 
 .name{
-    font-size: 24px;
-    padding-bottom: 20px;
+    font-size: 28px;
+    font-weight: 100;
+    width: 220px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
 }
 
 .card-price{
@@ -79,9 +83,9 @@ main h1, main h2{
 
 .price{
     color:darkgreen;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px 25px;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 10px 25px;
     margin-left: -50px;
 }
 
@@ -107,3 +111,32 @@ main h1, main h2{
 }
 
 /*Media Queries*/
+
+@media (min-width: 759px){
+    section.main-container{
+        display: grid;
+        align-self: center;
+    }
+
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-self: center;
+    }
+
+    .card-container a{
+        margin: auto
+    }
+}
+
+@media (min-width: 1023px){
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1500px){
+    .card-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

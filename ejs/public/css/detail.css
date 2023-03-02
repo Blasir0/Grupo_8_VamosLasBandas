@@ -83,8 +83,8 @@ a{
 }
 
 .title{
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.6em;
+    font-weight: 100;
     margin-bottom: 5px;
     width: 90%;
     text-align: start;
@@ -111,15 +111,15 @@ a{
 }
 
 .dates p{
+    font-weight: 100;
     padding: 5px 25px;
     text-align: start;
-    font-size: 1.1em;
+    font-size: 1em;
     white-space:nowrap;
 }
 
 .dates p:first-child{
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.4em;
     color:darkgreen;
 }
 
