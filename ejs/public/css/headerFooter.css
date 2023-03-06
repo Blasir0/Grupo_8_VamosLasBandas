@@ -105,7 +105,22 @@ header .searchbar:hover .submit i{
     padding-right: 5px;
 }
 
+
 .burguer-menu{
+    width: 20%;
+    color:#FFF;
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+.burger-container2{
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.burguer-menu2{
     width: 20%;
     color:#FFF;
     text-decoration: none;
