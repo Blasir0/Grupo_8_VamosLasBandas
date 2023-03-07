@@ -72,3 +72,54 @@ RETROSPECTIVA
       
    5. Dejar de hacer:
    Por el momento no hay puntos para dejar de hacer.
+   
+   > Sprint 6
+   
+   1. Comenzar a hacer: 
+   Realizar las tareas opcionales que se sugieren en el sprint
+      
+   2. Hacer más: 
+   Destinar más tiempo a mejorar la estética del sitio
+      
+   3. Continuar haciendo:
+   Cumplir con los tiempos necesarios para llevar a cabo cada tarea del sprint
+
+   4. Hacer menos:
+   Por el momento no hay puntos para hacer menos.
+      
+   5. Dejar de hacer:
+   Por el momento no hay puntos para dejar de hacer.
+   
+   > Sprint 7
+   
+   1. Comenzar a hacer: 
+   Pulir algunos detalles del cógido para que sea más amigable al usuario
+      
+   2. Hacer más:
+   Comunicarnos con mayor frecuencia para dividirnos mejor las tareas
+      
+   3. Continuar haciendo:
+   Revisar continuamente el código para asegurarnos que no haya conflictos.
+
+   4. Hacer menos:
+   Por el momento no hay puntos para hacer menos.
+      
+   5. Dejar de hacer:
+   Por el momento no hay puntos para dejar de hacer.
+
+   > Sprint 8
+   
+   1. Comenzar a hacer: 
+   Mejorar algunos detalles del FrontEnd para hacer el sitio más atractivo
+      
+   2. Hacer más:
+   Hacer las tareas opcionales sugeridas para el trabajo integrador
+      
+   3. Continuar haciendo:
+   Solicitar ayuda de los profesores en las clases de apoyo para solucionar algunos problemas que fueron surgiendo respecto al codigo
+
+   4. Hacer menos:
+   Por el momento no hay puntos para hacer menos.
+      
+   5. Dejar de hacer:
+   Por el momento no hay puntos para dejar de hacer.
